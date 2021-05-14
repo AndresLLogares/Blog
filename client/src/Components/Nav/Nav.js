@@ -20,7 +20,7 @@ const NavigationBar = () => {
     return (
         <div className={styles.header}>
             <div className={styles.PContainer}>
-                <Link style={{ textDecoration: 'none' }} to='/Home'>
+                <Link style={{ textDecoration: 'none' }} to='/Blog'>
                     <p className={styles.PLink} >Andrés</p>
                 </Link>
             </div>
