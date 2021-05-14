@@ -12,10 +12,10 @@ function App() {
         <NavigationBar />
       </Route>
       <Switch>
-        <Route exact path='/Home' component={Home} />
+        <Route exact path='/Blog' component={Home} />
 
         <Route exact path='/'  >
-          <Redirect to={{ pathname: '/Home', }} />
+          <Redirect to={{ pathname: '/Blog', }} />
         </Route>
         <Route component={PageNotFound} />
       </Switch>
