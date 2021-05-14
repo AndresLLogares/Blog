@@ -837,6 +837,78 @@ bottom: 100%;
   display: none;
 }
 
+.SortArrowUp{
+  position: fixed;
+  display: flex;
+  bottom: 5%;
+  right: 5%;
+  z-index: 4;
+}
+
+.LogosHomeUp{
+  max-width: 2rem;
+  min-width: 2rem;
+  max-height: 2rem;
+  min-height: 2rem;
+}
+
+.ButtonContainerUp {
+position: relative;
+width: 6rem;
+height: 3rem;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0vh;
+overflow: hidden;
+font-family: 'Merienda', cursive;
+font-weight: 300;
+font-size: 4vh;
+transition: 0.9s;
+letter-spacing: 1px;
+border-radius: 20%;
+
+button {
+width: 101%;
+height: 100%;
+font-family: 'Josefin Sans', sans-serif;
+font-weight: 300;
+font-size:3vh;
+letter-spacing: 1px;
+font-weight: bold;
+
+@include button($Cream,
+"https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
+2300%,
+100%,
+none,
+$Purple);
+cursor: pointer;
+-webkit-animation: ani2 0.7s steps(22) forwards;
+animation: ani2 0.7s steps(22) forwards;
+
+&:hover {
+-webkit-animation: ani 0.7s steps(22) forwards;
+animation: ani 0.7s steps(22) forwards;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+
+}
+}
+}
+
+.masUp{
+position: absolute;
+color:$Purple;
+text-align: center;
+width: 101%;
+font-family: 'Josefin Sans', sans-serif;
+font-weight: 300;
+position: absolute;
+font-size: 3vh;
+margin-top: .6rem;
+overflow: hidden;
+font-weight: bold;
+}
+
 @media (max-width: 648px) {
 
 .Back{

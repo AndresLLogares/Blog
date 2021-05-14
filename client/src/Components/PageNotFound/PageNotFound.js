@@ -1,7 +1,8 @@
 import React from 'react';
 import Homer from '../Images/Homer.gif';
 import { Link } from 'react-router-dom';
-import styles from '../../Scss/PageNotFound/PageNotFound.module.scss'
+import styles from '../../Scss/PageNotFound/PageNotFound.module.scss';
+
 const PageNotFound = () => {
 
     return (
