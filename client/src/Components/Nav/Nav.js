@@ -25,19 +25,19 @@ const NavigationBar = () => {
             </div>
             <ul className={click ? styles.nav_options_active : styles.nav_options}>
                 <li className={styles.SortNav} onClick={closeMobileMenu} >
-                    <Link style={{ textDecoration: 'none' }} to='/Home' >
+                    <a style={{ textDecoration: 'none' }} href='https://www.linkedin.com/in/andres-luis-logares-522595172/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAACkFWaoBglZUp19GGG5Q3LzLSMviGHXP1nw,1635457129917)/' >
                         <div className={styles.Links} ><TextDocument className={styles.IconsNav} />CV</div>
-                    </Link>
+                    </a>
                 </li>
                 <li className={styles.SortNav} onClick={closeMobileMenu} >
-                    <Link style={{ textDecoration: 'none' }} to='/https://github.com/AndresLLogares' >
+                    <a style={{ textDecoration: 'none' }} href="https://github.com/AndresLLogares" >
                         <div className={styles.Links}><Github className={styles.IconsNav} />GitHub</div>
-                    </Link>
+                    </a>
                 </li>
                 <li className={styles.SortNav} onClick={closeMobileMenu} >
-                    <Link style={{ textDecoration: 'none' }} to='/https://www.linkedin.com/in/andres-luis-logares-522595172/' >
+                    <a style={{ textDecoration: 'none' }} href="https://www.linkedin.com/in/andres-luis-logares-522595172/" >
                         <div className={styles.Links}><Linkedin className={styles.IconsNav} />Linkedin</div>
-                    </Link>
+                    </a>
                 </li>
             </ul>
             <div className={styles.mobile_menu} onClick={handleClick}>
