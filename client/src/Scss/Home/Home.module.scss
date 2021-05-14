@@ -1,0 +1,951 @@
+$Pink:#FFC1B6;
+$LPink:#FFDCB8;
+$Cream:#FFEEBB;
+$Yellow:#FDFFBC;
+$Black:#0C1115;
+$White:#FFFFFF;
+$Green:#98ddca;
+$Blue:#a3ddcb;
+$DPink:#e5707e;
+$DGreen:#4aa96c;
+$Purple:#21094e;
+$Violet:#511281;
+$Red:#f55c47;
+$DBlue:#233e8b;
+$Brown:#c8c2bc;
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
+
+
+::-webkit-scrollbar {
+width: 0.9rem;               
+}
+
+::-webkit-scrollbar-track {
+background: $Yellow;       
+border-radius: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+background-color: $Blue;    
+border-radius: 3rem;    
+border: groove .2rem $Purple;
+}
+
+.Back{
+width: 100%;
+margin-top: 0;
+min-height: 150vh;
+background-color:  $Blue;
+
+}
+
+.SeparateTwo{
+display: flex;
+flex-direction: row-reverse;
+width: 100%;
+}
+
+.SeparateTwo2do{
+display: flex;
+flex-direction: row;
+margin-top: 0;
+width: 100%;
+}
+
+.SortTitle{
+width: 50%;
+display: flex;
+margin-top: 5%;
+margin-bottom: 2%;
+margin-right: 5%;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+
+.SortTitle2do{
+width: 50%;
+display: flex;
+margin-top: 5%;
+margin-bottom: 2%;
+margin-left: 5%;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+
+.SortTitleImage{
+width: 50%;
+display: flex;
+margin-top: 10%;
+margin-bottom: 2%;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
+margin-right: 10%;
+}
+
+.SortTitleImage2do{
+width: 50%;
+display: flex;
+margin-bottom: 2%;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+
+.SortTitleContact{
+display: flex;
+margin-top: 3%;
+margin-bottom: 2%;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+
+.SortTitle3ro{
+  display: flex;
+margin-top: 3%;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+
+
+.Title{
+color: $Purple;
+font-size: 4vh;
+font-family: 'Merienda', cursive;
+text-shadow: -4px 3px 0 $Yellow;
+}
+
+.Title2do{
+color: $Purple;
+font-size: 5vh;
+font-family: 'Merienda', cursive;
+text-shadow: -4px 3px 0 $Yellow;
+}
+
+.Title3ro{
+color: $Purple;
+font-size: 5vh;
+font-family: 'Merienda', cursive;
+text-shadow: -4px 3px 0 $Yellow;
+}
+
+.Container{
+position: relative;
+width: 23rem;
+height: 23rem;
+margin-top: 10%;
+margin-bottom: 10%;
+margin-right: 10%;
+background: rgba(0,0,0,0);
+transition: 0.5s;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+border-radius: 20rem;
+
+}
+.Container img
+{
+position: absolute;
+width: 100%;
+transition: 0.5s;
+border-radius: .6rem;
+
+}
+.Container:hover img:nth-child(4)
+{
+transform: translate(90px,90px);		
+opacity: 1;
+}
+.Container:hover img:nth-child(3)
+{
+transform: translate(60px,60px);		
+opacity: .8;
+}
+.Container:hover img:nth-child(2)
+{
+transform: translate(30px,30px);		
+opacity: .6;
+}
+.Container:hover img:nth-child(1)
+{
+transform: translate(0px,0px);		
+opacity: .4;
+}
+
+.Container2{
+position: relative;
+width: 23rem;
+height: 23rem;
+margin-top: 10%;
+margin-bottom: 10%;
+margin-right: 10%;
+background: rgba(0,0,0,0);
+transition: 0.5s;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+border-radius: 20rem;
+
+}
+.Container2 img
+{
+position: absolute;
+width: 100%;
+transition: 0.5s;
+border-radius: .6rem;
+
+}
+.Container2:hover img:nth-child(4)
+{
+transform: translate(-90px,90px);		
+opacity: 1;
+}
+.Container2:hover img:nth-child(3)
+{
+transform: translate(-60px,60px);		
+opacity: .8;
+}
+.Container2:hover img:nth-child(2)
+{
+transform: translate(-30px,30px);		
+opacity: .6;
+}
+.Container2:hover img:nth-child(1)
+{
+transform: translate(-0px,0px);		
+opacity: .4;
+}
+.AboutMeBox{
+display: flex;
+flex-direction: column;
+text-align: center;
+margin-left: 5%;
+margin-right: 5%;
+background: $LPink;
+border:groove 1rem $Brown;
+border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.SkillsBox{
+display: flex;
+flex-direction: column;
+text-align: center;
+margin-left: 5%;
+margin-right: 5%;
+padding: 1%;
+background: $Yellow;
+border:groove 1rem $DGreen;
+border-radius: 15px 90px 130px;
+}
+
+.PSkills{
+font-family: 'Mali', cursive;
+color: $Purple;
+font-size: 3vh;
+font-weight: bold;
+}
+
+.SortCell{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+
+}
+
+.ContainerCell{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  perspective: 2000px;
+  margin-left: 23rem;
+  margin-top: 10rem;
+  margin-bottom: 0%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+}
+
+
+.ContainerCell img {
+  display: flex;
+  align-items: center;
+  background-color: $Pink;
+  border-radius: .8rem;
+  width: 20rem;
+  height: 20rem;
+  transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+  box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
+  transition: all .4s;
+  padding: 5%;
+  transform-style: preserve-3d;
+}
+
+.ImageCell:hover{ 
+    transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    cursor: url(../../Components//Images//Pointer1.png), pointer;
+}
+
+.AboutMeDivBox{
+margin-top: 2%;
+margin-bottom: 2%;
+margin-left: 1%;
+margin-right: 1%;
+}
+
+.AboutMeP{
+font-family: 'Mali', cursive;
+color: $Purple;
+font-size: 3vh;
+font-weight: bold;
+}
+
+.SortP{
+display: flex;
+margin-top: 3%;
+margin-left: 20%;
+margin-right: 20%;
+justify-content: center;
+text-align: center;
+background: $Cream;
+border: groove 1rem $Red;
+padding: 2%;
+border-radius: 50% 20% / 10% 40%;
+}
+
+.StyleP{
+margin-top: 0;
+font-family: 'Mali', cursive;
+font-weight: bold;
+color: $Purple;
+font-size: 3vh;
+}
+
+.ContactMeTitleCont{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+}
+
+.SortSkills{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+}
+
+.TitleContact{
+color: $Purple;
+font-size: 5vh;
+font-family: 'Merienda', cursive;
+text-shadow: -4px 3px 0 $Yellow;
+}
+
+
+.HrStyles{
+height: 1rem;
+color: $DPink;
+background-image: linear-gradient(-45deg,
+$Blue,
+$Blue 25%,
+currentColor 25%,
+currentColor 50%,
+$Blue 50%,
+$Blue 75%,
+currentColor 75%);
+background-size: 10px 10px;
+border: solid .3rem $Cream;
+border-radius: 90% 20% / 10% 90%;
+width: 70%;
+}
+
+.Information{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+text-align: center;
+margin: 3%;
+border-radius: 50% 25% 50% 25%/25% 50% 25% 50%;
+background: $Cream;
+height: 6rem;
+border:groove 1rem $Pink;
+}
+
+.SortInfor{
+display:flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 100%;
+margin-top: 2%;
+margin-bottom: 2%;
+max-height: 2rem;
+}
+
+.IconsContact{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+max-width: 2rem;
+max-height: 2rem;
+min-width: 2rem;
+max-height: 2rem;
+padding-right: 5%;
+padding-bottom: 9%;
+}
+
+.PInfo{
+display: flex;
+font-family: 'Mali', cursive;
+color: $Purple;
+font-weight: bold;
+font-size: 2.5vh;
+justify-content: center;
+align-items: center;
+text-align: center;
+text-decoration: none;
+border: none;
+cursor: pointer;
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.PInfo:hover{
+color: $Purple;
+border-bottom: solid .2rem $DPink;
+transform: skewY(-9deg);
+transition-duration: 1s;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+
+}
+
+.ContactMeTitleCont2do{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+border-radius: .5rem;
+margin-left: 20%;
+margin-right: 20%;
+}
+
+.TitleInfo{
+display: flex;
+font-family: 'Mali', cursive;
+font-size: 4vh;
+color: $Purple;
+justify-content: center;
+align-items: center;
+text-align: center;
+text-decoration: none;
+padding-right: 5%;
+
+}
+
+.SecondContact{
+color: $Purple;
+font-size: 5vh;
+font-family: 'Merienda', cursive;
+text-shadow: -4px 3px 0 $Yellow;
+}
+
+.ContactBox{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+
+.LoginBox{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-top: 5%;
+margin-bottom: 5%;
+width: 90%;
+border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+background:$Red;
+border:groove 1rem $Yellow;
+}
+
+.FormGroup{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+width: 100%;
+}
+
+.FomLabel{
+font-family: 'Josefin Sans', sans-serif;
+font-size: 3vh;
+font-weight: bold;
+color: $Cream;
+}
+
+.SortTextAreaBig{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.SortTextArea{
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+width: 50%;
+}
+
+.TextArea{
+width: 30rem;
+height: 10rem;
+background-color: rgba(4, 0, 4, 0.2);
+border-left: .4rem solid $Cream;
+font-family: 'Josefin Sans', sans-serif;
+color: $DPink;
+transition-duration: 2s;
+font-weight: bold;
+font-size: 2.5vh;
+margin-top: 2%;
+margin-left: 15%;
+resize: none;
+&:hover{
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+&:focus{
+background-color:$White;
+color: $Black;
+border-left: .4rem solid $Purple;
+}
+}
+}
+
+.LoginContainer{
+padding: 20px 0;
+position: relative;
+z-index: 2;
+
+input{
+font-family: 'Josefin Sans', sans-serif;
+display: block;
+appearance: none;
+outline: 0;
+border: .3rem solid $Yellow;
+background-color: rgba(4, 0, 4, 0.2);
+width: 15rem;
+border-radius: 10% / 50%;
+padding: 1rem 1.5rem;
+margin: 0 auto 10px auto;
+display: block;
+text-align: center;
+font-size: 2.5vh;
+color: $DPink;
+transition-duration: 2s;
+font-weight: bold;
+&:hover{
+background-color: fade($White, 40%);
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+
+}
+&:focus{
+background-color:$White;
+width: 20rem;
+color: darken($color: $Black, $amount: 45);
+border: .3rem solid $Purple;
+
+}
+}
+}
+
+.LoginBox form a {
+position: relative;
+display: inline-block;
+padding: 10px 20px;
+cursor: pointer;
+color: $Black;
+font-size: 4vh;
+font-family: 'Merienda', cursive;
+text-decoration: none;
+text-transform: uppercase;
+overflow: hidden;
+transition: .5s;
+margin-top: 40px;
+letter-spacing: 4px;
+background-color: $White;
+transition-duration: 3s;
+
+}
+
+.LoginBox a:hover {
+background: $Purple;
+color: $Cream;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+
+border-radius: 5px;
+
+}
+
+.LoginBox a span {
+position: absolute;
+display: block;
+}
+
+.LoginBox a span:nth-child(1) {
+top: 0;
+left: -100%;
+width: 100%;
+height: 10px;
+background: linear-gradient(90deg, transparent, $DPink);
+animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+0% {
+left: -100%;
+}
+50%,100% {
+left: 100%;
+}
+}
+
+.LoginBox a span:nth-child(2) {
+top: -100%;
+right: 0;
+width: 2px;
+height: 100%;
+background: linear-gradient(180deg, transparent, $DPink);
+animation: btn-anim2 1s linear infinite;
+animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+0% {
+top: -100%;
+}
+50%,100% {
+top: 100%;
+}
+}
+
+.LoginBox a span:nth-child(3) {
+bottom: 0;
+right: -100%;
+width: 100%;
+height: 10px;
+background: linear-gradient(270deg, transparent, $DPink);
+animation: btn-anim3 1s linear infinite;
+animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+0% {
+right: -100%;
+}
+50%,100% {
+right: 100%;
+}
+}
+
+.LoginBox a span:nth-child(4) {
+bottom: -100%;
+left: 0;
+width: 2px;
+height: 100%;
+background: linear-gradient(360deg, transparent, $DPink);
+animation: btn-anim4 1s linear infinite;
+animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+0% {
+bottom: -100%;
+}
+50%,100% {
+bottom: 100%;
+}
+}
+
+.ContainerCellRespon{
+  display: none;
+}
+
+@media (max-width: 648px) {
+
+.Back{
+width: 100%;
+padding-top: 25%;
+margin: 0;
+padding-left: 0%;
+padding-right: 0%;
+padding-bottom: 5%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.SeparateTwo{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-left:0;
+padding-right: 0;
+margin-left: 0;
+margin-right: 0;
+}
+
+.SeparateTwo2do{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding-left:0;
+padding-right: 0;
+margin-left: 0;
+margin-right: 0;
+}
+
+.SortTitle{
+width: 100%;
+}
+
+.SortTitle2do{
+width: 100%;
+}
+
+.SortTitleImage{
+width: 100%;
+}
+
+.SortTitleImage2do{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.Container2{
+max-width: 12rem;
+min-width: 12rem;
+max-height: 12rem;
+min-height: 12rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: 0;
+padding-bottom: 10%;
+}
+
+.Container2:hover img:nth-child(4)
+{
+transform: translate(-20px,20px);		
+opacity: 1;
+}
+.Container2:hover img:nth-child(3)
+{
+transform: translate(-15px,15px);		
+opacity: .8;
+}
+.Container2:hover img:nth-child(2)
+{
+transform: translate(-10px,10px);		
+opacity: .6;
+}
+.Container2:hover img:nth-child(1)
+{
+transform: translate(-5px,5px);		
+opacity: .4;
+}
+
+.Container{
+max-width: 12rem;
+min-width: 12rem;
+max-height: 12rem;
+min-height: 12rem;
+margin: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding-bottom: 20%;
+}
+.Container:hover img:nth-child(4)
+{
+transform: translate(20px,20px);		
+opacity: 1;
+}
+.Container:hover img:nth-child(3)
+{
+transform: translate(15px,15px);		
+opacity: .8;
+}
+.Container:hover img:nth-child(2)
+{
+transform: translate(10px,10px);		
+opacity: .6;
+}
+.Container:hover img:nth-child(1)
+{
+transform: translate(5px,5px);		
+opacity: .4;
+}
+.AboutMeBox{
+width: 80%;
+}
+.SortP{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 0;
+padding: 5%;
+align-items: center;
+text-align: center;
+width: 70%;
+}
+
+.ContactMe{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.Information{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 70%;
+height: 15rem;
+margin: 0;
+padding: 5%;
+}
+.SortInfor{
+display: flex;
+flex-direction: row;
+justify-content: left;
+text-align: left;
+}
+.TitleInfo{
+
+padding: 0;
+padding-top: 5%;
+padding-right: 0%;
+margin: 0;
+font-size: 3vh;
+}
+.PInfo{
+font-size: 2.5vh;
+padding: 0;
+padding-left: 5%;
+padding-top: 5%;
+
+margin: 0;
+}
+
+.ContactBox{
+display: flex;
+width: 100%;
+margin: 0;
+padding: 0%;
+padding-bottom: 20%;
+}
+.LoginBox{
+display: flex;
+width: 85%;
+}
+.FormGroup{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.SortTextArea{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin:0;
+padding: 0;
+padding-top: 5%;
+}
+.TextArea{
+margin: 0;
+width: 13rem;
+height: 15rem;
+}
+
+.ContainerCell{
+display: none;
+}
+
+
+.ContainerCellRespon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 8%;
+  border-radius: .4rem;
+  box-shadow: $Black 200px;
+}
+
+.ImageCellRes{
+  max-width: 10rem;
+  min-height: 10rem;
+  position: relative;
+  background-color: pink;
+  -webkit-transform: perspective(300px) rotateX(30deg);
+  -o-transform: perspective(300px) rotateX(30deg);
+  -moz-transform: perspective(300px) rotateX(30deg);
+  transform: perspective(300px) rotateX(30deg);
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+
+.LoginContainer{
+input{
+margin: 0;
+width: 7rem;
+&:focus{
+width: 12rem;
+}
+}
+}
+.FomLabel{
+margin-top: 5%;
+}
+.EachInput{
+margin-top: 5%;
+}
+}

@@ -1,0 +1,187 @@
+$Pink:#FFC1B6;
+$LPink:#FFDCB8;
+$Cream:#FFEEBB;
+$Yellow:#FDFFBC;
+$Black:#0C1115;
+$White:#FFFFFF;
+$Green:#98ddca;
+$Blue:#a3ddcb;
+$DPink:#e5707e;
+$DGreen:#4aa96c;
+$Purple:#21094e;
+$Violet:#511281;
+$Red:#f55c47;
+$DBlue:#233e8b;
+$Brown:#c8c2bc;
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
+
+
+.header {
+	display: flex;
+  box-shadow: 0px 0px;
+  justify-content:space-between;
+  background: $Yellow;
+	align-items: center;
+  position: absolute;
+	height: 12vh;
+  width: 100%;
+  font-family: 'Merienda', cursive;
+  z-index: 4;
+}
+
+.LogoContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 20%;
+}
+
+.PContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 20%;
+}
+
+
+.PLink{
+  font-family: 'Merienda', cursive;
+  font-size: 4vh;
+  color: $Purple;
+  font-weight: bold;
+}
+
+.PLink:hover{
+  color: $Purple;
+  border-bottom: solid .2rem $DPink;
+  transform: skewY(-9deg);
+  transition-duration: 1s;
+  cursor: url(../../Components//Images//Pointer1.png), pointer;
+
+}
+
+.nav_options {
+  display: flex;
+  justify-content:space-evenly;
+	list-style-type: none;
+  width: 100%;
+}
+
+.SortNav{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 20%;
+  margin-right: 5%;
+}
+
+.mobile_option {
+	display: none;
+}
+  
+.mobile_menu {
+	display: none;
+}
+
+.IconsNav{
+  min-width: 2rem;
+  min-height: 2rem;
+  max-height: 2rem;
+  max-width: 2rem;
+  padding-bottom: 9%;
+}
+
+.Links{
+  font-family: 'Merienda', cursive;
+  font-size: 3vh;
+  color: $Purple;
+  font-weight: bold;
+}
+
+.Links:hover{
+  color: $Purple;
+  border-bottom: solid .2rem $DPink;
+  transform: skewY(-9deg);
+  transition-duration: 1s;
+  cursor: url(../../Components//Images//Pointer1.png), pointer;
+
+}
+
+ @media (max-width: 648px) {
+
+.header {
+	width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_options {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  top: 80px;
+  left: -100%;
+  opacity: 0;
+  transition: all 0.5s ease;
+  flex-direction: column;
+  list-style-type: none;
+  grid-gap: 0px;	
+}
+.nav_options_active {
+  display: flex;
+  flex-direction: column;
+  background:$Yellow;
+  justify-content: center;
+  position: absolute;
+  height: fit-content;
+  border-radius: .5rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 3.6rem;
+  border: solid .2rem $Purple;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  z-index: 3;
+  align-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 40%;
+  padding-right: 40%;
+}
+
+.PLink{
+  padding-left: 20%;
+}
+
+.MenuIcon {
+  color: $Purple;
+  width: 4rem;
+  height: 4rem;
+  padding-right: 20%;
+}
+
+.Links{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+}
+.mobile_menu {
+display: block;
+}
