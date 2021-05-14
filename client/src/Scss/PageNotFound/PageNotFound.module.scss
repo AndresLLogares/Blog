@@ -24,7 +24,7 @@ $Brown:#c8c2bc;
 .BodyNotFound{
 width: 100%;
 margin-top: 0;
-min-height: 150vh;
+min-height: 100vh;
 background-color:  $Cream;
 }
 
@@ -42,7 +42,6 @@ align-items: center;
 .ContainerNotFoundButton{
 width: 100%;
 display: flex;
-padding-top: 10%;
 padding-bottom: 2%;
 flex-direction: column;
 justify-content: center;
@@ -184,5 +183,14 @@ mask-position: 100% 0;
 to {
 -webkit-mask-position: 0 0;
 mask-position: 0 0;
+}
+}
+
+@media (max-width: 648px) {
+.ContainerNotFound {
+    padding-top: 30%;
+}
+.buttoncontainer{
+    width: 10rem;
 }
 }

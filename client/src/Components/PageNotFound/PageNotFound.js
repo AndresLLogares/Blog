@@ -10,7 +10,7 @@ const PageNotFound = () => {
                 <h1 className={styles.TitleNotFound} >Parece que te has perdido</h1>
                 <h1 className={styles.TitleNotFound}>Pero no te preocupes, puedes pulsar ese botón</h1>
             </div>
-            <div className={styles.ContainerNotFound}>
+            <div className={styles.ContainerNotFoundButton}>
                 <img className={styles.ImageNotFound} src={Homer} alt='' />
             </div>
             <div className={styles.ContainerNotFoundButton}>

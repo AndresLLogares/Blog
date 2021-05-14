@@ -237,6 +237,152 @@ background: $LPink;
 border:groove 1rem $Brown;
 border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
+.SkillsButtonBox {
+display: flex;
+flex-direction: column;
+width: 90%;
+text-align: center;
+margin-left: 5%;
+margin-right: 5%;
+margin-bottom: 5%;
+background: $Pink;
+border:groove 1rem $Cream;
+border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.SortButtons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+@mixin button($bcolor,
+$url,
+$x1,
+$y1,
+$bor,
+$col) {
+background: $bcolor;
+-webkit-mask: url($url);
+mask: url($url);
+-webkit-mask-size: $x1 $y1;
+mask-size: $x1 $y1;
+border: $bor;
+color: $col;
+}
+
+.LogosHome{
+  min-width: 3.5rem;
+  max-width: 3.5rem;
+  max-height: 3.5rem;
+  min-width: 3.5rem;
+  }
+
+.buttoncontainer {
+position: relative;
+width: 10rem;
+height: 5rem;
+overflow: hidden;
+border: .5rem solid $Purple;
+font-family: 'Merienda', cursive;
+font-weight: 300;
+transition: 0.5s;
+letter-spacing: 1px;
+border-radius: 15px 50px;
+margin: 2%;
+
+
+
+button {
+width: 101%;
+height: 100%;
+font-family: 'Merienda', cursive;
+font-weight: 300;
+font-size: 3vh;
+letter-spacing: 1px;
+font-weight: bold;
+
+@include button($Yellow, "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+3000%,
+100%,
+none,
+$Red);
+cursor: pointer;
+-webkit-animation: ani2 0.7s steps(29) forwards;
+animation: ani2 0.7s steps(29) forwards;
+
+&:hover {
+-webkit-animation: ani 0.7s steps(29) forwards;
+animation: ani 0.7s steps(29) forwards;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+}
+}
+}
+
+.mas {
+position: absolute;
+color:$Purple;
+text-align: center;
+width: 101%;
+font-family: 'Merienda', cursive;
+font-weight: 300;
+position: absolute;
+font-size: 3vh;
+margin-top: .6rem;
+overflow: hidden;
+font-weight: bold;
+}
+
+@-webkit-keyframes ani {
+from {
+-webkit-mask-position: 0 0;
+mask-position: 0 0;
+}
+
+to {
+-webkit-mask-position: 100% 0;
+mask-position: 100% 0;
+}
+}
+
+@keyframes ani {
+from {
+-webkit-mask-position: 0 0;
+mask-position: 0 0;
+}
+
+to {
+-webkit-mask-position: 100% 0;
+mask-position: 100% 0;
+}
+}
+
+@-webkit-keyframes ani2 {
+from {
+-webkit-mask-position: 100% 0;
+mask-position: 100% 0;
+}
+
+to {
+-webkit-mask-position: 0 0;
+mask-position: 0 0;
+}
+}
+
+@keyframes ani2 {
+from {
+-webkit-mask-position: 100% 0;
+mask-position: 100% 0;
+}
+
+to {
+-webkit-mask-position: 0 0;
+mask-position: 0 0;
+}
+}
+
 
 .SkillsBox{
 display: flex;
@@ -264,7 +410,6 @@ font-weight: bold;
   align-items: center;
   text-align: center;
   width: 100%;
-
 }
 
 .ContainerCell{
@@ -732,7 +877,8 @@ margin-right: 0;
 }
 
 .SortTitle{
-width: 100%;
+width: 90%;
+
 }
 
 .SortTitle2do{
@@ -947,5 +1093,8 @@ margin-top: 5%;
 }
 .EachInput{
 margin-top: 5%;
+}
+.SkillsButtonBox{
+  width: 80%;
 }
 }

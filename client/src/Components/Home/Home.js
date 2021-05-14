@@ -14,6 +14,15 @@ import { useMediaQuery } from 'react-responsive';
 import LapTop from '../Images/LAPTOP.png';
 import TabletImage from '../Images/TABLET.png';
 import Cellgif from '../Images/CELLGIF.gif';
+import {LogoReact} from '@styled-icons/ionicons-solid/LogoReact';
+import {Javascript} from '@styled-icons/boxicons-logos/Javascript';
+import {Redux} from '@styled-icons/simple-icons/Redux';
+import {Express} from '@styled-icons/simple-icons/Express';
+import {Postgresql} from '@styled-icons/simple-icons/Postgresql';
+import {Apollographql} from '@styled-icons/simple-icons/Apollographql';
+import {Graphql} from '@styled-icons/simple-icons/Graphql';
+import {Html5} from '@styled-icons/boxicons-logos/Html5';
+import {Css3} from '@styled-icons/boxicons-logos/Css3';
 
 const Home = () => {
 
@@ -114,6 +123,46 @@ const Home = () => {
             <div className={styles.SortSkills}>
                 <div className={styles.SortTitle3ro}>
                     <h1 className={styles.Title3ro} >Habilidades</h1>
+                </div>
+                <div className={styles.SkillsButtonBox}>
+                    <div className={styles.SortButtons}>
+                        <div className={styles.buttoncontainer}>
+                            <span className={styles.mas}><LogoReact className={styles.LogosHome} /></span>
+                            <button type="button" name="Hover">React</button>
+                        </div>
+                        <div className={styles.buttoncontainer}>
+                            <span className={styles.mas}><Javascript className={styles.LogosHome} /></span>
+                            <button type="button" name="Hover">Javascript</button>
+                        </div>
+                        <div className={styles.buttoncontainer}>
+                            <span className={styles.mas}><Express className={styles.LogosHome} /></span>
+                            <button type="button" name="Hover">Express</button>
+                        </div>
+                        <div className={styles.buttoncontainer}>
+                            <span className={styles.mas}><Postgresql className={styles.LogosHome} /></span>
+                            <button type="button" name="Hover">Sequelize</button>
+                        </div>
+                        <div className={styles.buttoncontainer}>
+                            <span className={styles.mas}><Redux className={styles.LogosHome} /></span>
+                            <button type="button" name="Hover">Redux</button>
+                        </div>
+                        <div className={styles.buttoncontainer}>
+                            <span className={styles.mas}><Html5 className={styles.LogosHome} /></span>
+                            <button type="button" name="Hover">HTML</button>
+                        </div>
+                        <div className={styles.buttoncontainer}>
+                            <span className={styles.mas}><Css3 className={styles.LogosHome} /></span>
+                            <button type="button" name="Hover">CSS</button>
+                        </div>
+                        <div className={styles.buttoncontainer}>
+                            <span className={styles.mas}><Graphql className={styles.LogosHome} /></span>
+                            <button type="button" name="Hover">GraphQl</button>
+                        </div>
+                        <div className={styles.buttoncontainer}>
+                            <span className={styles.mas}><Apollographql className={styles.LogosHome} /></span>
+                            <button type="button" name="Hover">Apollo</button>
+                        </div>
+                    </div>
                 </div>
                 <div className={styles.SkillsBox}>
                     <p className={styles.PSkills} >Con respecto a mis habilidades he tenido la oportunidad de trabajar varias técnologias mayoritariamente con Javascript y React
