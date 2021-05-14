@@ -1,30 +1,29 @@
 {
   "files": {
-    "main.css": "/Blog/static/css/main.43d05d7b.chunk.css",
-    "main.js": "/Blog/static/js/main.305057ae.chunk.js",
-    "main.js.map": "/Blog/static/js/main.305057ae.chunk.js.map",
+    "main.css": "/Blog/static/css/main.904bd19d.chunk.css",
+    "main.js": "/Blog/static/js/main.333d3afd.chunk.js",
+    "main.js.map": "/Blog/static/js/main.333d3afd.chunk.js.map",
     "runtime-main.js": "/Blog/static/js/runtime-main.26165a87.js",
     "runtime-main.js.map": "/Blog/static/js/runtime-main.26165a87.js.map",
-    "static/js/2.c3af4b67.chunk.js": "/Blog/static/js/2.c3af4b67.chunk.js",
-    "static/js/2.c3af4b67.chunk.js.map": "/Blog/static/js/2.c3af4b67.chunk.js.map",
+    "static/js/2.47ffe447.chunk.js": "/Blog/static/js/2.47ffe447.chunk.js",
+    "static/js/2.47ffe447.chunk.js.map": "/Blog/static/js/2.47ffe447.chunk.js.map",
     "index.html": "/Blog/index.html",
-    "static/css/main.43d05d7b.chunk.css.map": "/Blog/static/css/main.43d05d7b.chunk.css.map",
-    "static/js/2.c3af4b67.chunk.js.LICENSE.txt": "/Blog/static/js/2.c3af4b67.chunk.js.LICENSE.txt",
+    "static/css/main.904bd19d.chunk.css.map": "/Blog/static/css/main.904bd19d.chunk.css.map",
+    "static/js/2.47ffe447.chunk.js.LICENSE.txt": "/Blog/static/js/2.47ffe447.chunk.js.LICENSE.txt",
     "static/media/CELLGIF.a9f3b655.gif": "/Blog/static/media/CELLGIF.a9f3b655.gif",
     "static/media/CELLPHONE.94009228.png": "/Blog/static/media/CELLPHONE.94009228.png",
     "static/media/CV.f8818216.jpg": "/Blog/static/media/CV.f8818216.jpg",
     "static/media/CV2.6b92f77d.jpg": "/Blog/static/media/CV2.6b92f77d.jpg",
     "static/media/Homer.37091497.gif": "/Blog/static/media/Homer.37091497.gif",
     "static/media/LAPTOP.4f2e6799.png": "/Blog/static/media/LAPTOP.4f2e6799.png",
-    "static/media/NAVIMAGE.a06b96f6.jpg": "/Blog/static/media/NAVIMAGE.a06b96f6.jpg",
     "static/media/TABLET.575a9734.png": "/Blog/static/media/TABLET.575a9734.png",
     "static/media/menu.c21acb3a.svg": "/Blog/static/media/menu.c21acb3a.svg",
     "static/media/x.cb990eee.svg": "/Blog/static/media/x.cb990eee.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.26165a87.js",
-    "static/js/2.c3af4b67.chunk.js",
-    "static/css/main.43d05d7b.chunk.css",
-    "static/js/main.305057ae.chunk.js"
+    "static/js/2.47ffe447.chunk.js",
+    "static/css/main.904bd19d.chunk.css",
+    "static/js/main.333d3afd.chunk.js"
   ]
 }
