@@ -1,29 +1,33 @@
 {
   "files": {
-    "main.css": "/Blog/static/css/main.904bd19d.chunk.css",
-    "main.js": "/Blog/static/js/main.175ace8c.chunk.js",
-    "main.js.map": "/Blog/static/js/main.175ace8c.chunk.js.map",
+    "main.css": "/Blog/static/css/main.75271b97.chunk.css",
+    "main.js": "/Blog/static/js/main.df253059.chunk.js",
+    "main.js.map": "/Blog/static/js/main.df253059.chunk.js.map",
     "runtime-main.js": "/Blog/static/js/runtime-main.26165a87.js",
     "runtime-main.js.map": "/Blog/static/js/runtime-main.26165a87.js.map",
-    "static/js/2.6cfcc5ba.chunk.js": "/Blog/static/js/2.6cfcc5ba.chunk.js",
-    "static/js/2.6cfcc5ba.chunk.js.map": "/Blog/static/js/2.6cfcc5ba.chunk.js.map",
+    "static/js/2.70add46a.chunk.js": "/Blog/static/js/2.70add46a.chunk.js",
+    "static/js/2.70add46a.chunk.js.map": "/Blog/static/js/2.70add46a.chunk.js.map",
     "index.html": "/Blog/index.html",
-    "static/css/main.904bd19d.chunk.css.map": "/Blog/static/css/main.904bd19d.chunk.css.map",
-    "static/js/2.6cfcc5ba.chunk.js.LICENSE.txt": "/Blog/static/js/2.6cfcc5ba.chunk.js.LICENSE.txt",
+    "static/css/main.75271b97.chunk.css.map": "/Blog/static/css/main.75271b97.chunk.css.map",
+    "static/js/2.70add46a.chunk.js.LICENSE.txt": "/Blog/static/js/2.70add46a.chunk.js.LICENSE.txt",
     "static/media/CELLGIF.a9f3b655.gif": "/Blog/static/media/CELLGIF.a9f3b655.gif",
     "static/media/CELLPHONE.94009228.png": "/Blog/static/media/CELLPHONE.94009228.png",
     "static/media/CV.f8818216.jpg": "/Blog/static/media/CV.f8818216.jpg",
     "static/media/CV2.6b92f77d.jpg": "/Blog/static/media/CV2.6b92f77d.jpg",
+    "static/media/HAPPY.52de18d1.gif": "/Blog/static/media/HAPPY.52de18d1.gif",
+    "static/media/HappySuper.6bc0039b.gif": "/Blog/static/media/HappySuper.6bc0039b.gif",
     "static/media/Homer.37091497.gif": "/Blog/static/media/Homer.37091497.gif",
     "static/media/LAPTOP.4f2e6799.png": "/Blog/static/media/LAPTOP.4f2e6799.png",
+    "static/media/SAD.6e0fd205.gif": "/Blog/static/media/SAD.6e0fd205.gif",
+    "static/media/SadHeart.8bd1bb73.gif": "/Blog/static/media/SadHeart.8bd1bb73.gif",
     "static/media/TABLET.575a9734.png": "/Blog/static/media/TABLET.575a9734.png",
     "static/media/menu.c21acb3a.svg": "/Blog/static/media/menu.c21acb3a.svg",
     "static/media/x.cb990eee.svg": "/Blog/static/media/x.cb990eee.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.26165a87.js",
-    "static/js/2.6cfcc5ba.chunk.js",
-    "static/css/main.904bd19d.chunk.css",
-    "static/js/main.175ace8c.chunk.js"
+    "static/js/2.70add46a.chunk.js",
+    "static/css/main.75271b97.chunk.css",
+    "static/js/main.df253059.chunk.js"
   ]
 }
