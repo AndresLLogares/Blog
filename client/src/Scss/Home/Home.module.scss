@@ -413,7 +413,7 @@ margin-left: 5%;
 margin-right: 5%;
 padding: 1%;
 background: $Yellow;
-border-radius: 15px 90px 130px;
+border-radius: 30px 90px 130px;
 }
 
 
@@ -710,8 +710,8 @@ font-family: 'Josefin Sans', sans-serif;
 display: block;
 appearance: none;
 outline: 0;
-border: .3rem solid $Yellow;
-background-color: rgba(4, 0, 4, 0.2);
+border: .3rem solid $Cream;
+background-color: rgba(4, 0, 4, 0.1);
 width: 15rem;
 border-radius: 10% / 50%;
 padding: 1rem 1.5rem;
@@ -719,7 +719,7 @@ margin: 0 auto 10px auto;
 display: block;
 text-align: center;
 font-size: 2.5vh;
-color: $DPink;
+color: $Cream;
 transition-duration: 2s;
 font-weight: bold;
 &:hover{
@@ -730,7 +730,7 @@ cursor: url(../../Components//Images//Pointer1.png), pointer;
 &:focus{
 background-color:$White;
 width: 20rem;
-color: darken($color: $Black, $amount: 45);
+color: $Purple;
 border: .3rem solid $Purple;
 
 }
