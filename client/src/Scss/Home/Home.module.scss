@@ -118,7 +118,7 @@ align-items: center;
 }
 
 .SortTitle3ro{
-  display: flex;
+display: flex;
 margin-top: 1%;
 flex-direction: column;
 justify-content: center;
@@ -144,9 +144,9 @@ text-shadow: -1px 1px 0 $Cream;
 }
 
 .Title2doFast{
-  padding-top: 0;
-  margin-top: 0;
-  color: $Cream;
+padding-top: 0;
+margin-top: 0;
+color: $Cream;
 font-size: 7vh;
 font-family: 'Oswald', sans-serif;
 text-shadow: -1px 1px 0 $Cream;
@@ -268,11 +268,11 @@ border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 
 .SortButtons{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 2%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+padding: 2%;
 }
 
 @mixin button($bcolor,
@@ -291,11 +291,11 @@ color: $col;
 }
 
 .LogosHome{
-  min-width: 3.5rem;
-  max-width: 3.5rem;
-  max-height: 3.5rem;
-  min-width: 3.5rem;
-  }
+min-width: 3.5rem;
+max-width: 3.5rem;
+max-height: 3.5rem;
+min-width: 3.5rem;
+}
 
 .buttoncontainer {
 position: relative;
@@ -415,7 +415,7 @@ border-radius: 30px 90px 130px;
 
 
 .PSkills{
-  font-family: 'Raleway', sans-serif;
+font-family: 'Raleway', sans-serif;
 color: $Purple;
 font-size: 3vh;
 font-weight: bold;
@@ -423,46 +423,46 @@ width: 90%;
 }
 
 .SortCell{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 100%;
 }
 
 .ContainerCell{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 10rem;
-  perspective: 2000px;
-  margin-left: 23rem;
-  margin-top: 10rem;
-  margin-bottom: 0%;
-  transform: translate(-50%, -50%);
-  transform-style: preserve-3d;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 10rem;
+perspective: 2000px;
+margin-left: 23rem;
+margin-top: 10rem;
+margin-bottom: 0%;
+transform: translate(-50%, -50%);
+transform-style: preserve-3d;
 }
 
 .ContainerCell img {
-  display: flex;
-  align-items: center;
-  background-color: $MBLUE;
-  border-radius: .8rem;
-  width: 20rem;
-  height: 20rem;
-  transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
-  box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
-  transition: all .4s;
-  padding: 5%;
-  transform-style: preserve-3d;
+display: flex;
+align-items: center;
+background-color: $MBLUE;
+border-radius: .8rem;
+width: 20rem;
+height: 20rem;
+transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
+transition: all .4s;
+padding: 5%;
+transform-style: preserve-3d;
 }
 
 .ImageCell:hover{ 
-    transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
-    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
-    cursor: url(../../Components//Images//Pointer1.png), pointer;
+transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+cursor: url(../../Components//Images//Pointer1.png), pointer;
 }
 
 .AboutMeDivBox{
@@ -473,7 +473,7 @@ margin-right: 1%;
 }
 
 .AboutMeP{
-  font-family: 'Raleway', sans-serif;
+font-family: 'Raleway', sans-serif;
 color: $Purple;
 font-size: 3vh;
 font-weight: bold;
@@ -570,7 +570,8 @@ padding-bottom: 9%;
 
 .PInfo{
 display: flex;
-font-family: 'Montserrat', sans-serif;color: $Purple;
+font-family: 'Montserrat', sans-serif;
+color: $Purple;
 font-weight: bold;
 font-size: 3.5vh;
 justify-content: center;
@@ -896,7 +897,7 @@ max-height: 16rem;
 }
 
 .ButtonSend{
-  font-family: 'Oswald', sans-serif;
+font-family: 'Oswald', sans-serif;
 border-radius: 4px;
 background-color: $NEONBLUE;
 border: none;
@@ -953,11 +954,11 @@ justify-content: center;
 text-align: center;
 }
 .AboutMeBox{
-  width: 80%;
-  margin-left: 10%;
+width: 80%;
+margin-left: 10%;
 }
 .AboutMeDivBox{
-  width: 90%;
+width: 90%;
 }
 .SeparateTwo{
 width: 100%;
@@ -1096,21 +1097,19 @@ justify-content: center;
 align-items: center;
 text-align: center;
 width: 80%;
-height: 15rem;
+height: 25rem;
 margin: 0;
 padding: 5%;
 }
 .SortInfor{
 display: flex;
-flex-direction: row;
-width: 80%;
-justify-content: left;
-text-align: left;
+flex-direction: column;
+width: 90%;
+justify-content: space-evenly;
+text-align: center;
 }
 .TitleInfo{
-
 padding: 0;
-padding-top: 5%;
 padding-right: 0%;
 margin: 0;
 font-size: 3vh;
@@ -1118,9 +1117,6 @@ font-size: 3vh;
 .PInfo{
 font-size: 2.5vh;
 padding: 0;
-padding-left: 5%;
-padding-top: 5%;
-
 margin: 0;
 }
 
@@ -1216,12 +1212,12 @@ font-size: 4vh;
 width: 10rem;
 }
 .PSkills{
-  width: 80%;
+width: 80%;
 }
 .IconsContact{
-  max-width: 2rem;
-  min-width: 2rem;
-  max-height: 2rem;
-  min-height: 2rem;
+max-width: 2rem;
+min-width: 2rem;
+max-height: 2rem;
+min-height: 2rem;
 }
 }
