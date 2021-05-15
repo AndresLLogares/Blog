@@ -115,7 +115,7 @@ align-items: center;
 
 .SortTitle3ro{
   display: flex;
-margin-top: 3%;
+margin-top: 1%;
 flex-direction: column;
 justify-content: center;
 text-align: center;
@@ -137,11 +137,21 @@ font-family: 'Merienda', cursive;
 text-shadow: -4px 3px 0 $Yellow;
 }
 
+.Title2doFast{
+  padding-top: 0;
+  margin-top: 0;
+  color: $Purple;
+font-size: 5vh;
+font-family: 'Merienda', cursive;
+text-shadow: -4px 3px 0 $Yellow;
+}
+
 .Title3ro{
 color: $Purple;
 font-size: 5vh;
 font-family: 'Merienda', cursive;
 text-shadow: -4px 3px 0 $Yellow;
+width: 95%;
 }
 
 .Container{
@@ -388,6 +398,7 @@ mask-position: 0 0;
 display: flex;
 flex-direction: column;
 text-align: center;
+margin-top: 5%;
 margin-left: 5%;
 margin-right: 5%;
 padding: 1%;
@@ -430,7 +441,7 @@ font-weight: bold;
 .ContainerCell img {
   display: flex;
   align-items: center;
-  background-color: $Pink;
+  background-color: $Cream;
   border-radius: .8rem;
   width: 20rem;
   height: 20rem;
@@ -725,131 +736,23 @@ border: .3rem solid $Purple;
 }
 }
 
-.LoginBox form a {
-position: relative;
-display: inline-block;
-padding: 10px 20px;
-cursor: pointer;
-color: $Black;
-font-size: 4vh;
-font-family: 'Merienda', cursive;
-text-decoration: none;
-text-transform: uppercase;
-overflow: hidden;
-transition: .5s;
-margin-top: 40px;
-letter-spacing: 4px;
-background-color: $White;
-transition-duration: 3s;
-
-}
-
-.LoginBox a:hover {
-background: $Purple;
-color: $Cream;
-cursor: url(../../Components//Images//Pointer1.png), pointer;
-
-border-radius: 5px;
-
-}
-
-.LoginBox a span {
-position: absolute;
-display: block;
-}
-
-.LoginBox a span:nth-child(1) {
-top: 0;
-left: -100%;
-width: 100%;
-height: 10px;
-background: linear-gradient(90deg, transparent, $DPink);
-animation: btn-anim1 1s linear infinite;
-}
-
-@keyframes btn-anim1 {
-0% {
-left: -100%;
-}
-50%,100% {
-left: 100%;
-}
-}
-
-.LoginBox a span:nth-child(2) {
-top: -100%;
-right: 0;
-width: 2px;
-height: 100%;
-background: linear-gradient(180deg, transparent, $DPink);
-animation: btn-anim2 1s linear infinite;
-animation-delay: .25s
-}
-
-@keyframes btn-anim2 {
-0% {
-top: -100%;
-}
-50%,100% {
-top: 100%;
-}
-}
-
-.LoginBox a span:nth-child(3) {
-bottom: 0;
-right: -100%;
-width: 100%;
-height: 10px;
-background: linear-gradient(270deg, transparent, $DPink);
-animation: btn-anim3 1s linear infinite;
-animation-delay: .5s
-}
-
-@keyframes btn-anim3 {
-0% {
-right: -100%;
-}
-50%,100% {
-right: 100%;
-}
-}
-
-.LoginBox a span:nth-child(4) {
-bottom: -100%;
-left: 0;
-width: 2px;
-height: 100%;
-background: linear-gradient(360deg, transparent, $DPink);
-animation: btn-anim4 1s linear infinite;
-animation-delay: .75s
-}
-
-@keyframes btn-anim4 {
-0% {
-bottom: -100%;
-}
-50%,100% {
-bottom: 100%;
-}
-}
-
 .ContainerCellRespon{
-  display: none;
+display: none;
 }
 
 .SortArrowUp{
-  position: fixed;
-  display: flex;
-  bottom: 5%;
-  right: 5%;
-  z-index: 4;
+position: fixed;
+display: flex;
+bottom: 5%;
+right: 5%;
+z-index: 4;
 }
 
 .LogosHomeUp{
-  max-width: 2rem;
-  min-width: 2rem;
-  max-height: 2rem;
-  min-height: 2rem;
+max-width: 2rem;
+min-width: 2rem;
+max-height: 2rem;
+min-height: 2rem;
 }
 
 .ButtonContainerUp {
@@ -908,6 +811,131 @@ margin-top: .6rem;
 overflow: hidden;
 font-weight: bold;
 }
+
+.SortHapSadButtons{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+width: 100%;
+margin-top: 5%;
+}
+
+.SortHapSad{
+display: flex;
+width: 50%;
+}
+
+.ButtonContainerHappy {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 10rem;
+height: 8rem;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0vh;
+overflow: hidden;
+font-family: 'Merienda', cursive;
+font-weight: 300;
+font-size: 4vh;
+transition: 0.9s;
+letter-spacing: 1px;
+border-radius: 20%;
+transition-duration: 5s;
+
+button {
+width: 101%;
+height: 100%;
+font-family: 'Merienda', cursive;
+font-weight: 300;
+font-size:5vh;
+letter-spacing: 1px;
+font-weight: bold;
+
+@include button($Pink,
+"https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
+2300%,
+100%,
+none,
+$Purple);
+cursor: pointer;
+-webkit-animation: ani2 0.7s steps(22) forwards;
+animation: ani2 0.7s steps(22) forwards;
+
+&:hover {
+-webkit-animation: ani 0.7s steps(22) forwards;
+animation: ani 0.7s steps(22) forwards;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+}
+}
+}
+
+.Smile{
+position: absolute;
+color:$Purple;
+text-align: center;
+width: 90%;
+font-family: 'Josefin Sans', sans-serif;
+font-weight: 300;
+position: absolute;
+font-size: 3vh;
+max-height: 5rem;
+min-height: 5rem;
+max-width: 5rem;
+min-width: 5rem;
+margin-top: 0rem;
+overflow: hidden;
+font-weight: bold;
+}
+
+.ImageBig{
+max-width: 14rem;
+max-height: 16rem;
+min-width: 14rem;
+max-height: 16rem;
+}
+
+.ButtonSend{
+font-family: 'Merienda', cursive;
+border-radius: 4px;
+background-color: $Yellow;
+border: none;
+color: $Purple;
+text-align: center;
+font-size: 5vh;
+padding: 16px;
+width: 12rem;
+transition: all 0.5s;
+margin: 36px;
+box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.ButtonSend  {
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.ButtonSend :after {
+content: '»';
+position: absolute;
+opacity: 0;  
+top: 14px;
+right: -20px;
+transition: 0.5s;
+}
+
+.ButtonSend :hover{
+padding-right: 24px;
+padding-left:8px;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+}
+
+.ButtonSend :hover:after {
+opacity: 1;
+right: 10px;
+}
+
 
 @media (max-width: 648px) {
 
@@ -1124,31 +1152,30 @@ height: 15rem;
 display: none;
 }
 
-
 .ContainerCellRespon{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5%;
-  margin-bottom: 8%;
-  border-radius: .4rem;
-  box-shadow: $Black 200px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 5%;
+margin-bottom: 8%;
+border-radius: .4rem;
+box-shadow: $Black 200px;
 }
 
 .ImageCellRes{
-  max-width: 10rem;
-  min-height: 10rem;
-  position: relative;
-  background-color: pink;
-  -webkit-transform: perspective(300px) rotateX(30deg);
-  -o-transform: perspective(300px) rotateX(30deg);
-  -moz-transform: perspective(300px) rotateX(30deg);
-  transform: perspective(300px) rotateX(30deg);
-  -webkit-transform-origin: 0% 50%;
-  -moz-transform-origin: 0% 50%;
-  -o-transform-origin: 0% 50%;
-  transform-origin: 0% 50%;
+max-width: 10rem;
+min-height: 10rem;
+position: relative;
+background-color: pink;
+-webkit-transform: perspective(300px) rotateX(30deg);
+-o-transform: perspective(300px) rotateX(30deg);
+-moz-transform: perspective(300px) rotateX(30deg);
+transform: perspective(300px) rotateX(30deg);
+-webkit-transform-origin: 0% 50%;
+-moz-transform-origin: 0% 50%;
+-o-transform-origin: 0% 50%;
+transform-origin: 0% 50%;
 }
 
 .LoginContainer{
@@ -1167,6 +1194,17 @@ margin-top: 5%;
 margin-top: 5%;
 }
 .SkillsButtonBox{
-  width: 80%;
+width: 80%;
+}
+.ButtonContainerHappy{
+width: 7rem;
+height: 5rem;
+button {
+font-size: 4vh;
+}
+}
+.ButtonSend{
+font-size: 4vh;
+width: 10rem;
 }
 }

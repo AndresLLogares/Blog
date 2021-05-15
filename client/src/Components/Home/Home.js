@@ -24,12 +24,28 @@ import { Html5 } from '@styled-icons/boxicons-logos/Html5';
 import { Css3 } from '@styled-icons/boxicons-logos/Css3';
 import { ArrowUpCircleFill } from '@styled-icons/bootstrap/ArrowUpCircleFill';
 import Zoom from 'react-reveal/Zoom';
+import Sad from '../Images/SAD.gif';
+import Happy from '../Images/HAPPY.gif';
+import TextTransition, { presets } from "react-text-transition";
+import Yes from '../Images/HappySuper.gif';
+import No from '../Images/SadHeart.gif';
+import { send } from 'emailjs-com';
+import toast from 'toast-me';
+import '../../Scss/Home/Toast.css';
 
 const Home = () => {
 
+    const TEXTS = [
+        "Creatividad",
+        "Compromiso",
+        "Pasión",
+    ];
+
+    const [index, setIndex] = useState(0);
+
     const [formContact, setFormContact] = useState({
-        name: '',
-        email: '',
+        user_name: '',
+        user_email: '',
         message: ''
     })
 
@@ -41,10 +57,21 @@ const Home = () => {
 
     const [scroll, setScroll] = useState(0)
 
+    const [hidden, setHidden] = useState(false)
+
+    const [Thanks, setThanks] = useState(false)
+
     window.onscroll = function () {
         setScroll(window.scrollY)
-        console.log(scroll)
     };
+
+    useEffect(() => {
+        const intervalId = setInterval(() =>
+            setIndex(index => index + 1),
+            1500
+        );
+        return () => clearTimeout(intervalId);
+    }, []);
 
     const Desktop = ({ children }) => {
         const isDesktop = useMediaQuery({ minWidth: 992 })
@@ -81,7 +108,27 @@ const Home = () => {
         setFormContact({ ...formContact, [event.currentTarget.name]: event.currentTarget.value })
     }
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        setFormContact({message:'', user_email:'', user_name:''})
+        send('service_uw6uoz3', 'template_a6xxqol', formContact, 'user_4naZZ1MUurHWaSEapVxsM')
+        .then((result) => {
+            toast('🚀 Gracias por su mensaje', {duration: 3000, toastClass:'toast'});
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+      }
 
+    const handleCickChangeHappy = () => {
+        setHidden(true)
+        setThanks(true)
+    }
+
+    const handleClickChangeSad = () => {
+        setHidden(true)
+        setThanks(false)
+    }
 
     return (
         <div className={styles.Back}>
@@ -108,7 +155,6 @@ const Home = () => {
                         <img src={CV} alt='' />
                     </div>
                 </div>
-
                 <div className={styles.SortP}>
                     <p className={styles.StyleP}>
                         Este blog personal es un proyecto con la finalidad de dar a conocer más sobre mí y mi trabajo, en el mismo podrán ver
@@ -120,7 +166,14 @@ const Home = () => {
                 <div className={styles.SortAbout}>
                     <div className={styles.SeparateTwo2do}>
                         <div className={styles.SortTitle2do}>
-                            <h4 className={styles.Title2do}>Acerca de mí</h4>
+                            <h4 className={styles.Title2do} >Acerca de mí</h4>
+                            <h4>
+                                <TextTransition
+                                    text={TEXTS[index % TEXTS.length]}
+                                    springConfig={presets.wobbly}
+                                    className={styles.Title2doFast}
+                                />
+                            </h4>
                         </div>
                         <div className={styles.Container2}>
                             <img src={CV2} alt='' />
@@ -190,28 +243,15 @@ const Home = () => {
                         </div>
                     </div>
                 </Zoom>
-
                 <div>
-                    <Zoom>
-                        <div className={styles.SkillsBox}>
-                            <p className={styles.PSkills} >Con respecto a mis habilidades he tenido la oportunidad de trabajar varias técnologias mayoritariamente con Javascript y React
-                            aunque en el E-Commerce que he realizado también he trabajado con GraphQl, Typescript y Apollo, creo que siempre es bueno
-                            aprender y conocer nuevas herramientas para poder llevar adelante proyectos que requieran una técnologia especifica.
-                            Particularmente en el caso de este blog si bien de momento no tengo un gran portfolio profesional que mostrar, quise usarlo
-                            para poder mostrar mis habilidades en el manejo de React y Express como base de datos, además de que cosas como que
-                            una pagina sea responsive es algo esencial hoy en dia porque no sabes desde donde estaran visualizando tu página.
-                    </p>
-                        </div>
-                    </Zoom>
                     <Zoom>
                         <div>
                             <div className={styles.SortTitle3ro}>
                                 <h1 className={styles.Title3ro} >Test de uso</h1>
-                                <Desktop ><p className={styles.Title3ro}> Ahora estas en un PC de escritorio o Laptop </p> </Desktop>
-                                <Tablet ><p className={styles.Title3ro}> Estas en una Tablet</p> </Tablet>
-                                <Mobile > <p className={styles.Title3ro} > Estas en un Celular   </p></Mobile>
+                                <Desktop ><p className={styles.Title3ro}>Estas viendo desde en un PC de escritorio o Laptop </p> </Desktop>
+                                <Tablet ><p className={styles.Title3ro}> Estas viendo desde en una Tablet</p> </Tablet>
+                                <Mobile > <p className={styles.Title3ro} >Estas viendo desde en un Celular   </p></Mobile>
                             </div>
-
                             {!lapTop && cellPhone && !tablet ?
                                 <div className={styles.SortCell} >
                                     <div className={styles.ContainerCell}>
@@ -244,9 +284,52 @@ const Home = () => {
                                 : null}
                         </div>
                     </Zoom>
+                    <Zoom>
+                        <div>
+                            {hidden && Thanks ?
+                                <div className={styles.SortTitle3ro} >
+                                    <p className={styles.Title3ro}>Gracias por responder</p>
+                                    <img className={styles.ImageBig} src={Yes} alt='' ></img>
+                                </div>
+
+                                : null}
+                            {hidden && !Thanks ?
+                                <div className={styles.SortTitle3ro} >
+                                    <p className={styles.Title3ro}>Lo haré mejor la próxima vez</p>
+                                    <img className={styles.ImageBig} src={No} alt=''></img>
+                                </div>
+                                : null}
+                            {!hidden ?
+                                <div className={styles.SortHapSadButtons} >
+                                    <div className={styles.SortHapSad}>
+                                        <div onClick={handleCickChangeHappy} className={styles.ButtonContainerHappy}>
+                                            <img src={Happy} alt='' className={styles.Smile}></img>
+                                            <button id='work' type="button" name="Hover">Acerte?</button>
+                                        </div>
+                                    </div>
+                                    <div onClick={handleClickChangeSad} className={styles.SortHapSad}>
+                                        <div className={styles.ButtonContainerHappy}>
+                                            <img src={Sad} alt='' className={styles.Smile}></img>
+                                            <button id='work' type="button" name="Hover">Falle?</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                : null}
+                        </div>
+                    </Zoom>
+                    <Zoom>
+                        <div className={styles.SkillsBox}>
+                            <p className={styles.PSkills} >Con respecto a mis habilidades he tenido la oportunidad de trabajar varias técnologias mayoritariamente con Javascript y React
+                            aunque en el E-Commerce que he realizado también he trabajado con GraphQl, Typescript y Apollo, creo que siempre es bueno
+                            aprender y conocer nuevas herramientas para poder llevar adelante proyectos que requieran una técnologia especifica.
+                            Particularmente en el caso de este blog si bien de momento no tengo un gran portfolio profesional que mostrar, quise usarlo
+                            para poder mostrar mis habilidades en el manejo de React y Express como base de datos, además de que cosas como que
+                            una pagina sea responsive es algo esencial hoy en dia porque no sabes desde donde estaran visualizando tu página.
+                    </p>
+                        </div>
+                    </Zoom>
                 </div>
             </div>
-
             <div className={styles.ContactMe} >
                 <Zoom>
                     <div className={styles.ContactMeTitleCont} >
@@ -277,21 +360,21 @@ const Home = () => {
                     <div className={styles.ContactMeTitleCont2do} >
                         <h4 className={styles.SecondContact} >También puedes enviarme un mensaje</h4>
                     </div>
-
                     <div className={styles.ContactBox}>
                         <div className={styles.LoginBox}>
                             <div className={styles.LoginContainer}>
-                                <form >
+                                <form onSubmit={handleSubmit} >
                                     <div className={styles.FormGroup}>
                                         <div className={styles.EachInput} >
                                             <label className={styles.FomLabel} >
                                                 Nombre</label>
                                             <input
                                                 className={styles.FormField}
-                                                minLength={10}
+                                                minLength={1}
                                                 maxLength={30}
                                                 type='text'
-                                                name='name'
+                                                value={formContact.user_name}
+                                                name='user_name'
                                                 onChange={handleChange}
                                                 required={true}
                                             />
@@ -304,7 +387,8 @@ const Home = () => {
                                                 minLength={10}
                                                 maxLength={30}
                                                 type='email'
-                                                name='email'
+                                                value={formContact.user_email}
+                                                name='user_email'
                                                 onChange={handleChange}
                                                 required={true}
                                             />
@@ -317,18 +401,13 @@ const Home = () => {
                                                 className={styles.TextArea}
                                                 type='text'
                                                 name='message'
+                                                value={formContact.message}
                                                 onChange={handleChange}
                                                 required={true}
                                             />
                                         </div>
                                     </div>
-                                    <a type='submit'>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                        Enviar
-                        </a>
+                                    <button className={styles.ButtonSend} type='submit'><span>Enviar</span></button>
                                 </form>
                             </div>
                         </div>
