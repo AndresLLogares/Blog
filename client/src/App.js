@@ -3,7 +3,6 @@ import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-d
 import Home from './Components/Home/Home';
 import NavigationBar from './Components/Nav/Nav';
 import PageNotFound from './Components/PageNotFound/PageNotFound';
-import { ToastContainer } from 'react-toastify';
 import './Scss/App/App.css';
 
 function App() {

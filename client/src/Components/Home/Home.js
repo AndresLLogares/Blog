@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../../Scss/Home/Home.module.scss';
-import { Link } from 'react-router-dom';
 import { Linkedin } from '@styled-icons/boxicons-logos/Linkedin';
 import { Github } from '@styled-icons/boxicons-logos/Github';
 import { LinkSquare } from '@styled-icons/fluentui-system-filled/LinkSquare';
