@@ -541,7 +541,7 @@ text-align: center;
 margin: 3%;
 border-radius: 50% 25% 50% 25%/25% 50% 25% 50%;
 background: $Cream;
-height: 6rem;
+height: 15rem;
 border:groove 1rem $Pink;
 }
 
@@ -554,7 +554,8 @@ text-align: center;
 width: 100%;
 margin-top: 2%;
 margin-bottom: 2%;
-max-height: 2rem;
+max-height: 6rem;
+min-height: 6rem;
 }
 
 .IconsContact{
@@ -562,10 +563,10 @@ display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
-max-width: 2rem;
-max-height: 2rem;
-min-width: 2rem;
-max-height: 2rem;
+max-width: 4rem;
+max-height: 4rem;
+min-width: 4rem;
+max-height: 4rem;
 padding-right: 5%;
 padding-bottom: 9%;
 }
@@ -575,7 +576,7 @@ display: flex;
 font-family: 'Mali', cursive;
 color: $Purple;
 font-weight: bold;
-font-size: 2.5vh;
+font-size: 3vh;
 justify-content: center;
 align-items: center;
 text-align: center;

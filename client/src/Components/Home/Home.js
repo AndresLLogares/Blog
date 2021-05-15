@@ -347,12 +347,12 @@ const Home = () => {
                         </div>
                         <div className={styles.SortInfor}>
                             <h1 className={styles.TitleInfo} ><LinkSquare className={styles.IconsContact} />:</h1>
-                            <Link className={styles.PInfo} style={{ textDecoration: 'none' }} to='https://www.linkedin.com/in/andres-luis-logares-522595172/'>
+                            <a className={styles.PInfo} style={{ textDecoration: 'none' }} href="https://www.linkedin.com/in/andres-luis-logares-522595172/" >
                                 <p className={styles.PInfo} ><Linkedin className={styles.IconsContact} /></p>
-                            </Link>
-                            <Link className={styles.PInfo} style={{ textDecoration: 'none' }} to='https://github.com/AndresLLogares' >
+                            </a>
+                            <a className={styles.PInfo} style={{ textDecoration: 'none' }} href="https://github.com/AndresLLogares" >
                                 <p className={styles.PInfo} >< Github className={styles.IconsContact} /></p>
-                            </Link>
+                            </a>
                         </div>
 
                     </div>
