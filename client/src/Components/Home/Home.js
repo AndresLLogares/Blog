@@ -111,9 +111,10 @@ const Home = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         setFormContact({message:'', user_email:'', user_name:''})
+                    toast('🚀 Gracias por su mensaje', {duration: 3000, toastClass:'toast'});
+
         send('service_uw6uoz3', 'template_a6xxqol', formContact, 'user_4naZZ1MUurHWaSEapVxsM')
         .then((result) => {
-            toast('🚀 Gracias por su mensaje', {duration: 3000, toastClass:'toast'});
             console.log(result.text);
         }, (error) => {
             console.log(error.text);
