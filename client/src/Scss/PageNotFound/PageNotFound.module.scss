@@ -13,6 +13,14 @@ $Violet:#511281;
 $Red:#f55c47;
 $DBlue:#233e8b;
 $Brown:#c8c2bc;
+
+$NEONBLUE:#9CF6FB;
+$SLBLE:#E1FCFD;
+$STRBLUE:#394F8A;
+$MBLUE:#4A5FC1;
+$STRPINK:#E5B9A8;
+$SLPINK:#EAD6CD;
+
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
@@ -25,7 +33,7 @@ $Brown:#c8c2bc;
 width: 100%;
 margin-top: 0;
 min-height: 100vh;
-background-color:  $Cream;
+background-color:  $STRBLUE;
 }
 
 .ContainerNotFound{
@@ -51,10 +59,10 @@ padding-bottom: 5%;
 }
 
 .TitleNotFound{
-color: $Purple;
+color: $Cream;
 font-size: 4vh;
 font-family: 'Merienda', cursive;
-text-shadow: -4px 3px 0 $DPink;
+text-shadow: -1px 1px 0 $Cream;
 padding-bottom: 0%;
 margin-bottom: 0;
 }
@@ -91,7 +99,7 @@ position: relative;
 width: 15rem;
 height: 5rem;
 overflow: hidden;
-border: .5rem solid $Purple;
+border: .5rem solid $MBLUE;
 font-family: 'Merienda', cursive;
 font-weight: 300;
 transition: 0.5s;
@@ -107,11 +115,11 @@ font-size: 3vh;
 letter-spacing: 1px;
 font-weight: bold;
 
-@include button($DPink, "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+@include button($NEONBLUE, "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
 3000%,
 100%,
 none,
-$Cream);
+$MBLUE);
 cursor: pointer;
 -webkit-animation: ani2 0.7s steps(29) forwards;
 animation: ani2 0.7s steps(29) forwards;
@@ -126,7 +134,7 @@ cursor: url(../../Components//Images//Pointer1.png), pointer;
 
 .mas {
 position: absolute;
-color:$Purple;
+color:$NEONBLUE;
 text-align: center;
 width: 101%;
 font-family: 'Merienda', cursive;

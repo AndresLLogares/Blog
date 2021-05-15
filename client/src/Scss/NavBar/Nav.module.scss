@@ -13,6 +13,14 @@ $Violet:#511281;
 $Red:#f55c47;
 $DBlue:#233e8b;
 $Brown:#c8c2bc;
+
+
+$NEONBLUE:#9CF6FB;
+$SLBLE:#E1FCFD;
+$STRBLUE:#394F8A;
+$MBLUE:#4A5FC1;
+$STRPINK:#E5B9A8;
+$SLPINK:#EAD6CD;
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
@@ -25,7 +33,7 @@ $Brown:#c8c2bc;
 	display: flex;
   box-shadow: 0px 0px;
   justify-content:space-between;
-  background: $Yellow;
+  background: $MBLUE;
 	align-items: center;
   position: absolute;
 	height: 12vh;
@@ -59,13 +67,13 @@ $Brown:#c8c2bc;
 .PLink{
   font-family: 'Merienda', cursive;
   font-size: 4vh;
-  color: $Purple;
+  color: $Cream;
   font-weight: bold;
 }
 
 .PLink:hover{
-  color: $Purple;
-  border-bottom: solid .2rem $DPink;
+  color: $Cream;
+  border-bottom: solid .2rem $NEONBLUE;
   transform: skewY(-9deg);
   transition-duration: 1s;
   cursor: url(../../Components//Images//Pointer1.png), pointer;
@@ -107,13 +115,13 @@ $Brown:#c8c2bc;
 .Links{
   font-family: 'Merienda', cursive;
   font-size: 3vh;
-  color: $Purple;
+  color: $Cream;
   font-weight: bold;
 }
 
 .Links:hover{
-  color: $Purple;
-  border-bottom: solid .2rem $DPink;
+  color: $Cream;
+  border-bottom: solid .2rem $NEONBLUE;
   transform: skewY(-9deg);
   transition-duration: 1s;
   cursor: url(../../Components//Images//Pointer1.png), pointer;
@@ -144,7 +152,7 @@ $Brown:#c8c2bc;
 .nav_options_active {
   display: flex;
   flex-direction: column;
-  background:$Yellow;
+  background:$MBLUE;
   justify-content: center;
   position: absolute;
   height: fit-content;
@@ -153,7 +161,7 @@ $Brown:#c8c2bc;
   right: 0;
   bottom: 0;
   top: 3.6rem;
-  border: solid .2rem $Purple;
+  border: solid .2rem $NEONBLUE;
   align-items: center;
   justify-content: center;
   transition: all 0.5s ease;
@@ -170,7 +178,7 @@ $Brown:#c8c2bc;
 }
 
 .MenuIcon {
-  color: $Purple;
+  color: $NEONBLUE;
   width: 4rem;
   height: 4rem;
   padding-right: 20%;

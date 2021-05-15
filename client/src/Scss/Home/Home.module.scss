@@ -13,6 +13,13 @@ $Violet:#511281;
 $Red:#f55c47;
 $DBlue:#233e8b;
 $Brown:#c8c2bc;
+
+$NEONBLUE:#9CF6FB;
+$SLBLE:#E1FCFD;
+$STRBLUE:#394F8A;
+$MBLUE:#4A5FC1;
+$STRPINK:#E5B9A8;
+$SLPINK:#EAD6CD;
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
@@ -26,21 +33,21 @@ width: 0.9rem;
 }
 
 ::-webkit-scrollbar-track {
-background: $Yellow;       
+background: $Cream;       
 border-radius: 0.2rem;
 }
 
 ::-webkit-scrollbar-thumb {
-background-color: $Blue;    
+background-color: $STRBLUE;    
 border-radius: 3rem;    
-border: groove .2rem $Purple;
+border: solid .2rem $Yellow;
 }
 
 .Back{
 width: 100%;
 margin-top: 0;
 min-height: 150vh;
-background-color:  $Blue;
+background-color:$STRBLUE;
 
 }
 
@@ -119,38 +126,40 @@ margin-top: 1%;
 flex-direction: column;
 justify-content: center;
 text-align: center;
+margin-top: 5%;
+margin-bottom: 5%;
 align-items: center;
 }
 
 
 .Title{
-color: $Purple;
+color: $Cream;
 font-size: 4vh;
 font-family: 'Merienda', cursive;
-text-shadow: -4px 3px 0 $Yellow;
+text-shadow: -1px 1px 0 $Cream;
 }
 
 .Title2do{
-color: $Purple;
+color: $Cream;
 font-size: 5vh;
 font-family: 'Merienda', cursive;
-text-shadow: -4px 3px 0 $Yellow;
+text-shadow: -1px 1px 0 $Cream;
 }
 
 .Title2doFast{
   padding-top: 0;
   margin-top: 0;
-  color: $Purple;
+  color: $Cream;
 font-size: 5vh;
 font-family: 'Merienda', cursive;
-text-shadow: -4px 3px 0 $Yellow;
+text-shadow: -1px 1px 0 $Cream;
 }
 
 .Title3ro{
-color: $Purple;
+color: $Cream;
 font-size: 5vh;
 font-family: 'Merienda', cursive;
-text-shadow: -4px 3px 0 $Yellow;
+text-shadow: -1px 1px 0 $Cream;
 width: 95%;
 }
 
@@ -237,14 +246,16 @@ opacity: .6;
 transform: translate(-0px,0px);		
 opacity: .4;
 }
+
+
+
 .AboutMeBox{
 display: flex;
 flex-direction: column;
 text-align: center;
 margin-left: 5%;
 margin-right: 5%;
-background: $LPink;
-border:groove 1rem $Brown;
+background: $Yellow;
 border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 .SkillsButtonBox {
@@ -255,8 +266,7 @@ text-align: center;
 margin-left: 5%;
 margin-right: 5%;
 margin-bottom: 5%;
-background: $Pink;
-border:groove 1rem $Cream;
+background: $Yellow;
 border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 
@@ -304,7 +314,6 @@ border-radius: 15px 50px;
 margin: 2%;
 
 
-
 button {
 width: 101%;
 height: 100%;
@@ -314,11 +323,11 @@ font-size: 3vh;
 letter-spacing: 1px;
 font-weight: bold;
 
-@include button($Yellow, "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+@include button($NEONBLUE, "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
 3000%,
 100%,
 none,
-$Red);
+$STRBLUE);
 cursor: pointer;
 -webkit-animation: ani2 0.7s steps(29) forwards;
 animation: ani2 0.7s steps(29) forwards;
@@ -333,7 +342,7 @@ cursor: url(../../Components//Images//Pointer1.png), pointer;
 
 .mas {
 position: absolute;
-color:$Purple;
+color:$MBLUE;
 text-align: center;
 width: 101%;
 font-family: 'Merienda', cursive;
@@ -394,6 +403,7 @@ mask-position: 0 0;
 }
 
 
+
 .SkillsBox{
 display: flex;
 flex-direction: column;
@@ -403,15 +413,16 @@ margin-left: 5%;
 margin-right: 5%;
 padding: 1%;
 background: $Yellow;
-border:groove 1rem $DGreen;
 border-radius: 15px 90px 130px;
 }
+
 
 .PSkills{
 font-family: 'Mali', cursive;
 color: $Purple;
 font-size: 3vh;
 font-weight: bold;
+width: 90%;
 }
 
 .SortCell{
@@ -437,11 +448,10 @@ font-weight: bold;
   transform-style: preserve-3d;
 }
 
-
 .ContainerCell img {
   display: flex;
   align-items: center;
-  background-color: $Cream;
+  background-color: $MBLUE;
   border-radius: .8rem;
   width: 20rem;
   height: 20rem;
@@ -479,11 +489,12 @@ margin-left: 20%;
 margin-right: 20%;
 justify-content: center;
 text-align: center;
-background: $Cream;
-border: groove 1rem $Red;
+background: $Yellow;
 padding: 2%;
 border-radius: 50% 20% / 10% 40%;
 }
+
+
 
 .StyleP{
 margin-top: 0;
@@ -498,6 +509,8 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 text-align: center;
+margin-top: 10%;
+margin-bottom: 5%;
 }
 
 .SortSkills{
@@ -508,29 +521,15 @@ text-align: center;
 }
 
 .TitleContact{
-color: $Purple;
+color: $Cream;
 font-size: 5vh;
 font-family: 'Merienda', cursive;
-text-shadow: -4px 3px 0 $Yellow;
+text-shadow: -1px 1px 0 $Cream;
 }
 
 
-.HrStyles{
-height: 1rem;
-color: $DPink;
-background-image: linear-gradient(-45deg,
-$Blue,
-$Blue 25%,
-currentColor 25%,
-currentColor 50%,
-$Blue 50%,
-$Blue 75%,
-currentColor 75%);
-background-size: 10px 10px;
-border: solid .3rem $Cream;
-border-radius: 90% 20% / 10% 90%;
-width: 70%;
-}
+
+
 
 .Information{
 display: flex;
@@ -540,9 +539,8 @@ align-items: center;
 text-align: center;
 margin: 3%;
 border-radius: 50% 25% 50% 25%/25% 50% 25% 50%;
-background: $Cream;
+background: $Yellow;
 height: 15rem;
-border:groove 1rem $Pink;
 }
 
 .SortInfor{
@@ -587,9 +585,10 @@ padding-left: 5%;
 padding-right: 5%;
 }
 
+
 .PInfo:hover{
 color: $Purple;
-border-bottom: solid .2rem $DPink;
+border-bottom: solid .2rem $NEONBLUE;
 transform: skewY(-9deg);
 transition-duration: 1s;
 cursor: url(../../Components//Images//Pointer1.png), pointer;
@@ -620,10 +619,10 @@ padding-right: 5%;
 }
 
 .SecondContact{
-color: $Purple;
+color: $Cream;
 font-size: 5vh;
 font-family: 'Merienda', cursive;
-text-shadow: -4px 3px 0 $Yellow;
+text-shadow: -1px 1px 0 $Cream;
 }
 
 .ContactBox{
@@ -642,9 +641,10 @@ margin-top: 5%;
 margin-bottom: 5%;
 width: 90%;
 border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-background:$Red;
-border:groove 1rem $Yellow;
+background:$MBLUE;
 }
+
+
 
 .FormGroup{
 display: flex;
@@ -780,12 +780,12 @@ font-size:3vh;
 letter-spacing: 1px;
 font-weight: bold;
 
-@include button($Cream,
+@include button($NEONBLUE,
 "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
 2300%,
 100%,
 none,
-$Purple);
+$STRBLUE);
 cursor: pointer;
 -webkit-animation: ani2 0.7s steps(22) forwards;
 animation: ani2 0.7s steps(22) forwards;
@@ -801,7 +801,7 @@ cursor: url(../../Components//Images//Pointer1.png), pointer;
 
 .masUp{
 position: absolute;
-color:$Purple;
+color:$NEONBLUE;
 text-align: center;
 width: 101%;
 font-family: 'Josefin Sans', sans-serif;
@@ -853,12 +853,12 @@ font-size:5vh;
 letter-spacing: 1px;
 font-weight: bold;
 
-@include button($Pink,
+@include button($NEONBLUE,
 "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
 2300%,
 100%,
 none,
-$Purple);
+$STRBLUE);
 cursor: pointer;
 -webkit-animation: ani2 0.7s steps(22) forwards;
 animation: ani2 0.7s steps(22) forwards;
@@ -899,7 +899,7 @@ max-height: 16rem;
 .ButtonSend{
 font-family: 'Merienda', cursive;
 border-radius: 4px;
-background-color: $Yellow;
+background-color: $NEONBLUE;
 border: none;
 color: $Purple;
 text-align: center;
@@ -953,7 +953,13 @@ align-items: center;
 justify-content: center;
 text-align: center;
 }
-
+.AboutMeBox{
+  width: 80%;
+  margin-left: 10%;
+}
+.AboutMeDivBox{
+  width: 90%;
+}
 .SeparateTwo{
 width: 100%;
 display: flex;
@@ -1090,7 +1096,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: center;
-width: 70%;
+width: 80%;
 height: 15rem;
 margin: 0;
 padding: 5%;
@@ -1098,6 +1104,7 @@ padding: 5%;
 .SortInfor{
 display: flex;
 flex-direction: row;
+width: 80%;
 justify-content: left;
 text-align: left;
 }
@@ -1196,6 +1203,7 @@ margin-top: 5%;
 }
 .SkillsButtonBox{
 width: 80%;
+margin-left: 10%;
 }
 .ButtonContainerHappy{
 width: 7rem;
@@ -1207,5 +1215,14 @@ font-size: 4vh;
 .ButtonSend{
 font-size: 4vh;
 width: 10rem;
+}
+.PSkills{
+  width: 80%;
+}
+.IconsContact{
+  max-width: 2rem;
+  min-width: 2rem;
+  max-height: 2rem;
+  min-height: 2rem;
 }
 }
