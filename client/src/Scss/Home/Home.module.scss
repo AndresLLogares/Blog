@@ -4,7 +4,6 @@ $Cream:#FFEEBB;
 $Yellow:#FDFFBC;
 $Black:#0C1115;
 $White:#FFFFFF;
-$Green:#98ddca;
 $Blue:#a3ddcb;
 $DPink:#e5707e;
 $DGreen:#4aa96c;
@@ -12,7 +11,6 @@ $Purple:#21094e;
 $Violet:#511281;
 $Red:#f55c47;
 $DBlue:#233e8b;
-$Brown:#c8c2bc;
 
 $NEONBLUE:#9CF6FB;
 $SLBLE:#E1FCFD;
@@ -20,6 +18,9 @@ $STRBLUE:#394F8A;
 $MBLUE:#4A5FC1;
 $STRPINK:#E5B9A8;
 $SLPINK:#EAD6CD;
+$GREEN:#05F4B7;
+$SPURPLE: #361999;
+$Pink:#FA255E;
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
@@ -130,33 +131,33 @@ align-items: center;
 
 
 .Title{
-color: $Cream;
+color: $GREEN;
 font-size: 7vh;
 font-family: 'Oswald', sans-serif;
-text-shadow: -1px 1px 0 $Cream;
+text-shadow: -3px 3px 0 $SPURPLE;
 }
 
 .Title2do{
-color: $Cream;
+color: $GREEN;
 font-size: 7vh;
 font-family: 'Oswald', sans-serif;
-text-shadow: -1px 1px 0 $Cream;
+text-shadow: -3px 3px 0 $SPURPLE;
 }
 
 .Title2doFast{
 padding-top: 0;
 margin-top: 0;
-color: $Cream;
+color: $GREEN;
 font-size: 7vh;
 font-family: 'Oswald', sans-serif;
-text-shadow: -1px 1px 0 $Cream;
+text-shadow: -3px 3px 0 $SPURPLE;
 }
 
 .Title3ro{
-color: $Cream;
-font-size: 7vh;
+color: $GREEN;
+font-size: 8vh;
 font-family: 'Oswald', sans-serif;
-text-shadow: -1px 1px 0 $Cream;
+text-shadow: -3px 3px 0 $SPURPLE;
 width: 95%;
 }
 
@@ -244,8 +245,6 @@ transform: translate(-0px,0px);
 opacity: .4;
 }
 
-
-
 .AboutMeBox{
 display: flex;
 flex-direction: column;
@@ -253,8 +252,8 @@ text-align: center;
 margin-left: 5%;
 margin-right: 5%;
 background: $Yellow;
-border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
+
 .SkillsButtonBox {
 display: flex;
 flex-direction: column;
@@ -264,7 +263,6 @@ margin-left: 5%;
 margin-right: 5%;
 margin-bottom: 5%;
 background: $Yellow;
-border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 
 .SortButtons{
@@ -399,18 +397,16 @@ mask-position: 0 0;
 }
 }
 
-
-
 .SkillsBox{
 display: flex;
 flex-direction: column;
+align-items: center;
 text-align: center;
 margin-top: 5%;
 margin-left: 5%;
 margin-right: 5%;
 padding: 1%;
 background: $Yellow;
-border-radius: 30px 90px 130px;
 }
 
 
@@ -488,7 +484,6 @@ justify-content: center;
 text-align: center;
 background: $Yellow;
 padding: 2%;
-border-radius: 50% 20% / 10% 40%;
 }
 
 
@@ -514,19 +509,16 @@ margin-bottom: 5%;
 display: flex;
 flex-direction: column;
 justify-content: center;
+align-items: center;
 text-align: center;
 }
 
 .TitleContact{
-color: $Cream;
-font-size: 5vh;
+color: $GREEN;
+font-size: 9vh;
 font-family: 'Oswald', sans-serif;
-text-shadow: -1px 1px 0 $Cream;
+text-shadow: -3px 3px 0 $SPURPLE;
 }
-
-
-
-
 
 .Information{
 display: flex;
@@ -535,9 +527,8 @@ justify-content: space-evenly;
 align-items: center;
 text-align: center;
 margin: 3%;
-border-radius: 50% 25% 50% 25%/25% 50% 25% 50%;
 background: $Yellow;
-height: 15rem;
+height: 13rem;
 }
 
 .SortInfor{
@@ -573,7 +564,7 @@ display: flex;
 font-family: 'Montserrat', sans-serif;
 color: $Purple;
 font-weight: bold;
-font-size: 3.5vh;
+font-size: 3vh;
 justify-content: center;
 align-items: center;
 text-align: center;
@@ -619,10 +610,10 @@ padding-right: 5%;
 }
 
 .SecondContact{
-color: $Cream;
-font-size: 5vh;
+color: $GREEN;
+font-size: 8vh;
 font-family: 'Oswald', sans-serif;
-text-shadow: -1px 1px 0 $Cream;
+text-shadow: -3px 3px 0 $SPURPLE;
 }
 
 .ContactBox{
@@ -640,7 +631,6 @@ justify-content: center;
 margin-top: 5%;
 margin-bottom: 5%;
 width: 90%;
-border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 background:$MBLUE;
 }
 

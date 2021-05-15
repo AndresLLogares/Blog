@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../../Scss/NavBar/header.css';
 import styles from '../../Scss/NavBar/Nav.module.scss';
 import { ReactComponent as CloseMenu } from '../../Assets/x.svg';
 import { ReactComponent as MenuIcon } from "../../Assets/menu.svg";

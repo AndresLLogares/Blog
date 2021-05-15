@@ -244,6 +244,17 @@ const Home = () => {
                         </div>
                     </div>
                 </Zoom>
+                <Zoom>
+                        <div className={styles.SkillsBox}>
+                            <p className={styles.PSkills} >Con respecto a mis habilidades he tenido la oportunidad de trabajar varias técnologias mayoritariamente con Javascript y React
+                            aunque en el E-Commerce que he realizado también he trabajado con GraphQl, Typescript y Apollo, creo que siempre es bueno
+                            aprender y conocer nuevas herramientas para poder llevar adelante proyectos que requieran una técnologia especifica.
+                            Particularmente en el caso de este blog si bien de momento no tengo un gran portfolio profesional que mostrar, quise usarlo
+                            para poder mostrar mis habilidades en el manejo de React y Express como base de datos, además de que cosas como que
+                            una pagina sea responsive es algo esencial hoy en dia porque no sabes desde donde estaran visualizando tu página.
+                    </p>
+                        </div>
+                    </Zoom>
                 <div>
                     <Zoom>
                         <div>
@@ -318,17 +329,7 @@ const Home = () => {
                                 : null}
                         </div>
                     </Zoom>
-                    <Zoom>
-                        <div className={styles.SkillsBox}>
-                            <p className={styles.PSkills} >Con respecto a mis habilidades he tenido la oportunidad de trabajar varias técnologias mayoritariamente con Javascript y React
-                            aunque en el E-Commerce que he realizado también he trabajado con GraphQl, Typescript y Apollo, creo que siempre es bueno
-                            aprender y conocer nuevas herramientas para poder llevar adelante proyectos que requieran una técnologia especifica.
-                            Particularmente en el caso de este blog si bien de momento no tengo un gran portfolio profesional que mostrar, quise usarlo
-                            para poder mostrar mis habilidades en el manejo de React y Express como base de datos, además de que cosas como que
-                            una pagina sea responsive es algo esencial hoy en dia porque no sabes desde donde estaran visualizando tu página.
-                    </p>
-                        </div>
-                    </Zoom>
+
                 </div>
             </div>
             <div className={styles.ContactMe} >
