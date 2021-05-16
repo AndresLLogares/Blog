@@ -671,7 +671,7 @@ width: 50%;
 width: 30rem;
 height: 10rem;
 background-color: rgba(4, 0, 4, 0.2);
-border-left: .4rem solid $Cream;
+border-left: .4rem solid $NEONBLUE;
 font-family: 'Josefin Sans', sans-serif;
 color: $White;
 transition-duration: 2s;
@@ -713,7 +713,6 @@ color: $White;
 transition-duration: 2s;
 font-weight: bold;
 &:hover{
-    background-color: rgba(4, 0, 4, 0.1);
     cursor: url(../../Components//Images//Pointer1.png), pointer;
 
 }
