@@ -160,6 +160,9 @@ font-family: 'Oswald', sans-serif;
 text-shadow: -3px 3px 0 $SPURPLE;
 width: 95%;
 }
+.BackImage{
+    background-color: $SPURPLE;
+}
 
 .Container{
 position: relative;
@@ -178,30 +181,13 @@ border-radius: 20rem;
 {
 position: absolute;
 width: 100%;
+margin-top: 20%;
 transition: 0.5s;
 border-radius: .6rem;
+background-color: $SPURPLE;
 
 }
-.Container:hover img:nth-child(4)
-{
-transform: translate(90px,90px);		
-opacity: 1;
-}
-.Container:hover img:nth-child(3)
-{
-transform: translate(60px,60px);		
-opacity: .8;
-}
-.Container:hover img:nth-child(2)
-{
-transform: translate(30px,30px);		
-opacity: .6;
-}
-.Container:hover img:nth-child(1)
-{
-transform: translate(0px,0px);		
-opacity: .4;
-}
+
 
 .Container2{
 position: relative;
@@ -224,26 +210,7 @@ transition: 0.5s;
 border-radius: .6rem;
 
 }
-.Container2:hover img:nth-child(4)
-{
-transform: translate(-90px,90px);		
-opacity: 1;
-}
-.Container2:hover img:nth-child(3)
-{
-transform: translate(-60px,60px);		
-opacity: .8;
-}
-.Container2:hover img:nth-child(2)
-{
-transform: translate(-30px,30px);		
-opacity: .6;
-}
-.Container2:hover img:nth-child(1)
-{
-transform: translate(-0px,0px);		
-opacity: .4;
-}
+
 
 .AboutMeBox{
 display: flex;

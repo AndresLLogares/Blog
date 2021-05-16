@@ -31,6 +31,7 @@ import No from '../Images/SadHeart.gif';
 import { send } from 'emailjs-com';
 import toast from 'toast-me';
 import '../../Scss/Home/Toast.css';
+import ReactMediumImg from 'react-medium-zoom';
 
 const Home = () => {
 
@@ -109,16 +110,16 @@ const Home = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        setFormContact({message:'', user_email:'', user_name:''})
-                    toast('🚀 Gracias por su mensaje', {duration: 3000, toastClass:'toast'});
+        setFormContact({ message: '', user_email: '', user_name: '' })
+        toast('🚀 Gracias por su mensaje', { duration: 3000, toastClass: 'toast' });
 
         send('service_uw6uoz3', 'template_a6xxqol', formContact, 'user_4naZZ1MUurHWaSEapVxsM')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
-      }
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    }
 
     const handleCickChangeHappy = () => {
         setHidden(true)
@@ -149,10 +150,12 @@ const Home = () => {
                         <h4 className={styles.Title}>Full-stack-developer orientado a front end</h4>
                     </div>
                     <div className={styles.Container}>
-                        <img src={CV} alt='' />
-                        <img src={CV} alt='' />
-                        <img src={CV} alt='' />
-                        <img src={CV} alt='' />
+                        <ReactMediumImg
+                            src={CV} alt=''
+                            className={styles.BackImage}
+                            onOpen={() => console.log('Image Open')}
+                            onClosed={() => console.log('Image closed')}
+                        />
                     </div>
                 </div>
                 <div className={styles.SortP}>
@@ -176,10 +179,12 @@ const Home = () => {
                             </h4>
                         </div>
                         <div className={styles.Container2}>
-                            <img src={CV2} alt='' />
-                            <img src={CV2} alt='' />
-                            <img src={CV2} alt='' />
-                            <img src={CV2} alt='' />
+                            <ReactMediumImg
+                                src={CV2} alt=''
+                                className={styles.BackImage}
+                                onOpen={() => console.log('Image Open')}
+                                onClosed={() => console.log('Image closed')}
+                            />
                         </div>
                     </div>
                     <div className={styles.AboutMeBox}>
@@ -244,16 +249,16 @@ const Home = () => {
                     </div>
                 </Zoom>
                 <Zoom>
-                        <div className={styles.SkillsBox}>
-                            <p className={styles.PSkills} >Con respecto a mis habilidades he tenido la oportunidad de trabajar varias técnologias mayoritariamente con Javascript y React
-                            aunque en el E-Commerce que he realizado también he trabajado con GraphQl, Typescript y Apollo, creo que siempre es bueno
-                            aprender y conocer nuevas herramientas para poder llevar adelante proyectos que requieran una técnologia especifica.
-                            Particularmente en el caso de este blog si bien de momento no tengo un gran portfolio profesional que mostrar, quise usarlo
-                            para poder mostrar mis habilidades en el manejo de React y Express como base de datos, además de que cosas como que
-                            una pagina sea responsive es algo esencial hoy en dia porque no sabes desde donde estaran visualizando tu página.
+                    <div className={styles.SkillsBox}>
+                        <p className={styles.PSkills} >Con respecto a mis habilidades he tenido la oportunidad de trabajar varias técnologias mayoritariamente con Javascript y React
+                        aunque en el E-Commerce que he realizado también he trabajado con GraphQl, Typescript y Apollo, creo que siempre es bueno
+                        aprender y conocer nuevas herramientas para poder llevar adelante proyectos que requieran una técnologia especifica.
+                        Particularmente en el caso de este blog si bien de momento no tengo un gran portfolio profesional que mostrar, quise usarlo
+                        para poder mostrar mis habilidades en el manejo de React y Express como base de datos, además de que cosas como que
+                        una pagina sea responsive es algo esencial hoy en dia porque no sabes desde donde estaran visualizando tu página.
                     </p>
-                        </div>
-                    </Zoom>
+                    </div>
+                </Zoom>
                 <div>
                     <Zoom>
                         <div>
