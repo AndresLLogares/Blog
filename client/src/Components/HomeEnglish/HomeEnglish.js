@@ -33,12 +33,12 @@ import toast from 'toast-me';
 import '../../Scss/Home/Toast.css';
 import ReactMediumImg from 'react-medium-zoom';
 
-const Home = () => {
+const HomeEnglish = () => {
 
     const TEXTS = [
-        "Creatividad",
-        "Compromiso",
-        "Pasión",
+        "Creativity",
+        "Commitment",
+        "Passion",
     ];
 
     const [index, setIndex] = useState(0);
@@ -138,7 +138,7 @@ const Home = () => {
                     <a href='#Begin'>
                         <div className={styles.ButtonContainerUp}>
                             <span className={styles.masUp}><ArrowUpCircleFill className={styles.LogosHomeUp} /></span>
-                            <button id='work' type="button" name="Hover">Arriba</button>
+                            <button id='work' type="button" name="Hover">Up</button>
                         </div>
                     </a>
                     : null}
@@ -146,7 +146,7 @@ const Home = () => {
             <Zoom>
                 <div className={styles.SeparateTwo}>
                     <div id='Begin' className={styles.SortTitle}>
-                        <h4 className={styles.Title}>Hola, soy Andrés Luis Logares</h4>
+                        <h4 className={styles.Title}>Hi, i am Andrés Luis Logares</h4>
                         <h4 className={styles.Title}>Full-stack-developer</h4>
                     </div>
                     <div className={styles.Container}>
@@ -160,8 +160,8 @@ const Home = () => {
                 </div>
                 <div className={styles.SortP}>
                     <p className={styles.StyleP}>
-                        Este blog personal es un proyecto con la finalidad de dar a conocer más sobre mí y mi trabajo, en el mismo podrán ver
-                        trabajos de los que he formado parte como los que he hecho de manera particular, espero sea de su agrado y no dude en contactarme.
+                        This personal blog is a project with the purpose of making known more about me and my work, in it you will be able to see the works of which
+                        I have been part as well as those that I have done in a particular way, I hope you like it and do not hesitate to contact me .
                 </p>
                 </div>
             </Zoom>
@@ -169,7 +169,7 @@ const Home = () => {
                 <div className={styles.SortAbout}>
                     <div className={styles.SeparateTwo2do}>
                         <div className={styles.SortTitle2do}>
-                            <h4 className={styles.Title2do} >Acerca de mí</h4>
+                            <h4 className={styles.Title2do} >About me</h4>
                             <h4>
                                 <TextTransition
                                     text={TEXTS[index % TEXTS.length]}
@@ -189,14 +189,14 @@ const Home = () => {
                     </div>
                     <div className={styles.AboutMeBox}>
                         <div className={styles.AboutMeDivBox}>
-                            <p className={styles.AboutMeP} >Con mi pasado en gastronomía he tenido la posibilidad de crear y poder mostrar el
-                            resultado de eso al público en general. Ahora desde otro punto de partida diferente
-                como developer pero con el mismo entusiasmo. </p>
+                            <p className={styles.AboutMeP} >
+                                With my past in gastronomy I have had the possibility to create and be able to show the result of that to the general public.
+Now from a different starting point as a developer but with the same enthusiasm. </p>
                         </div>
                         <div className={styles.AboutMeDivBox}>
-                            <p className={styles.AboutMeP} >He trabajado en algunos proyectos tanto de manera individual como en equipo, tal como he comentado anteriormente,
-                            en la actualidad me encuentro en la busqueda de mi primer trabajo profesional en este rubro, pero a su vez sigo trabajando en proyectos para tener más
-                            experiencia con las tecnologías y poder seguir subiendo cosas tanto en mi GitHub como Linkedin.
+                            <p className={styles.AboutMeP}> I have worked on some projects both individually and as a team, as I have commented previously,
+                            I am currently looking for my first professional job in this area, but at the same time I am still working on projects to have more
+                            experience with technologies and be able to continue uploading things both on my GitHub and on Linkedin.
                 </p>
                         </div>
                     </div>
@@ -205,7 +205,7 @@ const Home = () => {
             <div className={styles.SortSkills}>
                 <Zoom>
                     <div className={styles.SortTitle3ro}>
-                        <h1 className={styles.Title3ro} >Habilidades</h1>
+                        <h1 className={styles.Title3ro} >Skills</h1>
                     </div>
                     <div className={styles.SkillsButtonBox}>
                         <div className={styles.SortButtons}>
@@ -250,12 +250,10 @@ const Home = () => {
                 </Zoom>
                 <Zoom>
                     <div className={styles.SkillsBox}>
-                        <p className={styles.PSkills} >Con respecto a mis habilidades he tenido la oportunidad de trabajar con varias técnologias mayoritariamente con Javascript y React
-                        aunque en el E-Commerce que he realizado también he trabajado con GraphQl, Typescript y Apollo, creo que siempre es bueno
-                        aprender y conocer nuevas herramientas para poder llevar adelante proyectos que requieran una técnologia especifica.
-                        Particularmente en el caso de este blog si bien de momento no tengo un gran portfolio profesional que mostrar, quise usarlo
-                        para poder mostrar mis habilidades en el manejo de React y Express como base de datos, además de que cosas como que
-                        una pagina sea responsive es algo esencial hoy en dia porque no sabes desde donde estaran visualizando tu página.
+                        <p className={styles.PSkills} >Regarding my skills, I have had the opportunity to work with various technologies, mainly with Javascript and React, although in the E-Commerce that I have done I have also worked with GraphQl, Typescript and Apollo,
+                        I think it is always good to learn and know new tools to carry out projects that require a specific technology.
+                        Particularly in the case of this blog, although at the moment I don't have a great professional portfolio to show, I wanted to use it to show my skills in handling React and Express as a database, as well as things like that.
+                        A responsive page is essential today because you don't know where they will see your page from.
                     </p>
                     </div>
                 </Zoom>
@@ -263,10 +261,10 @@ const Home = () => {
                     <Zoom>
                         <div>
                             <div className={styles.SortTitle3ro}>
-                                <h1 className={styles.Title3ro} >Prueba de uso</h1>
-                                <Desktop ><p className={styles.Title3ro}>Estas viendo desde en un PC de escritorio o Laptop </p> </Desktop>
-                                <Tablet ><p className={styles.Title3ro}> Estas viendo desde en una Tablet</p> </Tablet>
-                                <Mobile > <p className={styles.Title3ro} >Estas viendo desde en un Celular   </p></Mobile>
+                                <h1 className={styles.Title3ro} >Use test</h1>
+                                <Desktop ><p className={styles.Title3ro}>You are on a desktop or laptop </p> </Desktop>
+                                <Tablet ><p className={styles.Title3ro}>You are on a Tablet</p> </Tablet>
+                                <Mobile > <p className={styles.Title3ro} >You are o a Phone</p></Mobile>
                             </div>
                             {!lapTop && cellPhone && !tablet ?
                                 <div className={styles.SortCell} >
@@ -304,14 +302,14 @@ const Home = () => {
                         <div>
                             {hidden && Thanks ?
                                 <div className={styles.SortTitle3ro} >
-                                    <p className={styles.Title3ro}>Gracias por responder</p>
+                                    <p className={styles.Title3ro}>Thanks for answering</p>
                                     <img className={styles.ImageBig} src={Yes} alt='' ></img>
                                 </div>
 
                                 : null}
                             {hidden && !Thanks ?
                                 <div className={styles.SortTitle3ro} >
-                                    <p className={styles.Title3ro}>Lo haré mejor la próxima vez</p>
+                                    <p className={styles.Title3ro}>I will do better next time</p>
                                     <img className={styles.ImageBig} src={No} alt=''></img>
                                 </div>
                                 : null}
@@ -320,13 +318,13 @@ const Home = () => {
                                     <div className={styles.SortHapSad}>
                                         <div onClick={handleCickChangeHappy} className={styles.ButtonContainerHappy}>
                                             <img src={Happy} alt='' className={styles.Smile}></img>
-                                            <button id='work' type="button" name="Hover">Acerte?</button>
+                                            <button id='work' type="button" name="Hover">Right?</button>
                                         </div>
                                     </div>
                                     <div onClick={handleClickChangeSad} className={styles.SortHapSad}>
                                         <div className={styles.ButtonContainerHappy}>
                                             <img src={Sad} alt='' className={styles.Smile}></img>
-                                            <button id='work' type="button" name="Hover">Falle?</button>
+                                            <button id='work' type="button" name="Hover">Wrong?</button>
                                         </div>
                                     </div>
                                 </div>
@@ -339,7 +337,7 @@ const Home = () => {
             <div className={styles.ContactMe} >
                 <Zoom>
                     <div className={styles.ContactMeTitleCont} >
-                        <h1 className={styles.TitleContact} >Contáctame</h1>
+                        <h1 className={styles.TitleContact} >Contact me</h1>
                     </div>
                     <div className={styles.Information} >
                         <div className={styles.SortInfor}>
@@ -364,7 +362,7 @@ const Home = () => {
                 </Zoom>
                 <Zoom>
                     <div className={styles.ContactMeTitleCont2do} >
-                        <h4 className={styles.SecondContact} >También puedes enviarme un mensaje</h4>
+                        <h4 className={styles.SecondContact} >You can also send me a message</h4>
                     </div>
                     <div className={styles.ContactBox}>
                         <div className={styles.LoginBox}>
@@ -373,7 +371,7 @@ const Home = () => {
                                     <div className={styles.FormGroup}>
                                         <div className={styles.EachInput} >
                                             <label className={styles.FomLabel} >
-                                                Nombre</label>
+                                                Name</label>
                                             <input
                                                 className={styles.FormField}
                                                 minLength={1}
@@ -402,7 +400,7 @@ const Home = () => {
                                     </div>
                                     <div className={styles.SortTextAreaBig} >
                                         <div className={styles.SortTextArea} >
-                                            <label className={styles.FomLabel}  >Mensaje</label>
+                                            <label className={styles.FomLabel}  >Message</label>
                                             <textarea
                                                 className={styles.TextArea}
                                                 type='text'
@@ -413,7 +411,7 @@ const Home = () => {
                                             />
                                         </div>
                                     </div>
-                                    <button className={styles.ButtonSend} type='submit'><span>Enviar</span></button>
+                                    <button className={styles.ButtonSend} type='submit'><span>Send</span></button>
                                 </form>
                             </div>
                         </div>
@@ -424,4 +422,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default HomeEnglish;

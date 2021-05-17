@@ -1,17 +1,6 @@
-$Pink:#FFC1B6;
-$LPink:#FFDCB8;
-$Cream:#FFEEBB;
-$Yellow:#FDFFBC;
+
 $Black:#0C1115;
 $White:#FFFFFF;
-$Blue:#a3ddcb;
-$DPink:#e5707e;
-$DGreen:#4aa96c;
-$Purple:#21094e;
-$Violet:#511281;
-$Red:#f55c47;
-$DBlue:#233e8b;
-
 $NEONBLUE:#9CF6FB;
 $SLBLE:#E1FCFD;
 $STRBLUE:#394F8A;
@@ -267,7 +256,7 @@ position: relative;
 width: 10rem;
 height: 5rem;
 overflow: hidden;
-border: .5rem solid $Purple;
+border: .5rem solid $STRBLUE;
 font-family: 'Oswald', sans-serif;
 font-weight: 300;
 transition: 0.5s;
@@ -652,7 +641,7 @@ cursor: url(../../Components//Images//Pointer1.png), pointer;
 &:focus{
 background-color:$White;
 color: $Black;
-border-left: .4rem solid $Purple;
+border-left: .4rem solid $STRBLUE;
 }
 }
 }
@@ -686,8 +675,8 @@ font-weight: bold;
 &:focus{
 background-color:$White;
 width: 20rem;
-color: $Purple;
-border: .3rem solid $Purple;
+color: $STRBLUE;
+border: .3rem solid $STRBLUE;
 
 }
 }
@@ -829,7 +818,7 @@ cursor: url(../../Components//Images//Pointer1.png), pointer;
 
 .Smile{
 position: absolute;
-color:$Purple;
+color:$STRBLUE;
 text-align: center;
 width: 90%;
 font-family: 'Josefin Sans', sans-serif;
@@ -857,7 +846,7 @@ font-family: 'Oswald', sans-serif;
 border-radius: 4px;
 background-color: $NEONBLUE;
 border: none;
-color: $Purple;
+color: $STRBLUE;
 text-align: center;
 font-size: 5vh;
 padding: 16px;

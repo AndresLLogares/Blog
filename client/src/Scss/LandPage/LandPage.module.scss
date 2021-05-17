@@ -1,0 +1,320 @@
+$Black:#0C1115;
+$White:#FFFFFF;
+$NEONBLUE:#9CF6FB;
+$SLBLE:#E1FCFD;
+$STRBLUE:#394F8A;
+$MBLUE:#4A5FC1;
+$STRPINK:#E5B9A8;
+$SLPINK:#EAD6CD;
+$GREEN:#05F4B7;
+$SPURPLE: #361999;
+$Pink:#FA255E;
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.ContainerLand{
+display: flex;
+background-color: $SPURPLE;
+height: fit-content;
+min-height: 200vh;
+flex-direction: column;
+justify-content: start;
+align-items: center;
+text-align: center;
+}
+
+.SortLand{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.SortUp{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+text-align: center;
+width: 100%;
+padding-top: 10%;
+transition-duration: 5s;
+}
+
+.SortBrowser{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 50%;
+transition-duration: 5s;
+}
+
+.ButtonLand{
+font-family: 'Oswald', sans-serif;
+background-color: $NEONBLUE;
+border: none;
+color: $STRBLUE;
+text-align: center;
+font-size: 3vh;
+padding: 16px;
+width: 16rem;
+font-weight: bold;
+transition: all 0.5s;
+margin: 36px;
+box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+transition-duration: 5s;
+}
+
+.ButtonLand  {
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.ButtonLand :after {
+content: '»';
+position: absolute;
+opacity: 0;  
+top: 14px;
+right: -20px;
+transition: 0.5s;
+}
+
+.ButtonLand :hover{
+padding-right: 24px;
+padding-left:8px;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+}
+
+.ButtonLand :hover:after {
+opacity: 1;
+right: 10px;
+}
+
+.SortTitle{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.TitleLand{
+padding: 0;
+margin: 0;
+font-family: 'Oswald', sans-serif;
+font-size: 20vh;
+color: $NEONBLUE;
+text-shadow: 2px 2px 2px $Black;
+}
+
+.SortTitleSecond{
+display: flex;
+width: 100%;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+text-align: center;
+}
+
+.LandBox{
+display: flex;
+flex-direction: column;
+width: 50%;
+margin: 5%;
+text-align: center;
+align-items: center;
+justify-content: center;
+background-color: $White;
+border-radius: .5rem ;
+box-shadow: 20px 10px 20px -8px rgba(0, 0, 0,.7);
+
+}
+
+.BoxFlag{
+display: flex;
+flex-direction: column;
+width: 50%;
+margin: 5%;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+
+@mixin button($bcolor,
+$url,
+$x1,
+$y1,
+$bor,
+$col) {
+background: $bcolor;
+-webkit-mask: url($url);
+mask: url($url);
+-webkit-mask-size: $x1 $y1;
+mask-size: $x1 $y1;
+border: $bor;
+color: $col;
+}
+
+.ButtonContainer{
+position: relative;
+width: 13rem;
+height: 13rem;
+overflow: hidden;
+border: .5rem solid $White;
+font-family: 'Oswald', sans-serif;
+font-weight: 300;
+transition: 0.5s;
+letter-spacing: 1px;
+border-radius: 50%;
+margin: 2%;
+box-shadow: 20px 10px 20px -8px rgba(0, 0, 0,.7);
+
+
+button {
+width: 101%;
+height: 100%;
+font-family: 'Oswald', sans-serif;
+font-weight: 300;
+font-size: 5vh;
+letter-spacing: 1px;
+font-weight: bold;
+
+@include button($GREEN, "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+3000%,
+100%,
+none,
+$STRBLUE);
+cursor: pointer;
+-webkit-animation: ani2 0.7s steps(29) forwards;
+animation: ani2 0.7s steps(29) forwards;
+
+&:hover {
+-webkit-animation: ani 0.7s steps(29) forwards;
+animation: ani 0.7s steps(29) forwards;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+}
+}
+}
+
+.Flag{
+position: absolute;
+color:$NEONBLUE;
+text-align: center;
+width: 101%;
+font-family: 'Oswald', sans-serif;
+font-weight: 300;
+position: absolute;
+font-size: 3vh;
+margin-top: 0rem;
+overflow: hidden;
+font-weight: bold;
+}
+
+@-webkit-keyframes ani {
+from {
+-webkit-mask-position: 0 0;
+mask-position: 0 0;
+}
+
+to {
+-webkit-mask-position: 100% 0;
+mask-position: 100% 0;
+}
+}
+
+@keyframes ani {
+from {
+-webkit-mask-position: 0 0;
+mask-position: 0 0;
+}
+
+to {
+-webkit-mask-position: 100% 0;
+mask-position: 100% 0;
+}
+}
+
+@-webkit-keyframes ani2 {
+from {
+-webkit-mask-position: 100% 0;
+mask-position: 100% 0;
+}
+
+to {
+-webkit-mask-position: 0 0;
+mask-position: 0 0;
+}
+}
+
+@keyframes ani2 {
+from {
+-webkit-mask-position: 100% 0;
+mask-position: 100% 0;
+}
+
+to {
+-webkit-mask-position: 0 0;
+mask-position: 0 0;
+}
+}
+
+.SecondTitle{
+padding: 0;
+margin: 0;
+margin-top: 5%;
+font-family: 'Montserrat', sans-serif;
+font-size: 4vh;
+font-weight: bold;
+color: $SPURPLE;
+}
+
+@media (max-width: 648px) {
+.ContainerLand{
+height: 230vh;
+}
+.ButtonContainer{
+width: 10rem;
+height: 10rem;
+}
+.SortUp{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.SortBrowser{
+width: 90%;
+}
+
+.SortTitle{
+width: 90%;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.TitleLand{
+    width: 100%;
+font-size: 10vh;
+padding-left: 10%;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.SortTitleSecond{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.LandBox{
+    width: 90%;
+}
+}
