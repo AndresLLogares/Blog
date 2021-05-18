@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Blog/static/css/main.226b3322.chunk.css",
-    "main.js": "/Blog/static/js/main.7b658a97.chunk.js",
-    "main.js.map": "/Blog/static/js/main.7b658a97.chunk.js.map",
+    "main.css": "/Blog/static/css/main.ce5952dd.chunk.css",
+    "main.js": "/Blog/static/js/main.4b36832f.chunk.js",
+    "main.js.map": "/Blog/static/js/main.4b36832f.chunk.js.map",
     "runtime-main.js": "/Blog/static/js/runtime-main.26165a87.js",
     "runtime-main.js.map": "/Blog/static/js/runtime-main.26165a87.js.map",
-    "static/js/2.01025655.chunk.js": "/Blog/static/js/2.01025655.chunk.js",
-    "static/js/2.01025655.chunk.js.map": "/Blog/static/js/2.01025655.chunk.js.map",
+    "static/js/2.3ea50ce7.chunk.js": "/Blog/static/js/2.3ea50ce7.chunk.js",
+    "static/js/2.3ea50ce7.chunk.js.map": "/Blog/static/js/2.3ea50ce7.chunk.js.map",
     "index.html": "/Blog/index.html",
-    "static/css/main.226b3322.chunk.css.map": "/Blog/static/css/main.226b3322.chunk.css.map",
-    "static/js/2.01025655.chunk.js.LICENSE.txt": "/Blog/static/js/2.01025655.chunk.js.LICENSE.txt",
+    "static/css/main.ce5952dd.chunk.css.map": "/Blog/static/css/main.ce5952dd.chunk.css.map",
+    "static/js/2.3ea50ce7.chunk.js.LICENSE.txt": "/Blog/static/js/2.3ea50ce7.chunk.js.LICENSE.txt",
     "static/media/CELLGIF.a9f3b655.gif": "/Blog/static/media/CELLGIF.a9f3b655.gif",
     "static/media/CELLPHONE.94009228.png": "/Blog/static/media/CELLPHONE.94009228.png",
     "static/media/CV.f8818216.jpg": "/Blog/static/media/CV.f8818216.jpg",
@@ -21,13 +21,15 @@
     "static/media/SAD.6e0fd205.gif": "/Blog/static/media/SAD.6e0fd205.gif",
     "static/media/SadHeart.8bd1bb73.gif": "/Blog/static/media/SadHeart.8bd1bb73.gif",
     "static/media/TABLET.575a9734.png": "/Blog/static/media/TABLET.575a9734.png",
+    "static/media/VideoEcommerce.230fd94c.mp4": "/Blog/static/media/VideoEcommerce.230fd94c.mp4",
     "static/media/menu.c21acb3a.svg": "/Blog/static/media/menu.c21acb3a.svg",
+    "static/media/tenor.4f72ac91.gif": "/Blog/static/media/tenor.4f72ac91.gif",
     "static/media/x.cb990eee.svg": "/Blog/static/media/x.cb990eee.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.26165a87.js",
-    "static/js/2.01025655.chunk.js",
-    "static/css/main.226b3322.chunk.css",
-    "static/js/main.7b658a97.chunk.js"
+    "static/js/2.3ea50ce7.chunk.js",
+    "static/css/main.ce5952dd.chunk.css",
+    "static/js/main.4b36832f.chunk.js"
   ]
 }
