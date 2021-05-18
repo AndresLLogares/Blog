@@ -1,0 +1,1212 @@
+
+$Black:#0C1115;
+$White:#FFFFFF;
+$NEONBLUE:#9CF6FB;
+$SLBLE:#E1FCFD;
+$STRBLUE:#394F8A;
+$MBLUE:#4A5FC1;
+$STRPINK:#E5B9A8;
+$SLPINK:#EAD6CD;
+$GREEN:#05F4B7;
+$SPURPLE: #361999;
+$Pink:#FA255E;
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+::-webkit-scrollbar {
+width: 0.9rem;               
+}
+
+::-webkit-scrollbar-track {
+background: $White;       
+border-radius: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+background-color: $STRBLUE;    
+border-radius: 3rem;    
+border: solid .2rem $NEONBLUE;
+}
+
+.Back{
+width: 100%;
+margin-top: 0;
+min-height: 150vh;
+background-color:$SPURPLE;
+
+}
+
+.SeparateTwo{
+display: flex;
+flex-direction: row-reverse;
+width: 100%;
+}
+
+.SeparateTwo2do{
+display: flex;
+flex-direction: row;
+margin-top: 0;
+width: 100%;
+}
+
+.SortTitle{
+width: 50%;
+display: flex;
+margin-top: 5%;
+margin-bottom: 2%;
+margin-right: 5%;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+
+.SortTitle2do{
+width: 50%;
+display: flex;
+margin-top: 5%;
+margin-bottom: 2%;
+margin-left: 5%;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+
+.SortTitleImage{
+width: 50%;
+display: flex;
+margin-top: 10%;
+margin-bottom: 2%;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
+margin-right: 10%;
+}
+
+.SortTitleImage2do{
+width: 50%;
+display: flex;
+margin-bottom: 2%;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+
+.SortTitleContact{
+display: flex;
+margin-top: 3%;
+margin-bottom: 2%;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+
+.SortTitle3ro{
+display: flex;
+margin-top: 1%;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+margin-top: 5%;
+margin-bottom: 5%;
+align-items: center;
+}
+
+
+.Title{
+color: $GREEN;
+font-size: 7vh;
+font-family: 'Oswald', sans-serif;
+text-shadow: -3px 3px 0 $Black;
+}
+
+.Title2do{
+color: $GREEN;
+font-size: 7vh;
+font-family: 'Oswald', sans-serif;
+text-shadow: -3px 3px 0 $Black;
+}
+
+.Title2doFast{
+padding-top: 0;
+margin-top: 0;
+color: $GREEN;
+font-size: 7vh;
+font-family: 'Oswald', sans-serif;
+text-shadow: -3px 3px 0 $Black;
+}
+
+.Title3ro{
+color: $GREEN;
+font-size: 8vh;
+font-family: 'Oswald', sans-serif;
+text-shadow: -3px 3px 0 $Black;
+width: 95%;
+}
+.BackImage{
+    background-color: $Black;
+}
+
+.Container{
+position: relative;
+width: 23rem;
+height: 23rem;
+margin-top: 10%;
+margin-bottom: 10%;
+margin-right: 10%;
+background: rgba(0,0,0,0);
+transition: 0.5s;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+border-radius: 20rem;
+
+}
+.Container img
+{
+position: absolute;
+width: 100%;
+margin-top: 20%;
+transition: 0.5s;
+border-radius: .6rem;
+background-color: $SPURPLE;
+
+}
+
+
+.Container2{
+position: relative;
+width: 23rem;
+height: 23rem;
+margin-top: 10%;
+margin-bottom: 10%;
+margin-right: 10%;
+background: rgba(0,0,0,0);
+transition: 0.5s;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+border-radius: 20rem;
+
+}
+.Container2 img
+{
+position: absolute;
+width: 100%;
+transition: 0.5s;
+border-radius: .6rem;
+
+}
+
+
+.AboutMeBox{
+display: flex;
+flex-direction: column;
+text-align: center;
+margin-left: 5%;
+margin-right: 5%;
+background: $MBLUE;
+}
+
+.SkillsButtonBox {
+display: flex;
+flex-direction: column;
+width: 90%;
+text-align: center;
+margin-left: 5%;
+margin-right: 5%;
+margin-bottom: 5%;
+background: $MBLUE;
+}
+
+.SortButtons{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+padding: 2%;
+}
+
+@mixin button($bcolor,
+$url,
+$x1,
+$y1,
+$bor,
+$col) {
+background: $bcolor;
+-webkit-mask: url($url);
+mask: url($url);
+-webkit-mask-size: $x1 $y1;
+mask-size: $x1 $y1;
+border: $bor;
+color: $col;
+}
+
+.LogosHome{
+min-width: 3.5rem;
+max-width: 3.5rem;
+max-height: 3.5rem;
+min-width: 3.5rem;
+}
+
+.buttoncontainer {
+position: relative;
+width: 10rem;
+height: 5rem;
+overflow: hidden;
+border: .5rem solid $STRBLUE;
+font-family: 'Oswald', sans-serif;
+font-weight: 300;
+transition: 0.5s;
+letter-spacing: 1px;
+border-radius: 15px 50px;
+margin: 2%;
+
+
+button {
+width: 101%;
+height: 100%;
+font-family: 'Oswald', sans-serif;
+font-weight: 300;
+font-size: 3vh;
+letter-spacing: 1px;
+font-weight: bold;
+
+@include button($NEONBLUE, "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+3000%,
+100%,
+none,
+$STRBLUE);
+cursor: pointer;
+-webkit-animation: ani2 0.7s steps(29) forwards;
+animation: ani2 0.7s steps(29) forwards;
+
+&:hover {
+-webkit-animation: ani 0.7s steps(29) forwards;
+animation: ani 0.7s steps(29) forwards;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+}
+}
+}
+
+.mas {
+position: absolute;
+color:$NEONBLUE;
+text-align: center;
+width: 101%;
+font-family: 'Oswald', sans-serif;
+font-weight: 300;
+position: absolute;
+font-size: 3vh;
+margin-top: .6rem;
+overflow: hidden;
+font-weight: bold;
+}
+
+@-webkit-keyframes ani {
+from {
+-webkit-mask-position: 0 0;
+mask-position: 0 0;
+}
+
+to {
+-webkit-mask-position: 100% 0;
+mask-position: 100% 0;
+}
+}
+
+@keyframes ani {
+from {
+-webkit-mask-position: 0 0;
+mask-position: 0 0;
+}
+
+to {
+-webkit-mask-position: 100% 0;
+mask-position: 100% 0;
+}
+}
+
+@-webkit-keyframes ani2 {
+from {
+-webkit-mask-position: 100% 0;
+mask-position: 100% 0;
+}
+
+to {
+-webkit-mask-position: 0 0;
+mask-position: 0 0;
+}
+}
+
+@keyframes ani2 {
+from {
+-webkit-mask-position: 100% 0;
+mask-position: 100% 0;
+}
+
+to {
+-webkit-mask-position: 0 0;
+mask-position: 0 0;
+}
+}
+
+.SkillsBox{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+margin-top: 5%;
+margin-left: 5%;
+margin-right: 5%;
+padding: 1%;
+background: $MBLUE;
+}
+
+
+.PSkills{
+font-family: 'Raleway', sans-serif;
+color: $White;
+font-size: 3vh;
+font-weight: bold;
+width: 90%;
+}
+
+.SortCell{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 100%;
+}
+
+.ContainerCell{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 10rem;
+perspective: 2000px;
+margin-left: 23rem;
+margin-top: 10rem;
+margin-bottom: 0%;
+transform: translate(-50%, -50%);
+transform-style: preserve-3d;
+}
+
+.ContainerCell img {
+display: flex;
+align-items: center;
+background-color: $MBLUE;
+border-radius: .8rem;
+width: 20rem;
+height: 20rem;
+transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
+transition: all .4s;
+padding: 5%;
+transform-style: preserve-3d;
+}
+
+.ImageCell:hover{ 
+transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+}
+
+.AboutMeDivBox{
+margin-top: 2%;
+margin-bottom: 2%;
+margin-left: 1%;
+margin-right: 1%;
+}
+
+.AboutMeP{
+font-family: 'Raleway', sans-serif;
+color: $White;
+font-size: 3vh;
+font-weight: bold;
+}
+
+.SortP{
+display: flex;
+margin-top: 3%;
+margin-left: 20%;
+margin-right: 20%;
+justify-content: center;
+text-align: center;
+background: $MBLUE;
+padding: 2%;
+}
+
+
+
+.StyleP{
+margin-top: 0;
+font-family: 'Raleway', sans-serif;
+font-weight: bold;
+color: $White;
+font-size: 3vh;
+}
+
+.ContactMeTitleCont{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+margin-top: 10%;
+margin-bottom: 5%;
+}
+
+.SortSkills{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.TitleContact{
+color: $GREEN;
+font-size: 9vh;
+font-family: 'Oswald', sans-serif;
+text-shadow: -3px 3px 0 $Black;
+}
+
+.Information{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+text-align: center;
+margin: 3%;
+background: $MBLUE;
+height: 13rem;
+}
+
+.SortInfor{
+display:flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 100%;
+margin-top: 2%;
+margin-bottom: 2%;
+max-height: 6rem;
+min-height: 6rem;
+padding-left: 5%;
+
+}
+
+.IconsContact{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+max-width: 4rem;
+max-height: 4rem;
+min-width: 4rem;
+max-height: 4rem;
+padding-right: 5%;
+padding-bottom: 9%;
+}
+
+.PInfo{
+display: flex;
+font-family: 'Montserrat', sans-serif;
+color: $White;
+font-weight: bold;
+font-size: 3vh;
+justify-content: center;
+align-items: center;
+text-align: center;
+text-decoration: none;
+border: none;
+cursor: pointer;
+padding-left: 5%;
+
+padding-right: 5%;
+}
+
+
+.PInfo:hover{
+color: $NEONBLUE;
+border-bottom: solid .2rem $NEONBLUE;
+transform: skewY(-9deg);
+transition-duration: 1s;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+
+}
+
+.ContactMeTitleCont2do{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+border-radius: .5rem;
+margin-left: 20%;
+margin-right: 20%;
+}
+
+.TitleInfo{
+display: flex;
+font-family: 'Raleway', sans-serif;
+font-size: 4vh;
+color: $White;
+justify-content: center;
+align-items: center;
+text-align: center;
+text-decoration: none;
+padding-right: 5%;
+
+}
+
+.SecondContact{
+color: $GREEN;
+font-size: 8vh;
+font-family: 'Oswald', sans-serif;
+text-shadow: -3px 3px 0 $Black;
+}
+
+.ContactBox{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+
+.LoginBox{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-top: 5%;
+margin-bottom: 5%;
+width: 90%;
+background:$MBLUE;
+}
+
+
+
+.FormGroup{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+width: 100%;
+}
+
+.FomLabel{
+font-family: 'Josefin Sans', sans-serif;
+font-size: 3vh;
+font-weight: bold;
+color: $White;
+}
+
+.SortTextAreaBig{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.SortTextArea{
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+width: 50%;
+}
+
+.TextArea{
+width: 30rem;
+height: 10rem;
+background-color: rgba(4, 0, 4, 0.2);
+border-left: .4rem solid $NEONBLUE;
+font-family: 'Josefin Sans', sans-serif;
+color: $White;
+transition-duration: 2s;
+font-weight: bold;
+font-size: 2.5vh;
+margin-top: 2%;
+margin-left: 15%;
+resize: none;
+&:hover{
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+&:focus{
+background-color:$White;
+color: $Black;
+border-left: .4rem solid $STRBLUE;
+}
+}
+}
+
+.LoginContainer{
+padding: 20px 0;
+position: relative;
+z-index: 2;
+
+input{
+font-family: 'Josefin Sans', sans-serif;
+display: block;
+appearance: none;
+outline: 0;
+border: .3rem solid $NEONBLUE;
+background-color: rgba(4, 0, 4, 0.1);
+width: 15rem;
+border-radius: 10% / 50%;
+padding: 1rem 1.5rem;
+margin: 0 auto 10px auto;
+display: block;
+text-align: center;
+font-size: 2.5vh;
+color: $White;
+transition-duration: 2s;
+font-weight: bold;
+&:hover{
+    cursor: url(../../Components//Images//Pointer1.png), pointer;
+
+}
+&:focus{
+background-color:$White;
+width: 20rem;
+color: $STRBLUE;
+border: .3rem solid $STRBLUE;
+
+}
+}
+}
+
+.ContainerCellRespon{
+display: none;
+}
+
+.SortArrowUp{
+position: fixed;
+display: flex;
+bottom: 5%;
+right: 5%;
+z-index: 4;
+}
+
+.Link{
+    text-decoration: none;
+}
+
+.LogosHomeUp{
+max-width: 2rem;
+min-width: 2rem;
+max-height: 2rem;
+min-height: 2rem;
+}
+
+.ButtonContainerUp {
+position: relative;
+width: 6rem;
+height: 3rem;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0vh;
+overflow: hidden;
+font-family: 'Oswald', sans-serif;
+font-weight: 300;
+font-size: 4vh;
+transition: 0.9s;
+letter-spacing: 1px;
+border-radius: 20%;
+
+button {
+width: 101%;
+height: 100%;
+font-family: 'Josefin Sans', sans-serif;
+font-weight: 300;
+font-size:3vh;
+letter-spacing: 1px;
+font-weight: bold;
+
+@include button($NEONBLUE,
+"https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
+2300%,
+100%,
+none,
+$STRBLUE);
+cursor: pointer;
+-webkit-animation: ani2 0.7s steps(22) forwards;
+animation: ani2 0.7s steps(22) forwards;
+
+&:hover {
+-webkit-animation: ani 0.7s steps(22) forwards;
+animation: ani 0.7s steps(22) forwards;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+
+}
+}
+}
+
+.masUp{
+position: absolute;
+color:$NEONBLUE;
+text-align: center;
+width: 101%;
+font-family: 'Josefin Sans', sans-serif;
+font-weight: 300;
+position: absolute;
+font-size: 3vh;
+margin-top: .6rem;
+overflow: hidden;
+font-weight: bold;
+}
+
+.SortHapSadButtons{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+width: 100%;
+margin-top: 5%;
+}
+
+.SortHapSad{
+display: flex;
+width: 50%;
+}
+
+.ButtonContainerHappy {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 10rem;
+height: 8rem;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0vh;
+overflow: hidden;
+font-family: 'Oswald', sans-serif;
+font-weight: 300;
+font-size: 4vh;
+transition: 0.9s;
+letter-spacing: 1px;
+border-radius: 20%;
+transition-duration: 5s;
+
+button {
+width: 101%;
+height: 100%;
+font-family: 'Oswald', sans-serif;
+font-weight: 300;
+font-size:5vh;
+letter-spacing: 1px;
+font-weight: bold;
+
+@include button($NEONBLUE,
+"https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
+2300%,
+100%,
+none,
+$STRBLUE);
+cursor: pointer;
+-webkit-animation: ani2 0.7s steps(22) forwards;
+animation: ani2 0.7s steps(22) forwards;
+
+&:hover {
+-webkit-animation: ani 0.7s steps(22) forwards;
+animation: ani 0.7s steps(22) forwards;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+}
+}
+}
+
+.Smile{
+position: absolute;
+color:$STRBLUE;
+text-align: center;
+width: 90%;
+font-family: 'Josefin Sans', sans-serif;
+font-weight: 300;
+position: absolute;
+font-size: 3vh;
+max-height: 5rem;
+min-height: 5rem;
+max-width: 5rem;
+min-width: 5rem;
+margin-top: 0rem;
+overflow: hidden;
+font-weight: bold;
+}
+
+.ImageBig{
+max-width: 14rem;
+max-height: 16rem;
+min-width: 14rem;
+max-height: 16rem;
+}
+
+.ButtonSend{
+font-family: 'Oswald', sans-serif;
+border-radius: 4px;
+background-color: $NEONBLUE;
+border: none;
+color: $STRBLUE;
+text-align: center;
+font-size: 5vh;
+padding: 16px;
+width: 12rem;
+transition: all 0.5s;
+margin: 36px;
+box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.ButtonSend  {
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.ButtonSend :after {
+content: '»';
+position: absolute;
+opacity: 0;  
+top: 14px;
+right: -20px;
+transition: 0.5s;
+}
+
+.ButtonSend :hover{
+padding-right: 24px;
+padding-left:8px;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+}
+
+.ButtonSend :hover:after {
+opacity: 1;
+right: 10px;
+}
+
+
+.TwoLinks{
+display: flex;
+flex-direction: row;
+width: 100%;
+justify-content: space-evenly;
+align-items: center;
+text-align: center;
+}
+
+.AnyLink{
+display: flex;
+width: 50%;
+text-align: center;
+justify-content: center;
+align-items: center;
+}
+
+.WalkFolder{
+max-width: 15rem;
+max-height: 15rem;
+min-width: 15rem;
+min-height: 15rem;
+}
+
+.TitleClick{
+color: $GREEN;
+font-size: 7vh;
+font-family: 'Oswald', sans-serif;
+text-shadow: -3px 3px 0 $Black;
+}
+
+@media (max-width: 648px) {
+
+.SortArrowUp{
+    display: none;
+}
+
+.TwoLinks{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Back{
+width: 100%;
+padding-top: 25%;
+margin: 0;
+padding-left: 0%;
+padding-right: 0%;
+padding-bottom: 5%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+.AboutMeBox{
+width: 80%;
+margin-left: 10%;
+}
+.AboutMeDivBox{
+width: 90%;
+}
+.SeparateTwo{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-left:0;
+padding-right: 0;
+margin-left: 0;
+margin-right: 0;
+}
+
+.SeparateTwo2do{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding-left:0;
+padding-right: 0;
+margin-left: 0;
+margin-right: 0;
+}
+
+.SortTitle{
+width: 90%;
+
+}
+
+.SortTitle2do{
+width: 100%;
+}
+
+.SortTitleImage{
+width: 100%;
+}
+
+.SortTitleImage2do{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.Container2{
+max-width: 12rem;
+min-width: 12rem;
+max-height: 12rem;
+min-height: 12rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: 0;
+padding-bottom: 10%;
+}
+
+.Container2:hover img:nth-child(4)
+{
+transform: translate(-20px,20px);		
+opacity: 1;
+}
+.Container2:hover img:nth-child(3)
+{
+transform: translate(-15px,15px);		
+opacity: .8;
+}
+.Container2:hover img:nth-child(2)
+{
+transform: translate(-10px,10px);		
+opacity: .6;
+}
+.Container2:hover img:nth-child(1)
+{
+transform: translate(-5px,5px);		
+opacity: .4;
+}
+
+.Container{
+max-width: 12rem;
+min-width: 12rem;
+max-height: 12rem;
+min-height: 12rem;
+margin: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding-bottom: 20%;
+}
+.Container:hover img:nth-child(4)
+{
+transform: translate(20px,20px);		
+opacity: 1;
+}
+.Container:hover img:nth-child(3)
+{
+transform: translate(15px,15px);		
+opacity: .8;
+}
+.Container:hover img:nth-child(2)
+{
+transform: translate(10px,10px);		
+opacity: .6;
+}
+.Container:hover img:nth-child(1)
+{
+transform: translate(5px,5px);		
+opacity: .4;
+}
+.AboutMeBox{
+width: 80%;
+}
+.SortP{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 0;
+padding: 5%;
+align-items: center;
+text-align: center;
+width: 70%;
+}
+
+.ContactMe{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.Information{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 80%;
+height: 25rem;
+margin: 0;
+padding: 5%;
+}
+.SortInfor{
+display: flex;
+flex-direction: column;
+width: 90%;
+justify-content: space-evenly;
+text-align: center;
+}
+.TitleInfo{
+padding: 0;
+padding-right: 0%;
+margin: 0;
+font-size: 3vh;
+}
+.PInfo{
+font-size: 2.5vh;
+padding: 0;
+margin: 0;
+}
+
+.ContactBox{
+display: flex;
+width: 100%;
+margin: 0;
+padding: 0%;
+padding-bottom: 20%;
+}
+.LoginBox{
+display: flex;
+width: 85%;
+}
+.FormGroup{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.SortTextArea{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin:0;
+padding: 0;
+padding-top: 5%;
+}
+.TextArea{
+margin: 0;
+width: 13rem;
+height: 15rem;
+}
+
+.ContainerCell{
+display: none;
+}
+
+.ContainerCellRespon{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 5%;
+margin-bottom: 8%;
+border-radius: .4rem;
+box-shadow: $Black 200px;
+}
+
+.ImageCellRes{
+max-width: 10rem;
+min-height: 10rem;
+position: relative;
+background-color: pink;
+-webkit-transform: perspective(300px) rotateX(30deg);
+-o-transform: perspective(300px) rotateX(30deg);
+-moz-transform: perspective(300px) rotateX(30deg);
+transform: perspective(300px) rotateX(30deg);
+-webkit-transform-origin: 0% 50%;
+-moz-transform-origin: 0% 50%;
+-o-transform-origin: 0% 50%;
+transform-origin: 0% 50%;
+}
+
+.LoginContainer{
+input{
+margin: 0;
+width: 7rem;
+&:focus{
+width: 12rem;
+}
+}
+}
+.FomLabel{
+margin-top: 5%;
+}
+.EachInput{
+margin-top: 5%;
+}
+.SkillsButtonBox{
+width: 80%;
+margin-left: 10%;
+}
+.ButtonContainerHappy{
+width: 7rem;
+height: 5rem;
+button {
+font-size: 4vh;
+}
+}
+.ButtonSend{
+font-size: 4vh;
+width: 10rem;
+}
+.PSkills{
+width: 80%;
+}
+.IconsContact{
+max-width: 2rem;
+min-width: 2rem;
+max-height: 2rem;
+min-height: 2rem;
+}
+}

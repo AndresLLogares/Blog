@@ -1,0 +1,17 @@
+body{
+    cursor: url(../../Components/Images/CC1.png),default;
+}
+html,body{
+    width: 100%;
+	margin:0;
+	padding:0;
+ }
+
+ @media (max-width: 800px) {
+    html,body{
+        width:100%;
+        height: fit-content;
+        margin:0;
+        padding:0;
+     }
+ }

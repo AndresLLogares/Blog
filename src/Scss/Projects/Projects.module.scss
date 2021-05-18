@@ -1,0 +1,326 @@
+$Black:#0C1115;
+$White:#FFFFFF;
+$NEONBLUE:#9CF6FB;
+$SLBLE:#E1FCFD;
+$STRBLUE:#394F8A;
+$MBLUE:#4A5FC1;
+$STRPINK:#E5B9A8;
+$SLPINK:#EAD6CD;
+$GREEN:#05F4B7;
+$SPURPLE: #361999;
+$Pink:#FA255E;
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+.Back{
+background-color: $STRBLUE;
+min-height: 150vh;
+height: fit-content;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.SortTitle{
+display: flex;
+flex-direction: row;
+padding-top: 10%;
+align-items: center;
+justify-content: center;
+text-align: center;
+width: 100%;
+}
+
+.anyTitle{
+width: 50%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.TitlePr{
+color: $GREEN;
+font-size: 12vh;
+font-family: 'Oswald', sans-serif;
+text-shadow: -3px 3px 0 $Black;
+}
+
+.SortAny{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.SortInfoPro{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+width: 70%;
+background-color: $White;
+padding: 2%;
+margin-top: 2%;
+margin-bottom: 5%;
+font-family: 'Raleway', sans-serif;
+
+}
+
+.Pinfo{
+font-family: 'Raleway', sans-serif;
+font-size: 3vh;
+color: $STRBLUE;
+font-weight: bold;
+}
+
+.video{
+width: 80%;
+height: 80%;
+}
+
+@mixin button($bcolor,
+$url,
+$x1,
+$y1,
+$bor,
+$col) {
+background: $bcolor;
+-webkit-mask: url($url);
+mask: url($url);
+-webkit-mask-size: $x1 $y1;
+mask-size: $x1 $y1;
+border: $bor;
+color: $col;
+}
+
+.LogosVideo{
+min-width: 3.5rem;
+max-width: 3.5rem;
+max-height: 3.5rem;
+min-width: 3.5rem;
+}
+
+.SortButtons{
+display: flex;
+flex-direction: row;
+padding-top: 3%;
+align-items: center;
+justify-content: center;
+text-align: center;
+width: 100%;
+}
+
+.anyButtons{
+display: flex;
+width: 25%;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.ButtonContainer {
+position: relative;
+width: 10rem;
+height: 5rem;
+overflow: hidden;
+border: .5rem solid $STRBLUE;
+font-family: 'Oswald', sans-serif;
+font-weight: 300;
+transition: 0.5s;
+letter-spacing: 1px;
+border-radius: 30%;
+margin: 2%;
+
+button {
+width: 101%;
+height: 100%;
+font-family: 'Oswald', sans-serif;
+font-weight: 300;
+font-size: 3vh;
+letter-spacing: 1px;
+font-weight: bold;
+
+@include button($GREEN, "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+3000%,
+100%,
+none,
+$SPURPLE);
+cursor: pointer;
+-webkit-animation: ani2 0.7s steps(29) forwards;
+animation: ani2 0.7s steps(29) forwards;
+
+&:hover {
+-webkit-animation: ani 0.7s steps(29) forwards;
+animation: ani 0.7s steps(29) forwards;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+}
+}
+}
+
+.Mas {
+position: absolute;
+color:$GREEN;
+text-align: center;
+width: 101%;
+font-family: 'Oswald', sans-serif;
+font-weight: 300;
+position: absolute;
+font-size: 3vh;
+margin-top: .6rem;
+overflow: hidden;
+font-weight: bold;
+}
+
+@-webkit-keyframes ani {
+from {
+-webkit-mask-position: 0 0;
+mask-position: 0 0;
+}
+
+to {
+-webkit-mask-position: 100% 0;
+mask-position: 100% 0;
+}
+}
+
+@keyframes ani {
+from {
+-webkit-mask-position: 0 0;
+mask-position: 0 0;
+}
+
+to {
+-webkit-mask-position: 100% 0;
+mask-position: 100% 0;
+}
+}
+
+@-webkit-keyframes ani2 {
+from {
+-webkit-mask-position: 100% 0;
+mask-position: 100% 0;
+}
+
+to {
+-webkit-mask-position: 0 0;
+mask-position: 0 0;
+}
+}
+
+@keyframes ani2 {
+from {
+-webkit-mask-position: 100% 0;
+mask-position: 100% 0;
+}
+
+to {
+-webkit-mask-position: 0 0;
+mask-position: 0 0;
+}
+}
+
+.ButtonContainerUp {
+position: relative;
+width: 6rem;
+height: 3rem;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0vh;
+overflow: hidden;
+font-family: 'Oswald', sans-serif;
+font-weight: 300;
+font-size: 4vh;
+transition: 0.9s;
+letter-spacing: 1px;
+border-radius: 20%;
+
+button {
+width: 101%;
+height: 100%;
+font-family: 'Josefin Sans', sans-serif;
+font-weight: 300;
+font-size:3vh;
+letter-spacing: 1px;
+font-weight: bold;
+
+@include button($NEONBLUE,
+"https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
+2300%,
+100%,
+none,
+$STRBLUE);
+cursor: pointer;
+-webkit-animation: ani2 0.7s steps(22) forwards;
+animation: ani2 0.7s steps(22) forwards;
+
+&:hover {
+-webkit-animation: ani 0.7s steps(22) forwards;
+animation: ani 0.7s steps(22) forwards;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+
+}
+}
+}
+
+.masUp{
+position: absolute;
+color:$NEONBLUE;
+text-align: center;
+width: 101%;
+font-family: 'Josefin Sans', sans-serif;
+font-weight: 300;
+position: absolute;
+font-size: 3vh;
+margin-top: .6rem;
+overflow: hidden;
+font-weight: bold;
+}
+
+.SortArrowUp{
+position: fixed;
+display: flex;
+bottom: 5%;
+right: 5%;
+z-index: 4;
+}    
+
+.LogosHomeUp{
+max-width: 2rem;
+min-width: 2rem;
+max-height: 2rem;
+min-height: 2rem;
+}
+
+
+
+
+@media (max-width: 648px) {
+
+.SortTitle{
+display: flex;
+flex-direction: column;
+}
+
+.SortButtons{
+display: flex;
+flex-direction: column;
+}
+
+.anyButtons{
+width: 50%;
+}
+
+.Folder{
+padding-top: 5rem;
+}
+
+}
