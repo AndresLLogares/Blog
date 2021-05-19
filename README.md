@@ -1,6 +1,6 @@
 ## Readme
 
-Blog personal desarrollado integramente con React con la finalidad de dar a conocer mi trabajo y también ire actualizando con los proyectos que iré realizando.
+Blog personal desarrollado integramente con React con la finalidad de dar a conocer mi trabajo y iré actualizando con los proyectos que estoy realizando.
 
 Tecnologías usadas:
 
