@@ -137,7 +137,7 @@ const ProjectsE = () => {
                     <div className={styles.SortInfoPro} >
                         <p className={styles.Pinfo}>
                             Currently I am doing a Full Stack project using Express and MongoDB in the back, while
-                            that in the Front part I am using React and Redux, I hope to bring advances of it soon
+                            that in the Front i am using React and Redux, I hope to bring advances of it soon
                     </p>
                     </div>
                 </Zoom>
