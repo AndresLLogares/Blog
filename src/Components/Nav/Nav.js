@@ -24,7 +24,7 @@ const NavigationBar = () => {
             </div>
             <ul className={click ? styles.nav_options_active : styles.nav_options}>
                 <li className={styles.SortNav} onClick={closeMobileMenu} >
-                    <a style={{ textDecoration: 'none' }} href='https://www.linkedin.com/in/andres-luis-logares-522595172/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAACkFWaoBglZUp19GGG5Q3LzLSMviGHXP1nw,1635457479298)/' >
+                    <a style={{ textDecoration: 'none' }} href='https://www.linkedin.com/in/andres-luis-logares-522595172/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAACkFWaoBglZUp19GGG5Q3LzLSMviGHXP1nw,1635457723454)/' >
                         <div className={styles.Links} ><TextDocument className={styles.IconsNav} />CV</div>
                     </a>
                 </li>
