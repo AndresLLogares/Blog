@@ -35,6 +35,7 @@ import '../../Scss/Home/Toast.css';
 import ReactMediumImg from 'react-medium-zoom';
 import Folder from '../Images/tenor.gif';
 import {Mongodb} from '@styled-icons/simple-icons/Mongodb';
+import {Nodejs} from '@styled-icons/boxicons-logos/Nodejs';
 
 const HomeEnglish = () => {
 
@@ -252,6 +253,10 @@ const HomeEnglish = () => {
                             <div className={styles.buttoncontainer}>
                                 <span className={styles.mas}><Mongodb className={styles.LogosHome} /></span>
                                 <button type="button" name="Hover">MongoDB</button>
+                            </div>
+                            <div className={styles.buttoncontainer}>
+                                <span className={styles.mas}><Nodejs className={styles.LogosHome} /></span>
+                                <button type="button" name="Hover">Node</button>
                             </div>
                         </div>
                     </div>
