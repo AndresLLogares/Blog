@@ -77,11 +77,10 @@ const ProjectsE = () => {
                 <Zoom>
                     <div className={styles.SortInfoPro} >
                         <p className={styles.Pinfo}>
-                            In the following video you will be able to see in operation the E-Commerce carried out during Henry's stage, which
-                            It was carried out working with a team of 7 people, in it several functions can be performed as shown in
-                            the video, either make a purchase through the payment gateway with the MercadoPago SDK, make comments,
-                            add favorites and other functions of the client side, such as from the administrator part add products, categories,
-                            assign new administrators among other functions.
+                        In the following video you can see in operation the E-Commerce made during the Henry stage, 
+                        which was done working with a team of 7 colleagues, in it you can perform various functions as shown in the video, either 
+                        make a purchase through the payment gateway with MercadoPago SDK, make comments, add favorites and other functions from the customer side, 
+                        as from the part of the administrator add products, categories, assign new administrators and other functions.
                     </p>
                     </div>
                 </Zoom>

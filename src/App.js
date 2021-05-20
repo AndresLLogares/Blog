@@ -26,7 +26,6 @@ function App() {
         <NavigationBar />
       </Route>
       <ScrollToTop />
-
       <Switch>
         <Route exact path='/Blog' component={LandPage} />
         <Route exact path='/Home' component={Home} />
