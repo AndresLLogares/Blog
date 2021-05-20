@@ -7,6 +7,7 @@ import LandPage from './Components/LandPage/LandPage';
 import HomeEnglish from './Components/HomeEnglish/HomeEnglish';
 import Projects from './Components/Projects/Projects';
 import ProjectsE from './Components/ProjectsE/ProjectsE';
+import ScrollToTop from './Components/ScrolToTop/ScrolToTop'
 import './Scss/App/App.css';
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
       <Route path='/ProjectsE'>
         <NavigationBar />
       </Route>
+      <ScrollToTop />
+
       <Switch>
         <Route exact path='/Blog' component={LandPage} />
         <Route exact path='/Home' component={Home} />
