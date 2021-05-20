@@ -34,6 +34,7 @@ import toast from 'toast-me';
 import '../../Scss/Home/Toast.css';
 import ReactMediumImg from 'react-medium-zoom';
 import Folder from '../Images/tenor.gif';
+import {Mongodb} from '@styled-icons/simple-icons/Mongodb';
 
 const Home = () => {
 
@@ -247,6 +248,10 @@ const Home = () => {
                             <div className={styles.buttoncontainer}>
                                 <span className={styles.mas}><Apollographql className={styles.LogosHome} /></span>
                                 <button type="button" name="Hover">Apollo</button>
+                            </div>
+                            <div className={styles.buttoncontainer}>
+                                <span className={styles.mas}><Mongodb className={styles.LogosHome} /></span>
+                                <button type="button" name="Hover">MongoDB</button>
                             </div>
                         </div>
                     </div>

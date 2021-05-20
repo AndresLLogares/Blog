@@ -858,6 +858,9 @@ width: 12rem;
 transition: all 0.5s;
 margin: 36px;
 box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+
+
 }
 
 .ButtonSend  {
@@ -902,6 +905,8 @@ width: 50%;
 text-align: center;
 justify-content: center;
 align-items: center;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+
 }
 
 .WalkFolder{
@@ -1159,7 +1164,7 @@ box-shadow: $Black 200px;
 max-width: 10rem;
 min-height: 10rem;
 position: relative;
-background-color: pink;
+background-color:$MBLUE;
 -webkit-transform: perspective(300px) rotateX(30deg);
 -o-transform: perspective(300px) rotateX(30deg);
 -moz-transform: perspective(300px) rotateX(30deg);
