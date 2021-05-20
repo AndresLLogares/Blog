@@ -149,7 +149,7 @@ const Home = () => {
                 <div className={styles.SeparateTwo}>
                     <div id='Begin' className={styles.SortTitle}>
                         <h4 className={styles.Title}>Hola, soy Andrés Luis Logares</h4>
-                        <h4 className={styles.Title}>Full-stack-developer</h4>
+                        <h4 className={styles.Title}>Fullstack Developer</h4>
                     </div>
                     <div className={styles.Container}>
                         <ReactMediumImg

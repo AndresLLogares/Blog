@@ -43,7 +43,7 @@ $Pink:#FA255E;
 
 .PLink{
   font-family: 'Oswald', sans-serif;
-  font-size: 4.5vh;
+  font-size: 5vh;
   color: $White;
   font-weight: bold;
   text-shadow: -2px 2px 0 $Black;
@@ -155,13 +155,16 @@ $Pink:#FA255E;
 }
 
 .PLink{
+  font-size: 7vh;
   padding-left: 20%;
 }
 
 .MenuIcon {
   color: $NEONBLUE;
-  width: 4rem;
-  height: 4rem;
+  min-width: 3rem;
+  min-height: 3rem;
+  max-width: 3rem;
+  max-height: 3rem;
   padding-right: 20%;
 }
 

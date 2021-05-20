@@ -64,7 +64,7 @@ const LandPage = () => {
                                 <h4 className={styles.TitleLand} >Andrés Luis Logares</h4>
                             </div>
                             <div className={styles.SortTitle} >
-                                <h4 className={styles.TitleLand} >Full-Stack-Developer</h4>
+                                <h4 className={styles.TitleLand} >Fullstack Developer</h4>
                             </div>
                             {middleSquare.isRendered && (
                                 <div className="middle-square" ref={middleSquare.ref}>

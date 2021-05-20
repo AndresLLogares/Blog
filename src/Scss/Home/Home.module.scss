@@ -149,7 +149,8 @@ text-shadow: -3px 3px 0 $Black;
 width: 95%;
 }
 .BackImage{
-    background-color: $Black;
+background-color: $Black;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
 }
 
 .Container{
