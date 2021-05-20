@@ -50,14 +50,8 @@ const LandPage = () => {
 
                 <div className={styles.SortToggle} >
                     {<div className={styles.SortUp} >
-                        <div className={styles.SortBrowser} >
-                            <Browser className={styles.Browser} size={100} mood="excited" color="#9CF6FB" />
-                        </div>
-                        <div className={styles.SortBrowser} >
-                            <button className={styles.ButtonLand} onClick={() => bgSquare.togglePresence()}><span>Again /De nuevo</span></button>
-                        </div>
+                            <Browser className={styles.Browser} size={150} mood="excited" color="#9CF6FB" />
                     </div>}
-
                     {bgSquare.isRendered && (
                         <div ref={bgSquare.ref} className="bg-square">
                             <div className={styles.SortTitle} >
