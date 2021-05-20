@@ -24,22 +24,30 @@ const NavigationBar = () => {
             </div>
             <ul className={click ? styles.nav_options_active : styles.nav_options}>
                 <li className={styles.SortNav} onClick={closeMobileMenu} >
-                    <a style={{ textDecoration: 'none' }} href='https://drive.google.com/file/d/1ZrRdklAvt_G1hbYRo4tlCBAQUKdmIIvs/view?usp=sharing' >
+                    <a style={{ textDecoration: 'none' }}
+                        target="_blank"
+                        href='https://drive.google.com/file/d/1ZrRdklAvt_G1hbYRo4tlCBAQUKdmIIvs/view?usp=sharing' >
                         <div className={styles.Links} ><TextDocument className={styles.IconsNav} />CV</div>
                     </a>
                 </li>
                 <li className={styles.SortNav} onClick={closeMobileMenu} >
-                    <a style={{ textDecoration: 'none' }} href='https://drive.google.com/file/d/1eTHW-prsSwCMw7aAnNnCzCeQbTTtZNBO/view?usp=sharing' >
+                    <a style={{ textDecoration: 'none' }}
+                        target="_blank"
+                        href='https://drive.google.com/file/d/1eTHW-prsSwCMw7aAnNnCzCeQbTTtZNBO/view?usp=sharing' >
                         <div className={styles.Links} ><TextDocument className={styles.IconsNav} />English CV</div>
                     </a>
                 </li>
                 <li className={styles.SortNav} onClick={closeMobileMenu} >
-                    <a style={{ textDecoration: 'none' }} href="https://github.com/AndresLLogares" >
+                    <a style={{ textDecoration: 'none' }}
+                        target="_blank"
+                        href="https://github.com/AndresLLogares" >
                         <div className={styles.Links}><Github className={styles.IconsNav} />GitHub</div>
                     </a>
                 </li>
                 <li className={styles.SortNav} onClick={closeMobileMenu} >
-                    <a style={{ textDecoration: 'none' }} href="https://www.linkedin.com/in/andres-luis-logares-522595172/" >
+                    <a style={{ textDecoration: 'none' }}
+                        target="_blank"
+                        href="https://www.linkedin.com/in/andres-luis-logares-522595172/" >
                         <div className={styles.Links}><Linkedin className={styles.IconsNav} />Linkedin</div>
                     </a>
                 </li>
