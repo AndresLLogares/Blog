@@ -184,6 +184,7 @@ const Home = () => {
                             <ReactMediumImg
                                 src={CV2} alt=''
                                 className={styles.BackImage}
+                                style={{cursor:""}}
                                 onOpen={() => console.log('Image Open')}
                                 onClosed={() => console.log('Image closed')}
                             />
@@ -252,7 +253,7 @@ const Home = () => {
                 </Zoom>
                 <Zoom>
                     <div className={styles.SkillsBox}>
-                        <p className={styles.PSkills} >Con respecto a mis habilidades he tenido la oportunidad de trabajar con varias técnologias mayoritariamente con Javascript y React
+                        <p className={styles.PSkills} >Con respecto a mis habilidades he tenido la oportunidad de trabajar con varias tecnologías mayoritariamente con Javascript y React
                         aunque en el E-Commerce que he realizado también he trabajado con GraphQl, Typescript y Apollo, creo que siempre es bueno
                         aprender y conocer nuevas herramientas para poder llevar adelante proyectos que requieran una técnologia especifica.
                         Particularmente en el caso de este blog si bien de momento no tengo un gran portfolio profesional que mostrar, quise usarlo
