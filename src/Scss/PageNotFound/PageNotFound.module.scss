@@ -1,25 +1,14 @@
-$Pink:#FFC1B6;
-$LPink:#FFDCB8;
-$Cream:#FFEEBB;
-$Yellow:#FDFFBC;
 $Black:#0C1115;
 $White:#FFFFFF;
-$Green:#98ddca;
-$Blue:#a3ddcb;
-$DPink:#e5707e;
-$DGreen:#4aa96c;
-$Purple:#21094e;
-$Violet:#511281;
-$Red:#f55c47;
-$DBlue:#233e8b;
-$Brown:#c8c2bc;
-
 $NEONBLUE:#9CF6FB;
 $SLBLE:#E1FCFD;
 $STRBLUE:#394F8A;
-$MBLUE:#4A5FC1;
+$MBLUE:#7868E6;
 $STRPINK:#E5B9A8;
 $SLPINK:#EAD6CD;
+$GREEN:#05F4B7;
+$SPURPLE: #361999;
+$Pink:#FA255E;
 
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
@@ -33,7 +22,7 @@ $SLPINK:#EAD6CD;
 width: 100%;
 margin-top: 0;
 min-height: 100vh;
-background-color:  $STRBLUE;
+background-color:  $SPURPLE;
 }
 
 .ContainerNotFound{
@@ -59,10 +48,10 @@ padding-bottom: 5%;
 }
 
 .TitleNotFound{
-color: $Cream;
-font-size: 4vh;
-font-family: 'Merienda', cursive;
-text-shadow: -1px 1px 0 $Cream;
+color: $White;
+font-size: 8vh;
+font-family: 'Oswald', sans-serif;
+text-shadow: -3px 3px 0 $Black;
 padding-bottom: 0%;
 margin-bottom: 0;
 }
