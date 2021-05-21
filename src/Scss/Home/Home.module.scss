@@ -205,8 +205,8 @@ border-radius: .6rem;
 display: flex;
 flex-direction: column;
 text-align: center;
-margin-left: 5%;
-margin-right: 5%;
+padding: 3%;
+width: 90%;
 background: $MBLUE;
 }
 
@@ -215,9 +215,10 @@ display: flex;
 flex-direction: column;
 width: 90%;
 text-align: center;
-margin-left: 5%;
-margin-right: 5%;
+justify-content: center;
+align-items: center;
 margin-bottom: 5%;
+padding: 2%;
 background: $MBLUE;
 }
 
@@ -226,7 +227,6 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
-padding: 2%;
 }
 
 @mixin button($bcolor,
@@ -356,12 +356,11 @@ mask-position: 0 0;
 .SkillsBox{
 display: flex;
 flex-direction: column;
+justify-content: center;
 align-items: center;
 text-align: center;
-margin-top: 5%;
-margin-left: 5%;
-margin-right: 5%;
-padding: 1%;
+width: 90%;
+padding: 3%;
 background: $MBLUE;
 }
 
@@ -371,7 +370,6 @@ font-family: 'Raleway', sans-serif;
 color: $White;
 font-size: 3vh;
 font-weight: bold;
-width: 90%;
 }
 
 .SortCell{
@@ -417,12 +415,7 @@ box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
 cursor: url(../../Components//Images//Pointer1.png), pointer;
 }
 
-.AboutMeDivBox{
-margin-top: 2%;
-margin-bottom: 2%;
-margin-left: 1%;
-margin-right: 1%;
-}
+
 
 .AboutMeP{
 font-family: 'Raleway', sans-serif;
@@ -434,8 +427,8 @@ font-weight: bold;
 .SortP{
 display: flex;
 margin-top: 3%;
-margin-left: 20%;
-margin-right: 20%;
+width: 90%;
+text-align: center;
 justify-content: center;
 text-align: center;
 background: $MBLUE;
@@ -445,6 +438,7 @@ padding: 2%;
 
 
 .StyleP{
+text-align: center;
 margin-top: 0;
 font-family: 'Raleway', sans-serif;
 font-weight: bold;
@@ -482,7 +476,9 @@ flex-direction: row;
 justify-content: space-evenly;
 align-items: center;
 text-align: center;
-margin: 3%;
+width: 90%;
+margin-top: 3%;
+margin-bottom: 3%;
 background: $MBLUE;
 height: 13rem;
 }
@@ -923,11 +919,25 @@ font-family: 'Oswald', sans-serif;
 text-shadow: -3px 3px 0 $Black;
 }
 
+.SortBoxs{
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+.SortIconsLinks{
+display: flex;
+justify-content: center;
+flex-direction: row;
+text-align: center;
+align-items: center;
+}
+
 @media (max-width: 648px) {
 
-.SortArrowUp{
-    display: none;
-}
 
 .TwoLinks{
     flex-direction: column;
@@ -947,17 +957,16 @@ align-items: center;
 justify-content: center;
 text-align: center;
 }
-.AboutMeBox{
-width: 80%;
-margin-left: 10%;
-}
+
 .AboutMeDivBox{
 width: 90%;
 }
 .SeparateTwo{
 width: 100%;
 display: flex;
+justify-content: center;
 flex-direction: column;
+text-align: center;
 align-items: center;
 padding-left:0;
 padding-right: 0;
@@ -978,12 +987,24 @@ margin-right: 0;
 }
 
 .SortTitle{
+display: flex;
+margin: 0;
+padding: 0%;
+justify-content: center;
+text-align: center;
+align-items: center;
 width: 90%;
 
 }
 
 .SortTitle2do{
-width: 100%;
+display: flex;
+margin: 0;
+padding: 0%;
+justify-content: center;
+text-align: center;
+align-items: center;
+width: 90%;
 }
 
 .SortTitleImage{
@@ -1065,16 +1086,21 @@ opacity: .4;
 }
 .AboutMeBox{
 width: 80%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
 }
 .SortP{
 display: flex;
 flex-direction: column;
 justify-content: center;
 margin: 0;
-padding: 5%;
+padding: 3%;
 align-items: center;
 text-align: center;
-width: 70%;
+width: 90%;
 }
 
 .ContactMe{
@@ -1084,32 +1110,45 @@ justify-content: center;
 align-items: center;
 text-align: center;
 }
+
 .Information{
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: center;
-width: 80%;
+width: 90%;
 height: 25rem;
 margin: 0;
-padding: 5%;
+padding:0;
 }
+
 .SortInfor{
 display: flex;
 flex-direction: column;
-width: 90%;
-justify-content: space-evenly;
+justify-content: center;
 text-align: center;
+width: 100%;
+height:50rem;
 }
+
 .TitleInfo{
 padding: 0;
-padding-right: 0%;
 margin: 0;
 font-size: 3vh;
 }
+
+.SortIconsLinks{
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+text-align: center;
+align-items: center;
+width: 60%;
+}
+
 .PInfo{
-font-size: 2.5vh;
+font-size: 3vh;
 padding: 0;
 margin: 0;
 }
@@ -1191,8 +1230,8 @@ margin-top: 5%;
 margin-top: 5%;
 }
 .SkillsButtonBox{
-width: 80%;
-margin-left: 10%;
+width: 90%;
+
 }
 .ButtonContainerHappy{
 width: 7rem;

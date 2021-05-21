@@ -34,8 +34,8 @@ import toast from 'toast-me';
 import '../../Scss/Home/Toast.css';
 import ReactMediumImg from 'react-medium-zoom';
 import Folder from '../Images/tenor.gif';
-import {Mongodb} from '@styled-icons/simple-icons/Mongodb';
-import {Nodejs} from '@styled-icons/boxicons-logos/Nodejs';
+import { Mongodb } from '@styled-icons/simple-icons/Mongodb';
+import { Nodejs } from '@styled-icons/boxicons-logos/Nodejs';
 
 const Home = () => {
 
@@ -64,6 +64,10 @@ const Home = () => {
     const [hidden, setHidden] = useState(false)
 
     const [Thanks, setThanks] = useState(false)
+
+    const [width, setWidth] = useState(window.innerWidth);
+
+    const [height, setHeight] = useState(window.innerHeight);
 
     window.onscroll = function () {
         setScroll(window.scrollY)
@@ -135,10 +139,24 @@ const Home = () => {
         setThanks(false)
     }
 
+    const updateWidthAndHeight = () => {
+        setWidth(window.innerWidth);
+        setHeight(window.innerHeight);
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", updateWidthAndHeight);
+        return () => window.removeEventListener("resize", updateWidthAndHeight);
+        
+    });
+
+
+    console.log(width)
+
     return (
         <div className={styles.Back}>
             <div className={styles.SortArrowUp} >
-                {scroll > 2000 ?
+                {scroll > 2000  || width < 648 ?
                     <a href='#Begin'>
                         <div className={styles.ButtonContainerUp}>
                             <span className={styles.masUp}><ArrowUpCircleFill className={styles.LogosHomeUp} /></span>
@@ -162,18 +180,20 @@ const Home = () => {
                         />
                     </div>
                 </div>
-                <div className={styles.SortP}>
-                    <p className={styles.StyleP}>
-                        Este blog personal es un proyecto con la finalidad de dar a conocer más sobre mí y mi trabajo, en el mismo podrán ver
-                        trabajos de los que he formado parte como los que he hecho de manera particular, espero sea de su agrado y no dude en contactarme.
+                <div className={styles.SortBoxs}>
+                    <div className={styles.SortP}>
+                        <p className={styles.StyleP}>
+                            Este blog personal es un proyecto con la finalidad de dar a conocer más sobre mí y mi trabajo, en el mismo podrán ver
+                            trabajos de los que he formado parte como los que he hecho de manera particular, espero sea de su agrado y no dude en contactarme.
                 </p>
+                    </div>
                 </div>
             </Zoom>
             <Zoom>
                 <div className={styles.SortAbout}>
                     <div className={styles.SeparateTwo2do}>
                         <div className={styles.SortTitle2do}>
-                            <h4 className={styles.Title2do} >Acerca de mí</h4>
+                            <h4 className={styles.Title2do} >Sobre mí</h4>
                             <h4>
                                 <TextTransition
                                     text={TEXTS[index % TEXTS.length]}
@@ -186,23 +206,25 @@ const Home = () => {
                             <ReactMediumImg
                                 src={CV2} alt=''
                                 className={styles.BackImage}
-                                style={{cursor:""}}
+                                style={{ cursor: "" }}
                                 onOpen={() => console.log('Image Open')}
                                 onClosed={() => console.log('Image closed')}
                             />
                         </div>
                     </div>
-                    <div className={styles.AboutMeBox}>
-                        <div className={styles.AboutMeDivBox}>
-                            <p className={styles.AboutMeP} >Con mi pasado en gastronomía he tenido la posibilidad de crear y poder mostrar el
-                            resultado de eso al público en general. Ahora desde otro punto de partida diferente
+                    <div className={styles.SortBoxs}>
+                        <div className={styles.AboutMeBox}>
+                            <div className={styles.AboutMeDivBox}>
+                                <p className={styles.AboutMeP} >Con mi pasado en gastronomía he tenido la posibilidad de crear y poder mostrar el
+                                resultado de eso al público en general. Ahora desde otro punto de partida diferente
                 como developer pero con el mismo entusiasmo. </p>
-                        </div>
-                        <div className={styles.AboutMeDivBox}>
-                            <p className={styles.AboutMeP} >He trabajado en algunos proyectos tanto de manera individual como en equipo, tal como he comentado anteriormente,
-                            en la actualidad me encuentro en la busqueda de mi primer trabajo profesional en este rubro, pero a su vez sigo trabajando en proyectos para tener más
-                            experiencia con las tecnologías y poder seguir subiendo cosas tanto en mi GitHub como Linkedin.
+                            </div>
+                            <div className={styles.AboutMeDivBox}>
+                                <p className={styles.AboutMeP} >He trabajado en algunos proyectos tanto de manera individual como en equipo, tal como he comentado anteriormente,
+                                en la actualidad me encuentro en la busqueda de mi primer trabajo profesional en este rubro, pero a su vez sigo trabajando en proyectos para tener más
+                                experiencia con las tecnologías y poder seguir subiendo cosas tanto en mi GitHub como Linkedin.
                 </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -367,28 +389,31 @@ const Home = () => {
 
             <div className={styles.ContactMe} >
                 <Zoom>
-                    <div className={styles.ContactMeTitleCont} >
-                        <h1 className={styles.TitleContact} >Contáctame</h1>
-                    </div>
-                    <div className={styles.Information} >
-                        <div className={styles.SortInfor}>
-                            <h1 className={styles.TitleInfo} ><Email className={styles.IconsContact} />:</h1>
-                            <p className={styles.PInfo} >Andresl940@hotmail.com</p>
+                    <div className={styles.SortBoxs}>
+                        <div className={styles.ContactMeTitleCont} >
+                            <h1 className={styles.TitleContact} >Contáctame</h1>
                         </div>
-                        <div className={styles.SortInfor}>
-                            <h1 className={styles.TitleInfo}><Phone className={styles.IconsContact} />:</h1>
-                            <p className={styles.PInfo} >+54 9 1136005563</p>
+                        <div className={styles.Information} >
+                            <div className={styles.SortInfor}>
+                                <h1 className={styles.TitleInfo} ><Email className={styles.IconsContact} />:</h1>
+                                <p className={styles.PInfo} >Andresl940@hotmail.com</p>
+                            </div>
+                            <div className={styles.SortInfor}>
+                                <h1 className={styles.TitleInfo}><Phone className={styles.IconsContact} />:</h1>
+                                <p className={styles.PInfo} >+54 9 1136005563</p>
+                            </div>
+                            <div className={styles.SortInfor}>
+                                <h1 className={styles.TitleInfo} ><LinkSquare className={styles.IconsContact} />:</h1>
+                                <div className={styles.SortIconsLinks}> 
+                                <a className={styles.PInfo} style={{ textDecoration: 'none' }} href="https://www.linkedin.com/in/andres-luis-logares-522595172/" >
+                                    <p className={styles.PInfo} ><Linkedin className={styles.IconsContact} /></p>
+                                </a>
+                                <a className={styles.PInfo} style={{ textDecoration: 'none' }} href="https://github.com/AndresLLogares" >
+                                    <p className={styles.PInfo} >< Github className={styles.IconsContact} /></p>
+                                </a>
+                                </div>
+                            </div>
                         </div>
-                        <div className={styles.SortInfor}>
-                            <h1 className={styles.TitleInfo} ><LinkSquare className={styles.IconsContact} />:</h1>
-                            <a className={styles.PInfo} style={{ textDecoration: 'none' }} href="https://www.linkedin.com/in/andres-luis-logares-522595172/" >
-                                <p className={styles.PInfo} ><Linkedin className={styles.IconsContact} /></p>
-                            </a>
-                            <a className={styles.PInfo} style={{ textDecoration: 'none' }} href="https://github.com/AndresLLogares" >
-                                <p className={styles.PInfo} >< Github className={styles.IconsContact} /></p>
-                            </a>
-                        </div>
-
                     </div>
                 </Zoom>
                 <Zoom>
