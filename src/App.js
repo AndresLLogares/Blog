@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch, Redirect, HashRouter } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import NavigationBar from './Components/Nav/Nav';
 import PageNotFound from './Components/PageNotFound/PageNotFound';
@@ -7,7 +7,8 @@ import LandPage from './Components/LandPage/LandPage';
 import HomeEnglish from './Components/HomeEnglish/HomeEnglish';
 import Projects from './Components/Projects/Projects';
 import ProjectsE from './Components/ProjectsE/ProjectsE';
-import ScrollToTop from './Components/ScrolToTop/ScrolToTop'
+import ScrollToTop from './Components/ScrolToTop/ScrolToTop';
+import NavE from './Components/Nav/NavE';
 import './Scss/App/App.css';
 
 function App() {
@@ -17,13 +18,13 @@ function App() {
         <NavigationBar />
       </Route>
       <Route path='/HomeE'>
-        <NavigationBar />
+        <NavE />
       </Route>
       <Route path='/Projects'>
         <NavigationBar />
       </Route>
       <Route path='/ProjectsE'>
-        <NavigationBar />
+        <NavE />
       </Route>
       <ScrollToTop />
       <Switch>

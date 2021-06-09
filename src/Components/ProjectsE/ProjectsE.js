@@ -10,6 +10,7 @@ import VideoE from '../Images/VideoEcommerce.mp4';
 import Zoom from 'react-reveal/Zoom';
 import { Link } from 'react-router-dom';
 import { Back } from '@styled-icons/entypo/Back';
+import { File } from 'react-kawaii';
 
 const ProjectsE = () => {
 
@@ -73,6 +74,16 @@ const ProjectsE = () => {
                     </div>
                 </div>
             </Zoom>
+            <div className={styles.SortLitleTitles} >
+                <Zoom>
+                    <div className={styles.anyTitle}>
+                        <p className={styles.TitleProjects} >CompuHenry</p>
+                    </div>
+                    <div className={styles.anyTitle}>
+                        <p className={styles.TitleProjects} >15/05/2021</p>
+                    </div>
+                </Zoom>
+            </div>
             <div className={styles.SortAny} >
                 <Zoom>
                     <div className={styles.SortInfoPro} >
@@ -130,16 +141,52 @@ const ProjectsE = () => {
             </div>
             <div className={styles.SortAny} >
                 <Zoom>
-                    <div>
-                        <h4 className={styles.TitlePr}>The future</h4>
+                    <div className={styles.SortLitleTitles} >
+                        <div className={styles.anyTitle}>
+                            <p className={styles.TitleProjects} >Animú</p>
+                        </div>
+                        <div className={styles.anyTitle}>
+                            <p className={styles.TitleProjects} >09/06/2021</p>
+                        </div>
                     </div>
                     <div className={styles.SortInfoPro} >
                         <p className={styles.Pinfo}>
-                            Currently I am doing a Full Stack project using Express and MongoDB in the back, while
-                            that in the Front i am using React and Redux, I hope to bring advances of it soon
-                    </p>
+                        This page was created using React and Redux on the front end, while Express and MongoDB were used on the back end. It was made
+                        using the Jikan API.
+                        I made it mostly to practice the use of external Api and the creation of users, also the use of mongoDB as a database.
+                        .In this page you can see the anime of the current season, as well as search from several years ago, exactly until 1975.
+                        Search by categories, create users, add favorites, etc.
+                        </p>
+                    </div>
+                    <div className={styles.SortLitleLinks} >
+                        <div className={styles.anyTitle}>
+                            <a style={{ textDecoration: 'none' }}
+                                target="_blank"
+                                className={styles.HoverLink}
+                                href='https://animuportfolio.netlify.app/Animu' >
+
+                                <File className={styles.Folder} mood='happy' size="100" color="#FFFFFF" />
+                            </a>
+                        </div>
+                        <div className={styles.anyTitle}>
+                            <a style={{ textDecoration: 'none' }}
+                                target="_blank"
+                                className={styles.HoverLink}
+                                href='https://animuportfolio.netlify.app/Animu' >
+                                <p className={styles.TitleProjects}>Link to the page</p>
+                            </a>
+                        </div>
                     </div>
                 </Zoom>
+            </div>
+            <div className={styles.SortAny} >
+                    <p className={styles.TitleProjects} >Current News</p>
+                <div className={styles.SortInfoPro} >
+                    <p className={styles.Pinfo}>
+                    I am currently working on another personal project making an E-Commerce
+                    , particularly focused on footwear and clothing, I hope to bring it finished soon. 
+                    </p>
+                </div>
             </div>
         </div >
     )

@@ -10,6 +10,7 @@ import VideoE from '../Images/VideoEcommerce.mp4';
 import Zoom from 'react-reveal/Zoom';
 import { Link } from 'react-router-dom';
 import { Back } from '@styled-icons/entypo/Back';
+import { File } from 'react-kawaii';
 
 const Projects = () => {
 
@@ -73,22 +74,30 @@ const Projects = () => {
                     </div>
                 </div>
             </Zoom>
-            <div className={styles.SortAny} >
+            <div className={styles.SortLitleTitles} >
                 <Zoom>
-                    <div className={styles.SortInfoPro} >
-                        <p className={styles.Pinfo}>
-                            En el siguiente video podrán ver en funcionamiento el E-Commerce realizado durante la etapa de Henry, el cual
-                            se realizó trabajando con un equipo de 7 personas, en el mismo se pueden realizar varias funciones como se muestran en
-                            el video, ya sea realizar una compra a través de la pasarela de pago con la SDK de MercadoPago, realizar comentarios,
-                            agregar favoritos y demás funciones de la parte del cliente, como desde la parte del administrador agregar productos, categorías,
-                            asignar nuevos administradores entre otras funciones.
-                    </p>
+                    <div className={styles.anyTitle}>
+                        <p className={styles.TitleProjects} >CompuHenry</p>
+                    </div>
+                    <div className={styles.anyTitle}>
+                        <p className={styles.TitleProjects} >15/05/2021</p>
                     </div>
                 </Zoom>
             </div>
+
+            <Zoom>
+                <div className={styles.SortInfoPro} >
+                    <p className={styles.Pinfo}>
+                        En el siguiente video podrán ver en funcionamiento el E-Commerce realizado durante la etapa de Henry, el cual
+                        se realizó trabajando con un equipo de 7 personas, en el mismo se pueden realizar varias funciones como se muestran en
+                        el video, ya sea realizar una compra a través de la pasarela de pago con la SDK de MercadoPago, realizar comentarios,
+                        agregar favoritos y demás funciones de la parte del cliente, como desde la parte del administrador agregar productos, categorías,
+                        asignar nuevos administradores entre otras funciones.
+                    </p>
+                </div>
+            </Zoom>
             <Zoom>
                 <div className={styles.SortAny} >
-
                     <ReactPlayer
                         url={VideoE}
                         width={widthVideo}
@@ -131,16 +140,52 @@ const Projects = () => {
             </div>
             <div className={styles.SortAny} >
                 <Zoom>
-                    <div>
-                        <h4 className={styles.TitlePr}>El futuro</h4>
+                    <div className={styles.SortLitleTitles} >
+                        <div className={styles.anyTitle}>
+                            <p className={styles.TitleProjects} >Animú</p>
+                        </div>
+                        <div className={styles.anyTitle}>
+                            <p className={styles.TitleProjects} >09/06/2021</p>
+                        </div>
                     </div>
                     <div className={styles.SortInfoPro} >
                         <p className={styles.Pinfo}>
-                            En la actualidad me encuentro realizando un proyecto Full Stack usando Express y MongoDB en la parte de back, mientras
-                            que en la parte del Front estoy usando React y Redux, espero poder traer avances de la misma en brevedad
-                    </p>
+                            Esta página fue creada usando React y Redux en la parte de front, mientras que se usó Express y MongoDB en el back. Se realizó
+                            consumiendo la API de Jikan.
+                            La realicé más que nada para practicar el uso de Api externas y la creación de usuarios, también el uso de mongoDB como base de
+                            datos. En la misma se pueden ver los animes de temporada actual, como también buscar de varios años atrás, exactamente hasta 1975.
+                            Buscar por categorías, crear usuario, agregar favoritos, etc.
+                        </p>
+                    </div>
+                    <div className={styles.SortLitleLinks} >
+                        <div className={styles.anyTitle}>
+                            <a style={{ textDecoration: 'none' }}
+                                target="_blank"
+                                className={styles.HoverLink}
+                                href='https://animuportfolio.netlify.app/Animu' >
+
+                                <File className={styles.Folder} mood='happy' size="100" color="#FFFFFF" />
+                            </a>
+                        </div>
+                        <div className={styles.anyTitle}>
+                            <a style={{ textDecoration: 'none' }}
+                                target="_blank"
+                                className={styles.HoverLink}
+                                href='https://animuportfolio.netlify.app/Animu' >
+                                <p className={styles.TitleProjects}>Link a la pagina</p>
+                            </a>
+                        </div>
                     </div>
                 </Zoom>
+            </div>
+            <div className={styles.SortAny} >
+                    <p className={styles.TitleProjects} >Actualidad</p>
+                <div className={styles.SortInfoPro} >
+                    <p className={styles.Pinfo}>
+                    Actualmente me encuentro realizando otro proyecto personal haciendo un E-Commerce, particularmente enfocado en el 
+                    de calzado e indumentaria, espero poder traerlo ya terminado en la brevedad.
+                    </p>
+                </div>
             </div>
         </div >
     )

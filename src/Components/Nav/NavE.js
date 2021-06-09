@@ -28,14 +28,14 @@ const NavigationBar = () => {
                     <a style={{ textDecoration: 'none' }}
                         target="_blank"
                         href='https://drive.google.com/file/d/1babg_R1Ab8aPDrGCRZKTgpq1dRD7hJ_b/view?usp=sharing' >
-                        <div className={styles.Links} ><TextDocument className={styles.IconsNav} />CV en Español </div>
+                        <div className={styles.Links} ><TextDocument className={styles.IconsNav} />Spanish CV</div>
                     </a>
                 </li>
                 <li className={styles.SortNav} onClick={closeMobileMenu} >
                     <a style={{ textDecoration: 'none' }}
                         target="_blank"
                         href='https://drive.google.com/file/d/1Irzm_AQt9QK9VGlwjnvPedPqMwE8SfoP/view?usp=sharing' >
-                        <div className={styles.Links} ><TextDocument className={styles.IconsNav} />CV en Ingles</div>
+                        <div className={styles.Links} ><TextDocument className={styles.IconsNav} />English CV</div>
                     </a>
                 </li>
                 <li className={styles.SortNav} onClick={closeMobileMenu} >
@@ -53,8 +53,8 @@ const NavigationBar = () => {
                     </a>
                 </li>
                 <li className={styles.SortNav} onClick={closeMobileMenu} >
-                    <Link style={{ textDecoration: 'none' }} to='/Projects'>
-                        <div className={styles.Links}><FolderFill className={styles.IconsNav} />Proyectos</div>
+                    <Link style={{ textDecoration: 'none' }} to='/ProjectsE'>
+                        <div className={styles.Links}><FolderFill className={styles.IconsNav} />Projects</div>
                     </Link>
                 </li>
             </ul>
