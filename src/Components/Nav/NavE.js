@@ -27,14 +27,14 @@ const NavigationBar = () => {
                 <li className={styles.SortNav} onClick={closeMobileMenu} >
                     <a style={{ textDecoration: 'none' }}
                         target="_blank"
-                        href='https://drive.google.com/file/d/1babg_R1Ab8aPDrGCRZKTgpq1dRD7hJ_b/view?usp=sharing' >
+                        href='https://drive.google.com/file/d/1xH7vWi_6uyPzTd1qz9HQgdnDG0zXuWAY/view?usp=sharing' >
                         <div className={styles.Links} ><TextDocument className={styles.IconsNav} />Spanish CV</div>
                     </a>
                 </li>
                 <li className={styles.SortNav} onClick={closeMobileMenu} >
                     <a style={{ textDecoration: 'none' }}
                         target="_blank"
-                        href='https://drive.google.com/file/d/1Irzm_AQt9QK9VGlwjnvPedPqMwE8SfoP/view?usp=sharing' >
+                        href='https://drive.google.com/file/d/1V7o7Qaw8pzu_On-1qFnxLHAH5amWuKH7/view?usp=sharing' >
                         <div className={styles.Links} ><TextDocument className={styles.IconsNav} />English CV</div>
                     </a>
                 </li>

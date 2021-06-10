@@ -147,16 +147,16 @@ const Home = () => {
     useEffect(() => {
         window.addEventListener("resize", updateWidthAndHeight);
         return () => window.removeEventListener("resize", updateWidthAndHeight);
-        
+
     });
 
 
     console.log(width)
 
     return (
-        <div className={styles.Back}>
+        <div id='Begin' className={styles.Back}>
             <div className={styles.SortArrowUp} >
-                {scroll > 2000  || width < 648 ?
+                {scroll > 2000 || width < 648 ?
                     <a href='#Begin'>
                         <div className={styles.ButtonContainerUp}>
                             <span className={styles.masUp}><ArrowUpCircleFill className={styles.LogosHomeUp} /></span>
@@ -167,7 +167,7 @@ const Home = () => {
             </div>
             <Zoom>
                 <div className={styles.SeparateTwo}>
-                    <div id='Begin' className={styles.SortTitle}>
+                    <div className={styles.SortTitle}>
                         <h4 className={styles.Title}>Hola, soy Andrés Luis Logares</h4>
                         <h4 className={styles.Title}>Fullstack Developer</h4>
                     </div>
@@ -404,13 +404,13 @@ const Home = () => {
                             </div>
                             <div className={styles.SortInfor}>
                                 <h1 className={styles.TitleInfo} ><LinkSquare className={styles.IconsContact} />:</h1>
-                                <div className={styles.SortIconsLinks}> 
-                                <a className={styles.PInfo} style={{ textDecoration: 'none' }} href="https://www.linkedin.com/in/andres-luis-logares-522595172/" >
-                                    <p className={styles.PInfo} ><Linkedin className={styles.IconsContact} /></p>
-                                </a>
-                                <a className={styles.PInfo} style={{ textDecoration: 'none' }} href="https://github.com/AndresLLogares" >
-                                    <p className={styles.PInfo} >< Github className={styles.IconsContact} /></p>
-                                </a>
+                                <div className={styles.SortIconsLinks}>
+                                    <a className={styles.PInfo} style={{ textDecoration: 'none' }} href="https://www.linkedin.com/in/andres-luis-logares-522595172/" >
+                                        <p className={styles.PInfo} ><Linkedin className={styles.IconsContact} /></p>
+                                    </a>
+                                    <a className={styles.PInfo} style={{ textDecoration: 'none' }} href="https://github.com/AndresLLogares" >
+                                        <p className={styles.PInfo} >< Github className={styles.IconsContact} /></p>
+                                    </a>
                                 </div>
                             </div>
                         </div>

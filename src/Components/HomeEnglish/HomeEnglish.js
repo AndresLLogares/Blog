@@ -34,8 +34,8 @@ import toast from 'toast-me';
 import '../../Scss/Home/Toast.css';
 import ReactMediumImg from 'react-medium-zoom';
 import Folder from '../Images/tenor.gif';
-import {Mongodb} from '@styled-icons/simple-icons/Mongodb';
-import {Nodejs} from '@styled-icons/boxicons-logos/Nodejs';
+import { Mongodb } from '@styled-icons/simple-icons/Mongodb';
+import { Nodejs } from '@styled-icons/boxicons-logos/Nodejs';
 
 const HomeEnglish = () => {
 
@@ -136,7 +136,7 @@ const HomeEnglish = () => {
     }
 
     return (
-        <div className={styles.Back}>
+        <div id='Begin' className={styles.Back}>
             <div className={styles.SortArrowUp} >
                 {scroll > 2000 ?
                     <a href='#Begin'>
@@ -149,7 +149,7 @@ const HomeEnglish = () => {
             </div>
             <Zoom>
                 <div className={styles.SeparateTwo}>
-                    <div id='Begin' className={styles.SortTitle}>
+                    <div className={styles.SortTitle}>
                         <h4 className={styles.Title}>Hi, i am Andrés Luis Logares</h4>
                         <h4 className={styles.Title}>Fullstack Developer</h4>
                     </div>
@@ -162,11 +162,14 @@ const HomeEnglish = () => {
                         />
                     </div>
                 </div>
-                <div className={styles.SortP}>
-                    <p className={styles.StyleP}>
-                    This personal blog is a project with the purpose of making known more about me and my work, in this blog you will be able to see works that 
-                    I have been part of and also those that I have done in a particular way, I hope you like it and do not hesitate to contact me.
+                <div className={styles.SortBoxs}>
+
+                    <div className={styles.SortP}>
+                        <p className={styles.StyleP}>
+                            This personal blog is a project with the purpose of making known more about me and my work, in this blog you will be able to see works that
+                            I have been part of and also those that I have done in a particular way, I hope you like it and do not hesitate to contact me.
                 </p>
+                    </div>
                 </div>
             </Zoom>
             <Zoom>
@@ -191,18 +194,21 @@ const HomeEnglish = () => {
                             />
                         </div>
                     </div>
-                    <div className={styles.AboutMeBox}>
-                        <div className={styles.AboutMeDivBox}>
-                            <p className={styles.AboutMeP} >
-                            With my background in gastronomy I have had the possibility to create and show the result to the general public. 
+                    <div className={styles.SortBoxs}>
+
+                        <div className={styles.AboutMeBox}>
+                            <div className={styles.AboutMeDivBox}>
+                                <p className={styles.AboutMeP} >
+                                    With my background in gastronomy I have had the possibility to create and show the result to the general public.
                             Now from a different starting point as a developer but with the same enthusiasm. </p>
-                        </div>
-                        <div className={styles.AboutMeDivBox}>
-                            <p className={styles.AboutMeP}> 
-                            I have worked on projects both individually and in teams, as I said before, 
-                            I am currently looking for my first professional job in this field, but at the same time 
-                            I continue working on projects to have more experience with technologies and to continue uploading things both in my GitHub and Linkedin.
+                            </div>
+                            <div className={styles.AboutMeDivBox}>
+                                <p className={styles.AboutMeP}>
+                                    I have worked on projects both individually and in teams, as I said before,
+                                    I am currently looking for my first professional job in this field, but at the same time
+                                    I continue working on projects to have more experience with technologies and to continue uploading things both in my GitHub and Linkedin.
                 </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -264,10 +270,10 @@ const HomeEnglish = () => {
                 <Zoom>
                     <div className={styles.SkillsBox}>
                         <p className={styles.PSkills} >
-                        About my skills I have had the opportunity to work with several technologies, mostly with Javascript and React, 
-                        although in the E-Commerce I have also worked with GraphQl, Typescript and Apollo, I think it is always good to learn and learn new tools to carry out projects that require a specific technology. Particularly in the case of this blog although 
-                        I don't have a great professional portfolio to show, I wanted to use it to show my skills in the management of React and Express as a database, 
-                        plus things like a responsive page is essential today because you don't know from where they will be viewing your page.
+                            About my skills I have had the opportunity to work with several technologies, mostly with Javascript and React,
+                            although in the E-Commerce I have also worked with GraphQl, Typescript and Apollo, I think it is always good to learn and learn new tools to carry out projects that require a specific technology. Particularly in the case of this blog although
+                            I don't have a great professional portfolio to show, I wanted to use it to show my skills in the management of React and Express as a database,
+                            plus things like a responsive page is essential today because you don't know from where they will be viewing your page.
                     </p>
                     </div>
                 </Zoom>
@@ -365,28 +371,30 @@ const HomeEnglish = () => {
             </div>
             <div className={styles.ContactMe} >
                 <Zoom>
-                    <div className={styles.ContactMeTitleCont} >
-                        <h1 className={styles.TitleContact} >Contact me</h1>
-                    </div>
-                    <div className={styles.Information} >
-                        <div className={styles.SortInfor}>
-                            <h1 className={styles.TitleInfo} ><Email className={styles.IconsContact} />:</h1>
-                            <p className={styles.PInfo} >Andresl940@hotmail.com</p>
-                        </div>
-                        <div className={styles.SortInfor}>
-                            <h1 className={styles.TitleInfo}><Phone className={styles.IconsContact} />:</h1>
-                            <p className={styles.PInfo} >+54 9 1136005563</p>
-                        </div>
-                        <div className={styles.SortInfor}>
-                            <h1 className={styles.TitleInfo} ><LinkSquare className={styles.IconsContact} />:</h1>
-                            <a className={styles.PInfo} style={{ textDecoration: 'none' }} href="https://www.linkedin.com/in/andres-luis-logares-522595172/" >
-                                <p className={styles.PInfo} ><Linkedin className={styles.IconsContact} /></p>
-                            </a>
-                            <a className={styles.PInfo} style={{ textDecoration: 'none' }} href="https://github.com/AndresLLogares" >
-                                <p className={styles.PInfo} >< Github className={styles.IconsContact} /></p>
-                            </a>
-                        </div>
+                    <div className={styles.SortBoxs}>
 
+                        <div className={styles.ContactMeTitleCont} >
+                            <h1 className={styles.TitleContact} >Contact me</h1>
+                        </div>
+                        <div className={styles.Information} >
+                            <div className={styles.SortInfor}>
+                                <h1 className={styles.TitleInfo} ><Email className={styles.IconsContact} />:</h1>
+                                <p className={styles.PInfo} >Andresl940@hotmail.com</p>
+                            </div>
+                            <div className={styles.SortInfor}>
+                                <h1 className={styles.TitleInfo}><Phone className={styles.IconsContact} />:</h1>
+                                <p className={styles.PInfo} >+54 9 1136005563</p>
+                            </div>
+                            <div className={styles.SortInfor}>
+                                <h1 className={styles.TitleInfo} ><LinkSquare className={styles.IconsContact} />:</h1>
+                                <a className={styles.PInfo} style={{ textDecoration: 'none' }} href="https://www.linkedin.com/in/andres-luis-logares-522595172/" >
+                                    <p className={styles.PInfo} ><Linkedin className={styles.IconsContact} /></p>
+                                </a>
+                                <a className={styles.PInfo} style={{ textDecoration: 'none' }} href="https://github.com/AndresLLogares" >
+                                    <p className={styles.PInfo} >< Github className={styles.IconsContact} /></p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </Zoom>
                 <Zoom>
