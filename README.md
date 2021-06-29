@@ -4,7 +4,9 @@ Blog personal desarrollado íntegramente con React con la finalidad de dar a con
 
 ## Tecnologías:
 
-![https://es.reactjs.org/](https://img.shields.io/badge/-React-blue)
+- ![https://es.reactjs.org/](https://img.shields.io/badge/-React-blue)
+- ![CSS](https://img.shields.io/badge/-SCSS-yellowgreen)
+
 
 ## Las puedes visualizar aquí:
 
@@ -17,7 +19,8 @@ Personal blog developed entirely with React in order to publicize my work and I 
 
 ## Technologies:
 
-![https://es.reactjs.org/](https://img.shields.io/badge/-React-blue)
+- ![https://es.reactjs.org/](https://img.shields.io/badge/-React-blue)
+- ![CSS](https://img.shields.io/badge/-SCSS-yellowgreen)
 
 ## You can see the website here:
 
