@@ -33,10 +33,10 @@ function App() {
         <Route exact path='/HomeE' component={HomeEnglish} />
         <Route exact path='/Projects' component={Projects} />
         <Route exact path='/ProjectsE' component={ProjectsE} />
-        <Route component={PageNotFound} />
         <Route exact path='/'  >
           <Redirect to={{ pathname: '/Blog' }} />
         </Route>
+        <Route component={PageNotFound} />
       </Switch>
     </Router>
   );

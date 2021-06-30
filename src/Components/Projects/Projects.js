@@ -97,7 +97,7 @@ const Projects = () => {
                 </div>
             </Zoom>
             <Zoom>
-                <div className={styles.SortAny} >
+                <div className={styles.SortAnyVideo} >
                     <ReactPlayer
                         url={VideoE}
                         width={widthVideo}
@@ -138,6 +138,7 @@ const Projects = () => {
                     </div>
                 </Zoom>
             </div>
+            <hr className={styles.hrProject} />
             <div className={styles.SortAny} >
                 <Zoom>
                     <div className={styles.SortLitleTitles} >
@@ -178,14 +179,45 @@ const Projects = () => {
                     </div>
                 </Zoom>
             </div>
+            <hr className={styles.hrProject} />
             <div className={styles.SortAny} >
-                    <p className={styles.TitleProjects} >Actualidad</p>
-                <div className={styles.SortInfoPro} >
-                    <p className={styles.Pinfo}>
-                    Actualmente me encuentro realizando otro proyecto personal haciendo un E-Commerce, particularmente enfocado en el 
-                    de calzado e indumentaria, espero poder traerlo ya terminado en la brevedad.
-                    </p>
-                </div>
+                <Zoom>
+                    <div className={styles.SortLitleTitles} >
+                        <div className={styles.anyTitle}>
+                            <p className={styles.TitleProjects} >Clothbea</p>
+                        </div>
+                        <div className={styles.anyTitle}>
+                            <p className={styles.TitleProjects} >28/06/2021</p>
+                        </div>
+                    </div>
+                    <div className={styles.SortInfoPro} >
+                        <p className={styles.Pinfo}>
+                        Esta pagina es un E-Commerce el cual realice en solitario utilizando React y Redux para desarrollar el Front End y en el Back End
+                            se utilizo Express, Node y MongoDB, si bien no es un sitio muy grande tiene varias funcionalidades, se pueden realizar compras de productos
+                            a través del medio de pago Stripe, adherir productos a una wishlist, en la parte de administrador se pueden crear productos, editar los mismos, crear categorías,
+                            entre otras funciones, espero que lo visiten.
+                        </p>
+                    </div>
+                    <div className={styles.SortLitleLinks} >
+                        <div className={styles.anyTitle}>
+                            <a style={{ textDecoration: 'none' }}
+                                target="_blank"
+                                className={styles.HoverLink}
+                                href='https://clothbea.netlify.app/' >
+
+                                <File className={styles.Folder} mood='happy' size="100" color="#FFFFFF" />
+                            </a>
+                        </div>
+                        <div className={styles.anyTitle}>
+                            <a style={{ textDecoration: 'none' }}
+                                target="_blank"
+                                className={styles.HoverLink}
+                                href='https://clothbea.netlify.app/' >
+                                <p className={styles.TitleProjects}>Link a la pagina</p>
+                            </a>
+                        </div>
+                    </div>
+                </Zoom>
             </div>
         </div >
     )

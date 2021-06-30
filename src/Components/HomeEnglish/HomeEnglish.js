@@ -166,9 +166,9 @@ const HomeEnglish = () => {
 
                     <div className={styles.SortP}>
                         <p className={styles.StyleP}>
-                            This personal blog is a project with the purpose of making known more about me and my work, in this blog you will be able to see works that
-                            I have been part of and also those that I have done in a particular way, I hope you like it and do not hesitate to contact me.
-                </p>
+                            This blog is a personal project with the purpose of making known more about me and my work, in this blog you will be able
+                            to see works that I have been part of and also those that I have done in a particular way, I hope you like it and do not hesitate to contact me.
+                        </p>
                     </div>
                 </div>
             </Zoom>
@@ -199,16 +199,12 @@ const HomeEnglish = () => {
                         <div className={styles.AboutMeBox}>
                             <div className={styles.AboutMeDivBox}>
                                 <p className={styles.AboutMeP} >
-                                    With my background in gastronomy I have had the possibility to create and show the result to the general public.
-                            Now from a different starting point as a developer but with the same enthusiasm. </p>
+                                    Working as a developer gives you the possibility to create something from 0 and be able to show the result of that to the whole world.
+                                    I am excited to learn new technologies and tools to continuously improve my skills and my work.
+                                    I have worked on projects both individually and in teams, as I said before, I am currently looking for my first
+                                    professional job in this field, but at the same time I continue working on projects to have more experience with technologies and to continue uploading things both in my GitHub and Linkedin. </p>
                             </div>
-                            <div className={styles.AboutMeDivBox}>
-                                <p className={styles.AboutMeP}>
-                                    I have worked on projects both individually and in teams, as I said before,
-                                    I am currently looking for my first professional job in this field, but at the same time
-                                    I continue working on projects to have more experience with technologies and to continue uploading things both in my GitHub and Linkedin.
-                </p>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -270,11 +266,10 @@ const HomeEnglish = () => {
                 <Zoom>
                     <div className={styles.SkillsBox}>
                         <p className={styles.PSkills} >
-                            About my skills I have had the opportunity to work with several technologies, mostly with Javascript and React,
-                            although in the E-Commerce I have also worked with GraphQl, Typescript and Apollo, I think it is always good to learn and learn new tools to carry out projects that require a specific technology. Particularly in the case of this blog although
-                            I don't have a great professional portfolio to show, I wanted to use it to show my skills in the management of React and Express as a database,
-                            plus things like a responsive page is essential today because you don't know from where they will be viewing your page.
-                    </p>
+                            About my skills I have had the opportunity to work with several technologies, mostly with Javascript,React, Express and MongoDB,
+                            although in the E-Commerce I have also worked with GraphQl, Typescript and Apollo, I think it is always good to learn
+                            and learn new tools to carry out projects that require a specific technology. Particularly in the case of this blog, although I don't have a great professional portfolio to show, I wanted to use it to show my skills in the management of React.
+                        </p>
                     </div>
                 </Zoom>
                 <Zoom>

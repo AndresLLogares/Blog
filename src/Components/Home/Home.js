@@ -185,7 +185,7 @@ const Home = () => {
                         <p className={styles.StyleP}>
                             Este blog personal es un proyecto con la finalidad de dar a conocer más sobre mí y mi trabajo, en el mismo podrán ver
                             trabajos de los que he formado parte como los que he hecho de manera particular, espero sea de su agrado y no dude en contactarme.
-                </p>
+                        </p>
                     </div>
                 </div>
             </Zoom>
@@ -215,15 +215,11 @@ const Home = () => {
                     <div className={styles.SortBoxs}>
                         <div className={styles.AboutMeBox}>
                             <div className={styles.AboutMeDivBox}>
-                                <p className={styles.AboutMeP} >Con mi pasado en gastronomía he tenido la posibilidad de crear y poder mostrar el
-                                resultado de eso al público en general. Ahora desde otro punto de partida diferente
-                como developer pero con el mismo entusiasmo. </p>
-                            </div>
-                            <div className={styles.AboutMeDivBox}>
-                                <p className={styles.AboutMeP} >He trabajado en algunos proyectos tanto de manera individual como en equipo, tal como he comentado anteriormente,
-                                en la actualidad me encuentro en la busqueda de mi primer trabajo profesional en este rubro, pero a su vez sigo trabajando en proyectos para tener más
-                                experiencia con las tecnologías y poder seguir subiendo cosas tanto en mi GitHub como Linkedin.
-                </p>
+                                <p className={styles.AboutMeP} >Para mi el ser desarrollador le da a uno la posibilidad de crear algo desde 0 y poder mostrar el resultado de eso a todo el mundo.
+                                    Me entusiasma mucho el poder conocer y aprender nuevas tecnologías y herramientas para poder mejorar continuamente mis capacidades y mis trabajos.
+                                    He trabajado en algunos proyectos tanto de manera individual como en equipo, tal como he comentado anteriormente,
+                                    en la actualidad me encuentro en la busqueda de mi primer trabajo profesional en este rubro, pero a su vez sigo trabajando en proyectos para tener más
+                                    experiencia con las tecnologías y poder seguir subiendo cosas tanto en mi GitHub como Linkedin.</p>
                             </div>
                         </div>
                     </div>
@@ -285,13 +281,12 @@ const Home = () => {
                 </Zoom>
                 <Zoom>
                     <div className={styles.SkillsBox}>
-                        <p className={styles.PSkills} >Con respecto a mis habilidades he tenido la oportunidad de trabajar con varias tecnologías mayoritariamente con Javascript y React
-                        aunque en el E-Commerce que he realizado también he trabajado con GraphQl, Typescript y Apollo, creo que siempre es bueno
-                        aprender y conocer nuevas herramientas para poder llevar adelante proyectos que requieran una técnologia especifica.
-                        Particularmente en el caso de este blog si bien de momento no tengo un gran portfolio profesional que mostrar, quise usarlo
-                        para poder mostrar mis habilidades en el manejo de React y Express como base de datos, además de que cosas como que
-                        una pagina sea responsive es algo esencial hoy en dia porque no sabes desde donde estaran visualizando tu página.
-                    </p>
+                        <p className={styles.PSkills} >Con respecto a mis habilidades, he tenido la oportunidad de trabajar con varias tecnologías mayoritariamente con Javascript, React, Express y MongoDB
+                            aunque en el E-Commerce que he realizado también he trabajado con GraphQl, Typescript y Apollo, creo que siempre es bueno
+                            aprender y conocer nuevas herramientas para poder llevar adelante proyectos que requieran una técnologia especifica.
+                            Particularmente en el caso de este blog si bien de momento no tengo un gran portfolio profesional que mostrar, quise usarlo
+                            para poder mostrar mis habilidades en el manejo de React.
+                        </p>
                     </div>
                 </Zoom>
                 <Zoom>
