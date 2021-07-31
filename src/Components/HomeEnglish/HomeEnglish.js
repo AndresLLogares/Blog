@@ -6,13 +6,7 @@ import { Github } from '@styled-icons/boxicons-logos/Github';
 import { LinkSquare } from '@styled-icons/fluentui-system-filled/LinkSquare';
 import { Phone } from '@styled-icons/boxicons-regular/Phone';
 import { Email } from '@styled-icons/evaicons-solid/Email';
-import CV from '../Images/CV.jpg';
-import CV2 from '../Images/CV2.jpg';
-import CELLPHONE from '../Images/CELLPHONE.png';
-import { useMediaQuery } from 'react-responsive';
-import LapTop from '../Images/LAPTOP.png';
-import TabletImage from '../Images/TABLET.png';
-import Cellgif from '../Images/CELLGIF.gif';
+import CV2 from '../Images/CV2.webp';
 import { LogoReact } from '@styled-icons/ionicons-solid/LogoReact';
 import { Javascript } from '@styled-icons/boxicons-logos/Javascript';
 import { Redux } from '@styled-icons/simple-icons/Redux';
@@ -23,19 +17,17 @@ import { Graphql } from '@styled-icons/simple-icons/Graphql';
 import { Html5 } from '@styled-icons/boxicons-logos/Html5';
 import { Css3 } from '@styled-icons/boxicons-logos/Css3';
 import { ArrowUpCircleFill } from '@styled-icons/bootstrap/ArrowUpCircleFill';
-import Zoom from 'react-reveal/Zoom';
-import Sad from '../Images/SAD.gif';
-import Happy from '../Images/HAPPY.gif';
+import { Zoom } from "react-awesome-reveal";
 import TextTransition, { presets } from "react-text-transition";
-import Yes from '../Images/HappySuper.gif';
-import No from '../Images/SadHeart.gif';
 import { send } from 'emailjs-com';
 import toast from 'toast-me';
 import '../../Scss/Home/Toast.css';
 import ReactMediumImg from 'react-medium-zoom';
-import Folder from '../Images/tenor.gif';
 import { Mongodb } from '@styled-icons/simple-icons/Mongodb';
 import { Nodejs } from '@styled-icons/boxicons-logos/Nodejs';
+import { Scrumalliance } from '@styled-icons/simple-icons/Scrumalliance';
+import { Folder } from 'react-kawaii';
+import Background from '../Water/Water.js';
 
 const HomeEnglish = () => {
 
@@ -53,17 +45,7 @@ const HomeEnglish = () => {
         message: ''
     })
 
-    const [lapTop, setLapTop] = useState(false);
-
-    const [cellPhone, setCellPhone] = useState(false);
-
-    const [tablet, setTablet] = useState(false);
-
     const [scroll, setScroll] = useState(0)
-
-    const [hidden, setHidden] = useState(false)
-
-    const [Thanks, setThanks] = useState(false)
 
     window.onscroll = function () {
         setScroll(window.scrollY)
@@ -76,37 +58,6 @@ const HomeEnglish = () => {
         );
         return () => clearTimeout(intervalId);
     }, []);
-
-    const Desktop = ({ children }) => {
-        const isDesktop = useMediaQuery({ minWidth: 992 })
-        if (isDesktop) {
-            setTablet(false)
-            setLapTop(true)
-            setCellPhone(false)
-            return children;
-        }
-        return null;
-    }
-    const Tablet = ({ children }) => {
-        const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 })
-        if (isTablet) {
-            setTablet(true)
-            setLapTop(false)
-            setCellPhone(false)
-            return children;
-        }
-        return null;
-    }
-    const Mobile = ({ children }) => {
-        const isMobile = useMediaQuery({ maxWidth: 767 })
-        if (isMobile) {
-            setTablet(false)
-            setLapTop(false)
-            setCellPhone(true)
-            return children;
-        }
-        return null;
-    }
 
     const handleChange = (event) => {
         setFormContact({ ...formContact, [event.currentTarget.name]: event.currentTarget.value })
@@ -125,18 +76,9 @@ const HomeEnglish = () => {
             });
     }
 
-    const handleCickChangeHappy = () => {
-        setHidden(true)
-        setThanks(true)
-    }
-
-    const handleClickChangeSad = () => {
-        setHidden(true)
-        setThanks(false)
-    }
-
     return (
         <div id='Begin' className={styles.Back}>
+            <Background className={styles.Background} />
             <div className={styles.SortArrowUp} >
                 {scroll > 2000 ?
                     <a href='#Begin'>
@@ -147,19 +89,11 @@ const HomeEnglish = () => {
                     </a>
                     : null}
             </div>
-            <Zoom>
+            <Zoom className={styles.zoom}>
                 <div className={styles.SeparateTwo}>
                     <div className={styles.SortTitle}>
                         <h4 className={styles.Title}>Hi, i am Andrés Luis Logares</h4>
                         <h4 className={styles.Title}>Fullstack Developer</h4>
-                    </div>
-                    <div className={styles.Container}>
-                        <ReactMediumImg
-                            src={CV} alt=''
-                            className={styles.BackImage}
-                            onOpen={() => console.log('Image Open')}
-                            onClosed={() => console.log('Image closed')}
-                        />
                     </div>
                 </div>
                 <div className={styles.SortBoxs}>
@@ -172,7 +106,7 @@ const HomeEnglish = () => {
                     </div>
                 </div>
             </Zoom>
-            <Zoom>
+            <Zoom className={styles.zoom}>
                 <div className={styles.SortAbout}>
                     <div className={styles.SeparateTwo2do}>
                         <div className={styles.SortTitle2do}>
@@ -199,18 +133,17 @@ const HomeEnglish = () => {
                         <div className={styles.AboutMeBox}>
                             <div className={styles.AboutMeDivBox}>
                                 <p className={styles.AboutMeP} >
-                                    Working as a developer gives you the possibility to create something from 0 and be able to show the result of that to the whole world.
-                                    I am excited to learn new technologies and tools to continuously improve my skills and my work.
-                                    I have worked on projects both individually and in teams, as I said before, I am currently looking for my first
-                                    professional job in this field, but at the same time I continue working on projects to have more experience with technologies and to continue uploading things both in my GitHub and Linkedin. </p>
+                                    I am passionate about development, trying to improve my work and my skills every day, always with curiosity
+                                    and impetus looking for solutions to the problems that arise and learning new things in this eternal path of
+                                    study that is to be a developer.
+                                </p>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </Zoom>
             <div className={styles.SortSkills}>
-                <Zoom>
+                <Zoom className={styles.zoom}>
                     <div className={styles.SortTitle3ro}>
                         <h1 className={styles.Title3ro} >Skills</h1>
                     </div>
@@ -260,10 +193,14 @@ const HomeEnglish = () => {
                                 <span className={styles.mas}><Nodejs className={styles.LogosHome} /></span>
                                 <button type="button" name="Hover">Node</button>
                             </div>
+                            <div className={styles.buttoncontainer}>
+                                <span className={styles.mas}><Scrumalliance className={styles.LogosHome} /></span>
+                                <button type="button" name="Hover">Scrum</button>
+                            </div>
                         </div>
                     </div>
                 </Zoom>
-                <Zoom>
+                <Zoom className={styles.zoom}>
                     <div className={styles.SkillsBox}>
                         <p className={styles.PSkills} >
                             About my skills I have had the opportunity to work with several technologies, mostly with Javascript,React, Express and MongoDB,
@@ -272,7 +209,7 @@ const HomeEnglish = () => {
                         </p>
                     </div>
                 </Zoom>
-                <Zoom>
+                <Zoom className={styles.zoom}>
                     <div className={styles.ContactMeTitleCont} >
                         <Link className={styles.Link} to='/ProjectsE' >
                             <h4 className={styles.TitleContact} >Projects</h4>
@@ -281,93 +218,16 @@ const HomeEnglish = () => {
                                     <h4 className={styles.TitleClick} >Click me</h4>
                                 </div>
                                 <div className={styles.AnyLink}>
-                                    <img className={styles.WalkFolder} src={Folder} alt='' />
+                                    <Folder className={styles.Browser} size={150} mood="excited" color="#CCD5AE" />
                                 </div>
                             </div>
                         </Link>
                     </div>
                 </Zoom>
-                <div>
-                    <Zoom>
-                        <div>
-                            <div className={styles.SortTitle3ro}>
-                                <h1 className={styles.Title3ro} >Use test</h1>
-                                <Desktop ><p className={styles.Title3ro}>You are on a desktop or laptop </p> </Desktop>
-                                <Tablet ><p className={styles.Title3ro}>You are on a Tablet</p> </Tablet>
-                                <Mobile > <p className={styles.Title3ro} >You are o a Phone</p></Mobile>
-                            </div>
-                            {!lapTop && cellPhone && !tablet ?
-                                <div className={styles.SortCell} >
-                                    <div className={styles.ContainerCell}>
-                                        <img className={styles.ImageCell} src={CELLPHONE} alt='' />
-                                    </div>
-                                    <div className={styles.ContainerCellRespon}>
-                                        <img className={styles.ImageCellRes} src={Cellgif} alt='' />
-                                    </div>
-                                </div>
-                                : null}
-                            {lapTop && !cellPhone && !tablet ?
-                                <div className={styles.SortCell} >
-                                    <div className={styles.ContainerCell}>
-                                        <img className={styles.ImageCell} src={LapTop} alt='' />
-                                    </div>
-                                    <div className={styles.ContainerCellRespon}>
-                                        <img className={styles.ImageCellRes} src={LapTop} alt='' />
-                                    </div>
-                                </div>
-                                : null}
-                            {tablet && !lapTop && !cellPhone ?
-                                <div className={styles.SortCell} >
-                                    <div className={styles.ContainerCell}>
-                                        <img className={styles.ImageCell} src={TabletImage} alt='' />
-                                    </div>
-                                    <div className={styles.ContainerCellRespon}>
-                                        <img className={styles.ImageCellRes} src={TabletImage} alt='' />
-                                    </div>
-                                </div>
-                                : null}
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div>
-                            {hidden && Thanks ?
-                                <div className={styles.SortTitle3ro} >
-                                    <p className={styles.Title3ro}>Thanks for answering</p>
-                                    <img className={styles.ImageBig} src={Yes} alt='' ></img>
-                                </div>
-
-                                : null}
-                            {hidden && !Thanks ?
-                                <div className={styles.SortTitle3ro} >
-                                    <p className={styles.Title3ro}>I will do better next time</p>
-                                    <img className={styles.ImageBig} src={No} alt=''></img>
-                                </div>
-                                : null}
-                            {!hidden ?
-                                <div className={styles.SortHapSadButtons} >
-                                    <div className={styles.SortHapSad}>
-                                        <div onClick={handleCickChangeHappy} className={styles.ButtonContainerHappy}>
-                                            <img src={Happy} alt='' className={styles.Smile}></img>
-                                            <button id='work' type="button" name="Hover">Right?</button>
-                                        </div>
-                                    </div>
-                                    <div onClick={handleClickChangeSad} className={styles.SortHapSad}>
-                                        <div className={styles.ButtonContainerHappy}>
-                                            <img src={Sad} alt='' className={styles.Smile}></img>
-                                            <button id='work' type="button" name="Hover">Wrong?</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                : null}
-                        </div>
-                    </Zoom>
-
-                </div>
             </div>
             <div className={styles.ContactMe} >
-                <Zoom>
+                <Zoom className={styles.zoom}>
                     <div className={styles.SortBoxs}>
-
                         <div className={styles.ContactMeTitleCont} >
                             <h1 className={styles.TitleContact} >Contact me</h1>
                         </div>
@@ -392,7 +252,7 @@ const HomeEnglish = () => {
                         </div>
                     </div>
                 </Zoom>
-                <Zoom>
+                <Zoom className={styles.zoom}>
                     <div className={styles.ContactMeTitleCont2do} >
                         <h4 className={styles.SecondContact} >You can also send me a message</h4>
                     </div>

@@ -28,15 +28,11 @@ function App() {
       </Route>
       <ScrollToTop />
       <Switch>
-        <Route exact path='/Blog' component={LandPage} />
+        <Route exact path='/' component={LandPage} />
         <Route exact path='/Home' component={Home} />
         <Route exact path='/HomeE' component={HomeEnglish} />
         <Route exact path='/Projects' component={Projects} />
         <Route exact path='/ProjectsE' component={ProjectsE} />
-        <Route exact path='/'  >
-          <Redirect to={{ pathname: '/Blog' }} />
-        </Route>
-        <Route component={PageNotFound} />
       </Switch>
     </Router>
   );

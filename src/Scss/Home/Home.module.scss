@@ -10,6 +10,12 @@ $GREEN:#05F4B7;
 $SPURPLE: #361999;
 $Pink:#FA255E;
 
+$Spring:#CCD5AE;
+$Goldenrod:#E9EDC9;
+$Cornsilk:#FEFAE0;
+$Papaya:#FAEDCD;
+$Fawn:#D4A373;
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
@@ -19,22 +25,22 @@ width: 0.9rem;
 }
 
 ::-webkit-scrollbar-track {
-background: $White;       
+background: $Cornsilk;       
 border-radius: 0.2rem;
 }
 
 ::-webkit-scrollbar-thumb {
-background-color: $STRBLUE;    
+background-color: $Fawn;    
 border-radius: 3rem;    
-border: solid .2rem $NEONBLUE;
+border: solid .2rem $Black;
 }
 
 .Back{
 width: 100%;
 margin-top: 0;
 min-height: 150vh;
-background-color:$SPURPLE;
-
+height: fit-content;
+background-color:$Goldenrod;
 }
 
 .SeparateTwo{
@@ -51,11 +57,10 @@ width: 100%;
 }
 
 .SortTitle{
-width: 50%;
+width: 100%;
 display: flex;
 margin-top: 5%;
 margin-bottom: 2%;
-margin-right: 5%;
 flex-direction: column;
 justify-content: center;
 text-align: center;
@@ -119,35 +124,34 @@ align-items: center;
 
 
 .Title{
-color: $NEONBLUE;
-font-size: 7vh;
+color: $Fawn;
+font-size: 9vh;
+margin-top: 4%;
+margin-bottom: 2%;
 font-family: 'Oswald', sans-serif;
-text-shadow: -3px 3px 0 $Black;
 }
 
 .Title2do{
-color: $NEONBLUE;
+color: $Fawn;
 font-size: 7vh;
 font-family: 'Oswald', sans-serif;
-text-shadow: -3px 3px 0 $Black;
 }
 
 .Title2doFast{
 padding-top: 0;
 margin-top: 0;
-color: $NEONBLUE;
+color: $Fawn;
 font-size: 7vh;
 font-family: 'Oswald', sans-serif;
-text-shadow: -3px 3px 0 $Black;
 }
 
 .Title3ro{
-color: $NEONBLUE;
+color: $Fawn;
 font-size: 8vh;
 font-family: 'Oswald', sans-serif;
-text-shadow: -3px 3px 0 $Black;
 width: 95%;
 }
+
 .BackImage{
 background-color: $Black;
 cursor: url(../../Components//Images//Pointer1.png), pointer;
@@ -172,8 +176,6 @@ width: 100%;
 margin-top: 20%;
 transition: 0.5s;
 border-radius: .6rem;
-background-color: $SPURPLE;
-
 }
 
 
@@ -206,8 +208,7 @@ text-align: center;
 padding: 3%;
 width: 90%;
 border-radius: .5rem ;
-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, .7);
-background: $White;
+background: $Cornsilk;
 }
 
 .SkillsButtonBox {
@@ -219,9 +220,8 @@ justify-content: center;
 align-items: center;
 margin-bottom: 5%;
 padding: 2%;
-background: $White;
+background: $Cornsilk;
 border-radius: .5rem ;
-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, .7);
 }
 
 .SortButtons{
@@ -229,6 +229,13 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
+}
+
+.zoom{
+display: flex;
+align-items: center;
+justify-content:center;
+width: 100%;
 }
 
 @mixin button($bcolor,
@@ -258,14 +265,13 @@ position: relative;
 width: 10rem;
 height: 5rem;
 overflow: hidden;
-border: .5rem solid $SPURPLE;
+border: .5rem solid $Fawn;
 font-family: 'Oswald', sans-serif;
 font-weight: 300;
 transition: 0.5s;
 letter-spacing: 1px;
 border-radius: 15px 50px;
 margin: 2%;
-
 
 button {
 width: 101%;
@@ -276,11 +282,11 @@ font-size: 3vh;
 letter-spacing: 1px;
 font-weight: bold;
 
-@include button($NEONBLUE, "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+@include button($Papaya, "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
 3000%,
 100%,
 none,
-$SPURPLE);
+$Black);
 cursor: pointer;
 -webkit-animation: ani2 0.7s steps(29) forwards;
 animation: ani2 0.7s steps(29) forwards;
@@ -295,7 +301,7 @@ cursor: url(../../Components//Images//Pointer1.png), pointer;
 
 .mas {
 position: absolute;
-color:$SPURPLE;
+color:$Black;
 text-align: center;
 width: 101%;
 font-family: 'Oswald', sans-serif;
@@ -363,15 +369,14 @@ align-items: center;
 text-align: center;
 width: 90%;
 padding: 3%;
-background: $White;
+background: $Cornsilk;
 border-radius: .5rem ;
-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, .7);
 }
 
 
 .PSkills{
 font-family: 'Raleway', sans-serif;
-color: $SPURPLE;
+color: $Black;
 font-size: 3vh;
 font-weight: bold;
 }
@@ -419,11 +424,9 @@ box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
 cursor: url(../../Components//Images//Pointer1.png), pointer;
 }
 
-
-
 .AboutMeP{
 font-family: 'Raleway', sans-serif;
-color: $SPURPLE;
+color: $Black;
 font-size: 3vh;
 font-weight: bold;
 }
@@ -435,20 +438,17 @@ width: 90%;
 text-align: center;
 justify-content: center;
 text-align: center;
-background: $White;
+background: $Cornsilk;
 border-radius: .5rem ;
-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, .7);
 padding: 2%;
 }
-
-
 
 .StyleP{
 text-align: center;
 margin-top: 0;
 font-family: 'Raleway', sans-serif;
 font-weight: bold;
-color: $SPURPLE;
+color: $Black;
 font-size: 3vh;
 }
 
@@ -457,7 +457,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 text-align: center;
-margin-top: 10%;
+margin-top: 0%;
 margin-bottom: 5%;
 }
 
@@ -470,10 +470,9 @@ text-align: center;
 }
 
 .TitleContact{
-color: $NEONBLUE;
+color: $Fawn;
 font-size: 9vh;
 font-family: 'Oswald', sans-serif;
-text-shadow: -3px 3px 0 $Black;
 }
 
 .Information{
@@ -485,10 +484,9 @@ text-align: center;
 width: 90%;
 margin-top: 3%;
 margin-bottom: 3%;
-background: $White;
+background: $Cornsilk;
 height: 13rem;
 border-radius: .5rem ;
-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, .7);
 }
 
 .SortInfor{
@@ -508,7 +506,7 @@ padding-left: 5%;
 
 .IconsContact{
 display: flex;
-color: $SPURPLE;
+color: $Black;
 justify-content: center;
 align-items: center;
 text-align: center;
@@ -523,7 +521,7 @@ padding-bottom: 9%;
 .PInfo{
 display: flex;
 font-family: 'Montserrat', sans-serif;
-color: $SPURPLE;
+color: $Black;
 font-weight: bold;
 font-size: 3vh;
 justify-content: center;
@@ -539,8 +537,7 @@ padding-right: 5%;
 
 
 .PInfo:hover{
-color: $SPURPLE;
-text-shadow: 1px 1px $Black;
+color: $Black;
 transform: scale(1, 1.2);
 transition-duration: 1s;
 cursor: url(../../Components//Images//Pointer1.png), pointer;
@@ -566,18 +563,17 @@ align-items: center;
 text-align: center;
 text-decoration: none;
 padding-right: 5%;
-
 }
 
 .SecondContact{
-color: $NEONBLUE;
+color: $Fawn;
 font-size: 8vh;
 font-family: 'Oswald', sans-serif;
-text-shadow: -3px 3px 0 $Black;
 }
 
 .ContactBox{
 display: flex;
+width: 95%;
 flex-direction: column;
 justify-content: center;
 text-align: center;
@@ -591,9 +587,8 @@ justify-content: center;
 margin-top: 5%;
 margin-bottom: 5%;
 border-radius: .5rem ;
-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, .7);
 width: 90%;
-background:$White;
+background:$Cornsilk;
 }
 
 .FormGroup{
@@ -608,7 +603,7 @@ width: 100%;
 font-family: 'Josefin Sans', sans-serif;
 font-size: 3vh;
 font-weight: bold;
-color: $SPURPLE;
+color: $Black;
 }
 
 .SortTextAreaBig{
@@ -631,7 +626,7 @@ width: 50%;
 width: 30rem;
 height: 10rem;
 background-color: rgba(4, 0, 4, 0.2);
-border-left: .4rem solid $SPURPLE;
+border-left: .4rem solid $Fawn;
 font-family: 'Josefin Sans', sans-serif;
 color: $White;
 transition-duration: 2s;
@@ -645,7 +640,7 @@ cursor: url(../../Components//Images//Pointer1.png), pointer;
 &:focus{
 background-color:$White;
 color: $Black;
-border-left: .4rem solid $STRBLUE;
+border-left: .4rem solid $Fawn;
 }
 }
 }
@@ -660,7 +655,7 @@ font-family: 'Josefin Sans', sans-serif;
 display: block;
 appearance: none;
 outline: 0;
-border: .3rem solid $STRBLUE;
+border: .3rem solid $Fawn;
 background-color: rgba(4, 4, 4, 0.1);
 width: 15rem;
 border-radius: 10% / 50%;
@@ -679,15 +674,11 @@ font-weight: bold;
 &:focus{
 background-color:$White;
 width: 20rem;
-color: $STRBLUE;
-border: .3rem solid $STRBLUE;
+color: $Black;
+border: .3rem solid $Fawn;
 
 }
 }
-}
-
-.ContainerCellRespon{
-display: none;
 }
 
 .SortArrowUp{
@@ -699,7 +690,11 @@ z-index: 4;
 }
 
 .Link{
-    text-decoration: none;
+text-decoration: none;
+&:hover{
+
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+}
 }
 
 .LogosHomeUp{
@@ -733,12 +728,12 @@ font-size:3vh;
 letter-spacing: 1px;
 font-weight: bold;
 
-@include button($NEONBLUE,
+@include button($Spring,
 "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
 2300%,
 100%,
 none,
-$SPURPLE);
+$Black);
 cursor: pointer;
 -webkit-animation: ani2 0.7s steps(22) forwards;
 animation: ani2 0.7s steps(22) forwards;
@@ -754,7 +749,7 @@ cursor: url(../../Components//Images//Pointer1.png), pointer;
 
 .masUp{
 position: absolute;
-color:$NEONBLUE;
+color:$Black;
 text-align: center;
 width: 101%;
 font-family: 'Josefin Sans', sans-serif;
@@ -766,102 +761,21 @@ overflow: hidden;
 font-weight: bold;
 }
 
-.SortHapSadButtons{
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-width: 100%;
-margin-top: 5%;
-}
-
-.SortHapSad{
-display: flex;
-width: 50%;
-}
-
-.ButtonContainerHappy {
-display: flex;
-justify-content: center;
-align-items: center;
-width: 10rem;
-height: 8rem;
-margin-left: auto;
-margin-right: auto;
-margin-top: 0vh;
-overflow: hidden;
-font-family: 'Oswald', sans-serif;
-font-weight: 300;
-font-size: 4vh;
-transition: 0.9s;
-letter-spacing: 1px;
-border-radius: 20%;
-transition-duration: 5s;
-
-button {
-width: 101%;
-height: 100%;
-font-family: 'Oswald', sans-serif;
-font-weight: 300;
-font-size:5vh;
-letter-spacing: 1px;
-font-weight: bold;
-
-@include button($NEONBLUE,
-"https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
-2300%,
-100%,
-none,
-$STRBLUE);
-cursor: pointer;
--webkit-animation: ani2 0.7s steps(22) forwards;
-animation: ani2 0.7s steps(22) forwards;
-
-&:hover {
--webkit-animation: ani 0.7s steps(22) forwards;
-animation: ani 0.7s steps(22) forwards;
-cursor: url(../../Components//Images//Pointer1.png), pointer;
-}
-}
-}
-
-.Smile{
-position: absolute;
-color:$STRBLUE;
-text-align: center;
-width: 90%;
-font-family: 'Josefin Sans', sans-serif;
-font-weight: 300;
-position: absolute;
-font-size: 3vh;
-max-height: 5rem;
-min-height: 5rem;
-max-width: 5rem;
-min-width: 5rem;
-margin-top: 0rem;
-overflow: hidden;
-font-weight: bold;
-}
-
-.ImageBig{
-max-width: 14rem;
-max-height: 16rem;
-min-width: 14rem;
-max-height: 16rem;
-}
 
 .ButtonSend{
 font-family: 'Oswald', sans-serif;
 border-radius: 4px;
-background-color: $SPURPLE;
+background-color: $Papaya;
 border: none;
-color: $NEONBLUE;
+color: $Black;
 text-align: center;
 font-size: 5vh;
 padding: 16px;
 width: 12rem;
 transition: all 0.5s;
 margin: 36px;
-box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+border: solid .2rem $Black;
+border-radius: 10px 10px 10px 10px;
 cursor: url(../../Components//Images//Pointer1.png), pointer;
 
 
@@ -905,12 +819,16 @@ text-align: center;
 
 .AnyLink{
 display: flex;
-width: 50%;
+width: 70%;
 text-align: center;
 justify-content: center;
 align-items: center;
 cursor: url(../../Components//Images//Pointer1.png), pointer;
-
+&:hover{
+transform: scale(1, 1.2);
+transition-duration: 1s;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+}
 }
 
 .WalkFolder{
@@ -921,10 +839,10 @@ min-height: 15rem;
 }
 
 .TitleClick{
-color: $NEONBLUE;
+color: $Fawn;
 font-size: 7vh;
+margin-right:2rem;
 font-family: 'Oswald', sans-serif;
-text-shadow: -3px 3px 0 $Black;
 }
 
 .SortBoxs{
@@ -946,10 +864,18 @@ align-items: center;
 
 @media (max-width: 1248px) {
 
+.Title{
+font-size: 5vh;
+}
 
 .TwoLinks{
-    flex-direction: column;
-    justify-content: center;
+flex-direction: column;
+justify-content: center;
+&:hover{
+transform: scale(1, 1.2);
+transition-duration: 1s;
+cursor: url(../../Components//Images//Pointer1.png), pointer;
+}
 }
 
 .Back{
@@ -1113,6 +1039,7 @@ width: 90%;
 
 .ContactMe{
 display: flex;
+width: 100%;
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -1192,35 +1119,6 @@ width: 13rem;
 height: 15rem;
 }
 
-.ContainerCell{
-display: none;
-}
-
-.ContainerCellRespon{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-top: 5%;
-margin-bottom: 8%;
-border-radius: .4rem;
-box-shadow: $Black 200px;
-}
-
-.ImageCellRes{
-max-width: 10rem;
-min-height: 10rem;
-position: relative;
-background-color:$MBLUE;
--webkit-transform: perspective(300px) rotateX(30deg);
--o-transform: perspective(300px) rotateX(30deg);
--moz-transform: perspective(300px) rotateX(30deg);
-transform: perspective(300px) rotateX(30deg);
--webkit-transform-origin: 0% 50%;
--moz-transform-origin: 0% 50%;
--o-transform-origin: 0% 50%;
-transform-origin: 0% 50%;
-}
 
 .LoginContainer{
 input{
@@ -1247,6 +1145,10 @@ height: 5rem;
 button {
 font-size: 4vh;
 }
+}
+
+.TitleClick{
+margin: 0;
 }
 .ButtonSend{
 font-size: 4vh;

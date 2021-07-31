@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../../Scss/NavBar/Nav.module.scss';
 import { ReactComponent as CloseMenu } from '../../Assets/x.svg';
@@ -16,10 +16,28 @@ const NavigationBar = () => {
 
     const handleClick = () => setClick(!click);
 
+    const [width, setWidth] = useState(window.innerWidth);
+
+    const [height, setHeight] = useState(window.innerHeight);
+
+    const updateWidthAndHeight = () => {
+        setWidth(window.innerWidth);
+        setHeight(window.innerHeight);
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", updateWidthAndHeight);
+        if (window.innerWidth > 1248) {
+            setClick(false)
+        }
+        return () => window.removeEventListener("resize", updateWidthAndHeight);
+
+    });
+
     return (
         <div className={styles.header}>
             <div className={styles.PContainer}>
-                <Link className={styles.PLink} style={{ textDecoration: 'none' }} to='/Blog'>
+                <Link className={styles.PLink} style={{ textDecoration: 'none' }} to='/'>
                     <p className={styles.PLink} >Andrés</p>
                 </Link>
             </div>
@@ -27,14 +45,14 @@ const NavigationBar = () => {
                 <li className={styles.SortNav} onClick={closeMobileMenu} >
                     <a style={{ textDecoration: 'none' }}
                         target="_blank"
-                        href='https://drive.google.com/file/d/1bVYIWVJdVGlo50okHYAwVabU9vAul64q/view?usp=sharing' >
+                        href='https://drive.google.com/file/d/1dKyJKiYvtcMFfGgJdY9uZETOT_q6da0p/view?usp=sharing' >
                         <div className={styles.Links} ><TextDocument className={styles.IconsNav} />CV en Español </div>
                     </a>
                 </li>
                 <li className={styles.SortNav} onClick={closeMobileMenu} >
                     <a style={{ textDecoration: 'none' }}
                         target="_blank"
-                        href='https://drive.google.com/file/d/1UD3_RlwOlkJw5oSlbOj6GvMSBrwVsCrA/view?usp=sharing' >
+                        href='https://drive.google.com/file/d/10IUKZmirVKolFpEbgzfd_vhXIampjj0i/view?usp=sharing' >
                         <div className={styles.Links} ><TextDocument className={styles.IconsNav} />CV en Ingles</div>
                     </a>
                 </li>

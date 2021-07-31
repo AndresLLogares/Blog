@@ -10,13 +10,20 @@ $GREEN:#05F4B7;
 $SPURPLE: #361999;
 $Pink:#FA255E;
 
+$Spring:#CCD5AE;
+$Goldenrod:#E9EDC9;
+$Cornsilk:#FEFAE0;
+$Papaya:#FAEDCD;
+$Fawn:#D4A373;
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+
 .ContainerLand{
 display: flex;
-background-color: $SPURPLE;
+background-color: $Goldenrod;
 height: fit-content;
 min-height: 200vh;
 flex-direction: column;
@@ -25,12 +32,21 @@ align-items: center;
 text-align: center;
 }
 
+.Reveal{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .SortLand{
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: center;
+z-index: 1;
 }
 
 .SortUp{
@@ -55,9 +71,9 @@ transition-duration: 5s;
 
 .ButtonLand{
 font-family: 'Oswald', sans-serif;
-background-color: $NEONBLUE;
+background-color: $Spring;
 border: none;
-color: $STRBLUE;
+color: $Fawn;
 text-align: center;
 font-size: 3vh;
 padding: 16px;
@@ -65,7 +81,6 @@ width: 16rem;
 font-weight: bold;
 transition: all 0.5s;
 margin: 36px;
-box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
 transition-duration: 5s;
 }
 
@@ -108,8 +123,7 @@ padding: 0;
 margin: 0;
 font-family: 'Oswald', sans-serif;
 font-size: 20vh;
-color: $NEONBLUE;
-text-shadow: 2px 2px 2px $Black;
+color: $Fawn;
 }
 
 .SortTitleSecond{
@@ -130,10 +144,8 @@ text-align: center;
 align-items: center;
 justify-content: center;
 padding: 3%;
-background-color: $White;
+background-color: $Cornsilk;
 border-radius: .5rem ;
-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, .7);
-
 }
 
 .BoxFlag{
@@ -166,16 +178,13 @@ position: relative;
 width: 13rem;
 height: 13rem;
 overflow: hidden;
-border: .5rem solid $White;
+border: .5rem solid $Fawn;
 font-family: 'Oswald', sans-serif;
 font-weight: 300;
 transition: 0.5s;
 letter-spacing: 1px;
 border-radius: 50%;
 margin: 2%;
-box-shadow: 20px 10px 20px -8px rgba(0, 0, 0,.7);
-
-
 button {
 width: 101%;
 height: 100%;
@@ -185,11 +194,11 @@ font-size: 5vh;
 letter-spacing: 1px;
 font-weight: bold;
 
-@include button($GREEN, "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+@include button($Cornsilk, "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
 3000%,
 100%,
 none,
-$STRBLUE);
+$Black);
 cursor: pointer;
 -webkit-animation: ani2 0.7s steps(29) forwards;
 animation: ani2 0.7s steps(29) forwards;
@@ -204,7 +213,7 @@ cursor: url(../../Components//Images//Pointer1.png), pointer;
 
 .Flag{
 position: absolute;
-color:$NEONBLUE;
+color:$Black;
 text-align: center;
 width: 101%;
 font-family: 'Oswald', sans-serif;
@@ -271,7 +280,7 @@ margin-top: 5%;
 font-family: 'Montserrat', sans-serif;
 font-size: 4vh;
 font-weight: bold;
-color: $SPURPLE;
+color: $Black;
 }
 
 @media (max-width: 1248px) {
@@ -282,20 +291,31 @@ height: 230vh;
 width: 10rem;
 height: 10rem;
 }
+
+.SortLand{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
 .SortUp{
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: center;
+width: 100%;
 }
 
 .SortBrowser{
-width: 90%;
+width: 100%;
 }
 
 .SortTitle{
-width: 90%;
+width: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -303,19 +323,18 @@ text-align: center;
 }
 
 .TitleLand{
-    width: 100%;
+width: 100%;
 font-size: 10vh;
-padding-left: 10%;
 justify-content: center;
 align-items: center;
 text-align: center;
 }
 .SortTitleSecond{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
+display: flex;
+width: 100%;
+flex-direction: column;
 }
 .LandBox{
-    width: 90%;
+width: 90%;
 }
 }
