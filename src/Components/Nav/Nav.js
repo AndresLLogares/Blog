@@ -45,14 +45,14 @@ const NavigationBar = () => {
                 <li className={styles.SortNav} onClick={closeMobileMenu} >
                     <a style={{ textDecoration: 'none' }}
                         target="_blank"
-                        href='https://drive.google.com/file/d/1dKyJKiYvtcMFfGgJdY9uZETOT_q6da0p/view?usp=sharing' >
+                        href='https://drive.google.com/file/d/1zLcXKOWsSe23wJNPcYz_d2N7FPtHy9ps/view?usp=sharing' >
                         <div className={styles.Links} ><TextDocument className={styles.IconsNav} />CV en Español </div>
                     </a>
                 </li>
                 <li className={styles.SortNav} onClick={closeMobileMenu} >
                     <a style={{ textDecoration: 'none' }}
                         target="_blank"
-                        href='https://drive.google.com/file/d/10IUKZmirVKolFpEbgzfd_vhXIampjj0i/view?usp=sharing' >
+                        href='https://drive.google.com/file/d/1bsPsWK5JFyCA2GE8uyQt_zIHzoCSFn1x/view?usp=sharing' >
                         <div className={styles.Links} ><TextDocument className={styles.IconsNav} />CV en Ingles</div>
                     </a>
                 </li>
