@@ -1,340 +1,337 @@
-$Black:#0C1115;
-$White:#FFFFFF;
-$NEONBLUE:#9CF6FB;
-$SLBLE:#E1FCFD;
-$STRBLUE:#394F8A;
-$MBLUE:#7868E6;
-$STRPINK:#E5B9A8;
-$SLPINK:#EAD6CD;
-$GREEN:#05F4B7;
+$Black: #0c1115;
+$White: #ffffff;
+$NEONBLUE: #9cf6fb;
+$SLBLE: #e1fcfd;
+$STRBLUE: #394f8a;
+$MBLUE: #7868e6;
+$STRPINK: #e5b9a8;
+$SLPINK: #ead6cd;
+$GREEN: #05f4b7;
 $SPURPLE: #361999;
-$Pink:#FA255E;
+$Pink: #fa255e;
 
-$Spring:#CCD5AE;
-$Goldenrod:#E9EDC9;
-$Cornsilk:#FEFAE0;
-$Papaya:#FAEDCD;
-$Fawn:#D4A373;
+$Spring: #ccd5ae;
+$Goldenrod: #e9edc9;
+$Cornsilk: #fefae0;
+$Papaya: #faedcd;
+$Fawn: #d4a373;
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-
-.ContainerLand{
-display: flex;
-background-color: $Goldenrod;
-height: fit-content;
-min-height: 200vh;
-flex-direction: column;
-justify-content: start;
-align-items: center;
-text-align: center;
+.ContainerLand {
+  display: flex;
+  background-color: $Goldenrod;
+  height: fit-content;
+  min-height: 200vh;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
 }
 
-.Reveal{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.Reveal {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.SortLand{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-z-index: 1;
+.SortLand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
 }
 
-.SortUp{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-text-align: center;
-width: 100%;
-padding-top: 10%;
-transition-duration: 5s;
+.SortUp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding-top: 10%;
+  transition-duration: 5s;
 }
 
-.SortBrowser{
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-width: 50%;
-transition-duration: 5s;
+.SortBrowser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  transition-duration: 5s;
 }
 
-.ButtonLand{
-font-family: 'Oswald', sans-serif;
-background-color: $Spring;
-border: none;
-color: $Fawn;
-text-align: center;
-font-size: 3vh;
-padding: 16px;
-width: 16rem;
-font-weight: bold;
-transition: all 0.5s;
-margin: 36px;
-transition-duration: 5s;
+.ButtonLand {
+  font-family: "Oswald", sans-serif;
+  background-color: $Spring;
+  border: none;
+  color: $Fawn;
+  text-align: center;
+  font-size: 3vh;
+  padding: 16px;
+  width: 16rem;
+  font-weight: bold;
+  transition: all 0.5s;
+  margin: 36px;
+  transition-duration: 5s;
 }
 
-.ButtonLand  {
-display: inline-block;
-position: relative;
-transition: 0.5s;
+.ButtonLand {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
 .ButtonLand :after {
-content: '»';
-position: absolute;
-opacity: 0;  
-top: 14px;
-right: -20px;
-transition: 0.5s;
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
 }
 
-.ButtonLand :hover{
-padding-right: 24px;
-padding-left:8px;
-cursor: url(../../Components//Images//Pointer1.png), pointer;
+.ButtonLand :hover {
+  padding-right: 24px;
+  padding-left: 8px;
+  cursor: url(../../Components//Images//Pointer1.png), pointer;
 }
 
 .ButtonLand :hover:after {
-opacity: 1;
-right: 10px;
+  opacity: 1;
+  right: 10px;
 }
 
-.SortTitle{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
+.SortTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.TitleLand{
-padding: 0;
-margin: 0;
-font-family: 'Oswald', sans-serif;
-font-size: 20vh;
-color: $Fawn;
+.TitleLand {
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 20vh;
+  color: $Fawn;
 }
 
-.SortTitleSecond{
-display: flex;
-width: 100%;
-flex-direction: row;
-justify-content: space-evenly;
-align-items: center;
-text-align: center;
+.SortTitleSecond {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
 }
 
-.LandBox{
-display: flex;
-flex-direction: column;
-width: 50%;
-margin: 5%;
-text-align: center;
-align-items: center;
-justify-content: center;
-padding: 3%;
-background-color: $Cornsilk;
-border-radius: .5rem ;
+.LandBox {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 5%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  background-color: $Cornsilk;
+  border-radius: 0.5rem;
 }
 
-.BoxFlag{
-display: flex;
-flex-direction: column;
-width: 50%;
-margin: 5%;
-text-align: center;
-align-items: center;
-justify-content: center;
+.BoxFlag {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 5%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
-@mixin button($bcolor,
-$url,
-$x1,
-$y1,
-$bor,
-$col) {
-background: $bcolor;
--webkit-mask: url($url);
-mask: url($url);
--webkit-mask-size: $x1 $y1;
-mask-size: $x1 $y1;
-border: $bor;
-color: $col;
+@mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
+  background: $bcolor;
+  -webkit-mask: url($url);
+  mask: url($url);
+  -webkit-mask-size: $x1 $y1;
+  mask-size: $x1 $y1;
+  border: $bor;
+  color: $col;
 }
 
-.ButtonContainer{
-position: relative;
-width: 13rem;
-height: 13rem;
-overflow: hidden;
-border: .5rem solid $Fawn;
-font-family: 'Oswald', sans-serif;
-font-weight: 300;
-transition: 0.5s;
-letter-spacing: 1px;
-border-radius: 50%;
-margin: 2%;
-button {
-width: 101%;
-height: 100%;
-font-family: 'Oswald', sans-serif;
-font-weight: 300;
-font-size: 5vh;
-letter-spacing: 1px;
-font-weight: bold;
+.ButtonContainer {
+  position: relative;
+  width: 13rem;
+  height: 13rem;
+  overflow: hidden;
+  border: 0.5rem solid $Fawn;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 50%;
+  margin: 2%;
+  button {
+    width: 101%;
+    height: 100%;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 5vh;
+    letter-spacing: 1px;
+    font-weight: bold;
 
-@include button($Cornsilk, "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
-3000%,
-100%,
-none,
-$Black);
-cursor: pointer;
--webkit-animation: ani2 0.7s steps(29) forwards;
-animation: ani2 0.7s steps(29) forwards;
+    @include button(
+      $Cornsilk,
+      "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+      3000%,
+      100%,
+      none,
+      $Black
+    );
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(29) forwards;
+    animation: ani2 0.7s steps(29) forwards;
 
-&:hover {
--webkit-animation: ani 0.7s steps(29) forwards;
-animation: ani 0.7s steps(29) forwards;
-cursor: url(../../Components//Images//Pointer1.png), pointer;
-}
-}
+    &:hover {
+      -webkit-animation: ani 0.7s steps(29) forwards;
+      animation: ani 0.7s steps(29) forwards;
+      cursor: url(../../Components//Images//Pointer1.png), pointer;
+    }
+  }
 }
 
-.Flag{
-position: absolute;
-color:$Black;
-text-align: center;
-width: 101%;
-font-family: 'Oswald', sans-serif;
-font-weight: 300;
-position: absolute;
-font-size: 3vh;
-margin-top: 0rem;
-overflow: hidden;
-font-weight: bold;
+.Flag {
+  position: absolute;
+  color: $Black;
+  text-align: center;
+  width: 101%;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  font-size: 3vh;
+  margin-top: 0rem;
+  overflow: hidden;
+  font-weight: bold;
 }
 
 @-webkit-keyframes ani {
-from {
--webkit-mask-position: 0 0;
-mask-position: 0 0;
-}
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 
-to {
--webkit-mask-position: 100% 0;
-mask-position: 100% 0;
-}
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
 }
 
 @keyframes ani {
-from {
--webkit-mask-position: 0 0;
-mask-position: 0 0;
-}
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 
-to {
--webkit-mask-position: 100% 0;
-mask-position: 100% 0;
-}
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
 }
 
 @-webkit-keyframes ani2 {
-from {
--webkit-mask-position: 100% 0;
-mask-position: 100% 0;
-}
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
 
-to {
--webkit-mask-position: 0 0;
-mask-position: 0 0;
-}
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 }
 
 @keyframes ani2 {
-from {
--webkit-mask-position: 100% 0;
-mask-position: 100% 0;
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 }
 
-to {
--webkit-mask-position: 0 0;
-mask-position: 0 0;
-}
-}
-
-.SecondTitle{
-padding: 0;
-margin: 0;
-margin-top: 5%;
-font-family: 'Montserrat', sans-serif;
-font-size: 4vh;
-font-weight: bold;
-color: $Black;
+.SecondTitle {
+  padding: 0;
+  margin: 0;
+  margin-top: 5%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4vh;
+  font-weight: bold;
+  color: $Black;
 }
 
 @media (max-width: 1248px) {
-    .ContainerLand{
-height: 230vh;
-}
-.ButtonContainer{
-width: 10rem;
-height: 10rem;
-}
+  .ContainerLand {
+    height: 230vh;
+  }
+  .ButtonContainer {
+    width: 10rem;
+    height: 10rem;
+  }
 
-.SortLand{
-width: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
-}
+  .SortLand {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
-.SortUp{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-width: 100%;
-}
+  .SortUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
 
-.SortBrowser{
-width: 100%;
-}
+  .SortBrowser {
+    width: 100%;
+  }
 
-.SortTitle{
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-}
+  .SortTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-.TitleLand{
-width: 100%;
-font-size: 10vh;
-justify-content: center;
-align-items: center;
-text-align: center;
-}
-.SortTitleSecond{
-display: flex;
-width: 100%;
-flex-direction: column;
-}
-.LandBox{
-width: 90%;
-}
+  .TitleLand {
+    width: 100%;
+    font-size: 10vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .SortTitleSecond {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .LandBox {
+    width: 90%;
+  }
 }

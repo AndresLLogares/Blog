@@ -1,188 +1,181 @@
-$Black:#0C1115;
-$White:#FFFFFF;
-$NEONBLUE:#9CF6FB;
-$SLBLE:#E1FCFD;
-$STRBLUE:#394F8A;
-$MBLUE:#7868E6;
-$STRPINK:#E5B9A8;
-$SLPINK:#EAD6CD;
-$GREEN:#05F4B7;
+$Black: #0c1115;
+$White: #ffffff;
+$NEONBLUE: #9cf6fb;
+$SLBLE: #e1fcfd;
+$STRBLUE: #394f8a;
+$MBLUE: #7868e6;
+$STRPINK: #e5b9a8;
+$SLPINK: #ead6cd;
+$GREEN: #05f4b7;
 $SPURPLE: #361999;
-$Pink:#FA255E;
+$Pink: #fa255e;
 
-$Spring:#CCD5AE;
-$Goldenrod:#E9EDC9;
-$Cornsilk:#FEFAE0;
-$Papaya:#FAEDCD;
-$Fawn:#D4A373;
+$Spring: #ccd5ae;
+$Goldenrod: #e9edc9;
+$Cornsilk: #fefae0;
+$Papaya: #faedcd;
+$Fawn: #d4a373;
 
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 .header {
-display: flex;
-box-shadow: 0px 0px;
-justify-content:space-between;
-background: $Spring;
-align-items: center;
-position: absolute;
-height: 12vh;
-width: 100%;
-font-family: 'Oswald', sans-serif;
-z-index: 4;
+  display: flex;
+  box-shadow: 0px 0px;
+  justify-content: space-between;
+  background: $Spring;
+  align-items: center;
+  position: absolute;
+  height: 12vh;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  z-index: 4;
 }
 
-
-.PContainer{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-margin-top: 1%;
-margin-bottom: 2%;
-width: 20%;
+.PContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  width: 20%;
 }
-.PContainer:hover{
+.PContainer:hover {
   cursor: url(../../Components//Images//Pointer1.png), pointer;
-
 }
 
-
-.PLink{
-font-family: 'Oswald', sans-serif;
-font-size: 5vh;
-color: $Black;
-font-weight: bold;
+.PLink {
+  font-family: "Oswald", sans-serif;
+  font-size: 5vh;
+  color: $Black;
+  font-weight: bold;
 }
 
-.PLink:hover{
-transform: scale(1, 1.2);
-transition-duration: 1s;
-cursor: url(../../Components//Images//Pointer1.png), pointer;
+.PLink:hover {
+  transform: scale(1, 1.2);
+  transition-duration: 1s;
+  cursor: url(../../Components//Images//Pointer1.png), pointer;
 }
 
 .nav_options {
-display: flex;
-justify-content:space-evenly;
-list-style-type: none;
-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  width: 100%;
 }
 
-.SortNav{
-display: flex;
-justify-content: center;
-text-align: center;
-align-items: center;
-width: 20%;
-margin-right: 5%;
+.SortNav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 20%;
+  margin-right: 5%;
 }
 
 .mobile_option {
-display: none;
+  display: none;
 }
 
 .mobile_menu {
-display: none;
+  display: none;
 }
 
-.IconsNav{
-min-width: 2rem;
-min-height: 2rem;
-max-height: 2rem;
-max-width: 2rem;
-padding-bottom: 5%;
+.IconsNav {
+  min-width: 2rem;
+  min-height: 2rem;
+  max-height: 2rem;
+  max-width: 2rem;
+  padding-bottom: 5%;
 }
 
-.Links{
-font-family: 'Oswald', sans-serif;
-font-size: 4vh;
-color: $Black;
-cursor: url(../../Components//Images//Pointer1.png), pointer;
-font-weight: bold;
+.Links {
+  font-family: "Oswald", sans-serif;
+  font-size: 4vh;
+  color: $Black;
+  cursor: url(../../Components//Images//Pointer1.png), pointer;
+  font-weight: bold;
 }
 
-.Links:hover{
-transform: scale(1, 1.2);
-transition-duration: 1s;
-cursor: url(../../Components//Images//Pointer1.png), pointer;
+.Links:hover {
+  transform: scale(1, 1.2);
+  transition-duration: 1s;
+  cursor: url(../../Components//Images//Pointer1.png), pointer;
 }
 
 @media (max-width: 1248px) {
+  .header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-.header {
-width: 100%;
-margin: 0;
-padding: 0;
-}
+  .nav_options {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    list-style-type: none;
+    grid-gap: 0px;
+  }
+  .nav_options_active {
+    display: flex;
+    flex-direction: column;
+    background: $Spring;
+    justify-content: center;
+    position: absolute;
+    height: fit-content;
+    border-radius: 0.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 80%;
+    border: solid 0.2rem $Black;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    z-index: 3;
+    align-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
 
-.nav_options {
-display: flex;
-width: 100%;
-height: 350px;
-position: absolute;
-top: 80px;
-left: -100%;
-opacity: 0;
-transition: all 0.5s ease;
-flex-direction: column;
-list-style-type: none;
-grid-gap: 0px;	
-}
-.nav_options_active {
-display: flex;
-flex-direction: column;
-background:$Spring;
-justify-content: center;
-position: absolute;
-height: fit-content;
-border-radius: .5rem;
-left: 0;
-right: 0;
-bottom: 0;
-top: 80%;
-border: solid .2rem $Black;
-align-items: center;
-justify-content: center;
-transition: all 0.5s ease;
-z-index: 3;
-align-content: center;
-padding-top: 5%;
-padding-bottom: 5%;
-}
+  .PLink {
+    font-size: 6vh;
+    padding-left: 3rem;
+  }
 
-.PLink{
-font-size: 6vh;
-padding-left: 3rem;
-}
+  .MenuIcon {
+    color: $Black;
+    min-width: 3rem;
+    min-height: 3rem;
+    max-width: 3rem;
+    max-height: 3rem;
+    padding-right: 20%;
+  }
 
-.MenuIcon {
-color: $Black;
-min-width: 3rem;
-min-height: 3rem;
-max-width: 3rem;
-max-height: 3rem;
-padding-right: 20%;
-}
+  .SortNav {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-.SortNav{
-width: 90%;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-}
-
-.Links{
-font-size: 3vh;
-padding-top: 10%;
-padding-bottom: 10%;
-}
-
+  .Links {
+    font-size: 3vh;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
 }
 .mobile_menu {
-display: block;
+  display: block;
 }

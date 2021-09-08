@@ -1,555 +1,549 @@
-$Black:#0C1115;
-$White:#FFFFFF;
-$NEONBLUE:#9CF6FB;
-$SLBLE:#E1FCFD;
-$STRBLUE:#394F8A;
-$MBLUE:#7868E6;
-$STRPINK:#E5B9A8;
-$SLPINK:#EAD6CD;
-$GREEN:#05F4B7;
+$Black: #0c1115;
+$White: #ffffff;
+$NEONBLUE: #9cf6fb;
+$SLBLE: #e1fcfd;
+$STRBLUE: #394f8a;
+$MBLUE: #7868e6;
+$STRPINK: #e5b9a8;
+$SLPINK: #ead6cd;
+$GREEN: #05f4b7;
 $SPURPLE: #361999;
-$Pink:#FA255E;
+$Pink: #fa255e;
 
-$Spring:#CCD5AE;
-$Goldenrod:#E9EDC9;
-$Cornsilk:#FEFAE0;
-$Papaya:#FAEDCD;
-$Fawn:#D4A373;
-$Honey: #F1FAEE;
+$Spring: #ccd5ae;
+$Goldenrod: #e9edc9;
+$Cornsilk: #fefae0;
+$Papaya: #faedcd;
+$Fawn: #d4a373;
+$Honey: #f1faee;
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-
-.Back{
-    width: 100%;
-    margin-top: 0;
-    min-height: 150vh;
-    height: fit-content;
-    padding-bottom: 10%;
-    background-color:$Goldenrod;
+.Back {
+  width: 100%;
+  margin-top: 0;
+  min-height: 150vh;
+  height: fit-content;
+  padding-bottom: 10%;
+  background-color: $Goldenrod;
 }
 
-.SortTitle{
-display: flex;
-flex-direction: row;
-padding-top: 3%;
-align-items: center;
-justify-content: center;
-text-align: center;
-width: 100%;
+.SortTitle {
+  display: flex;
+  flex-direction: row;
+  padding-top: 3%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 
-.SortLitleTitles{
-display: flex;
-flex-direction: row;
-padding-top: 3%;
-align-items: center;
-justify-content: center;
-text-align: center;
-width: 70%;
+.SortLitleTitles {
+  display: flex;
+  flex-direction: row;
+  padding-top: 3%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 70%;
 }
 
-.SortLitleLinks{
-display: flex;
-flex-direction: column;
-padding-top: 3%;
-align-items: center;
-justify-content: center;
-text-align: center;
-width: 100%;
+.SortLitleLinks {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 
-.sortLinks{
-display:flex;
-align-items: center;
-justify-content:center;
-width: 100%;
+.sortLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-.sortLinksImages{
-display:flex;
-align-items: center;
-justify-content:center;
-width: 100%;
+.sortLinksImages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-
-@mixin button($bcolor,
-$url,
-$x1,
-$y1,
-$bor,
-$col) {
-background: $bcolor;
--webkit-mask: url($url);
-mask: url($url);
--webkit-mask-size: $x1 $y1;
-mask-size: $x1 $y1;
-border: $bor;
-color: $col;
+@mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
+  background: $bcolor;
+  -webkit-mask: url($url);
+  mask: url($url);
+  -webkit-mask-size: $x1 $y1;
+  mask-size: $x1 $y1;
+  border: $bor;
+  color: $col;
 }
 
-.zoom{
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    width: 100%;
+.zoom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .buttoncontainerLink {
-position: relative;
-width: 20rem;
-height: 10rem;
-overflow: hidden;
-border: .2rem solid $Black;
-font-family: 'Oswald', sans-serif;
-font-weight: 300;
-transition: 0.5s;
-letter-spacing: 1px;
-border-radius: 5px 5px 5px 5px;
-margin: 2%;
-color:$Black;
-button {
-width: 101%;
-height: 100%;
-font-family: 'Oswald', sans-serif;
-font-weight: 300;
-font-size: 5vh;
-letter-spacing: 1px;
-font-weight: bold;
-@include button($Papaya, "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
-3000%,
-100%,
-none,
-$Black);
-cursor: pointer;
--webkit-animation: ani2 0.7s steps(29) forwards;
-animation: ani2 0.7s steps(29) forwards;
-&:hover {
--webkit-animation: ani 0.7s steps(29) forwards;
-animation: ani 0.7s steps(29) forwards;
-cursor: url(../../Components//Images//Pointer1.png), pointer;
-}
-}
+  position: relative;
+  width: 20rem;
+  height: 10rem;
+  overflow: hidden;
+  border: 0.2rem solid $Black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 2%;
+  color: $Black;
+  button {
+    width: 101%;
+    height: 100%;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 5vh;
+    letter-spacing: 1px;
+    font-weight: bold;
+    @include button(
+      $Papaya,
+      "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+      3000%,
+      100%,
+      none,
+      $Black
+    );
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(29) forwards;
+    animation: ani2 0.7s steps(29) forwards;
+    &:hover {
+      -webkit-animation: ani 0.7s steps(29) forwards;
+      animation: ani 0.7s steps(29) forwards;
+      cursor: url(../../Components//Images//Pointer1.png), pointer;
+    }
+  }
 }
 .masLink {
-position: absolute;
-color:$Black;
-text-align: center;
-width: 101%;
-font-weight: 300;
-position: absolute;
-margin-top: .1rem;
-overflow: hidden;
-font-weight: bold;
+  position: absolute;
+  color: $Black;
+  text-align: center;
+  width: 101%;
+  font-weight: 300;
+  position: absolute;
+  margin-top: 0.1rem;
+  overflow: hidden;
+  font-weight: bold;
 }
 
-.arrow{
-min-width: 2rem;
-max-width: 2rem;
-max-height: 2rem;
-min-width: 2rem;
+.arrow {
+  min-width: 2rem;
+  max-width: 2rem;
+  max-height: 2rem;
+  min-width: 2rem;
 }
 
-.imageButton{
-display:flex;
-align-items: center;
-justify-content:center;
-width: 20rem;
-height: 10rem;
+.imageButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+  height: 10rem;
 }
 
 @-webkit-keyframes ani {
-from {
--webkit-mask-position: 0 0;
-mask-position: 0 0;
-}
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 
-to {
--webkit-mask-position: 100% 0;
-mask-position: 100% 0;
-}
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
 }
 
 @keyframes ani {
-from {
--webkit-mask-position: 0 0;
-mask-position: 0 0;
-}
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 
-to {
--webkit-mask-position: 100% 0;
-mask-position: 100% 0;
-}
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
 }
 
 @-webkit-keyframes ani2 {
-from {
--webkit-mask-position: 100% 0;
-mask-position: 100% 0;
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 }
 
-to {
--webkit-mask-position: 0 0;
-mask-position: 0 0;
-}
-}
-
-.anyTitle{
-width: 50%;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
+.anyTitle {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.anyTitleL{
-width: 50%;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
-cursor: url(../../Components//Images//Pointer1.png), pointer;
+.anyTitleL {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: url(../../Components//Images//Pointer1.png), pointer;
 }
 
-.TitleProjects{
-font-size: 8vh;
-font-family: 'Josefin Sans', sans-serif;
-color: $Fawn;
-font-weight: bold;
+.TitleProjects {
+  font-size: 8vh;
+  font-family: "Josefin Sans", sans-serif;
+  color: $Fawn;
+  font-weight: bold;
 }
 
-.TitleProjectsL{
-font-size: 8vh;
-font-family: 'Josefin Sans', sans-serif;
-color: $Fawn;
-font-weight: bold;
-cursor: url(../../Components//Images//Pointer1.png), pointer;
+.TitleProjectsL {
+  font-size: 8vh;
+  font-family: "Josefin Sans", sans-serif;
+  color: $Fawn;
+  font-weight: bold;
+  cursor: url(../../Components//Images//Pointer1.png), pointer;
 }
 
-.HoverLink:hover{
-cursor: url(../../Components//Images//Pointer1.png), pointer;
+.HoverLink:hover {
+  cursor: url(../../Components//Images//Pointer1.png), pointer;
 }
 
-.TitlePr{
-color: $Fawn;
-font-size: 12vh;
-font-family: 'Oswald', sans-serif;
+.TitlePr {
+  color: $Fawn;
+  font-size: 12vh;
+  font-family: "Oswald", sans-serif;
 }
 
-.SortAny{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-margin-top: 3%;
-margin-bottom: 3%;
-text-align: center;
+.SortAny {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: center;
 }
 
-.SortAnyVideo{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-margin-top: 3%;
-margin-bottom: 3%;
-text-align: center;
-padding: 2%;
-background-color: $White;
-border-radius: .5rem ;
-width: 90%;
+.SortAnyVideo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: center;
+  padding: 2%;
+  background-color: $White;
+  border-radius: 0.5rem;
+  width: 90%;
 }
 
-.SortInfoPro{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
-width: 90%;
-background-color: $Cornsilk;
-padding: 2%;
-margin-top: 2%;
-margin-bottom: 5%;
-font-family: 'Raleway', sans-serif;
-border-radius: .5rem ;
+.SortInfoPro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+  background-color: $Cornsilk;
+  padding: 2%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  font-family: "Raleway", sans-serif;
+  border-radius: 0.5rem;
 }
 
-.Pinfo{
-font-family: 'Raleway', sans-serif;
-font-size: 3vh;
-color: $Black;
-font-weight: bold;
+.Pinfo {
+  font-family: "Raleway", sans-serif;
+  font-size: 3vh;
+  color: $Black;
+  font-weight: bold;
 }
 
-.video{
-width: 80%;
-height: 80%;
+.video {
+  width: 80%;
+  height: 80%;
 }
 
-@mixin button($bcolor,
-$url,
-$x1,
-$y1,
-$bor,
-$col) {
-background: $bcolor;
--webkit-mask: url($url);
-mask: url($url);
--webkit-mask-size: $x1 $y1;
-mask-size: $x1 $y1;
-border: $bor;
-color: $col;
+@mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
+  background: $bcolor;
+  -webkit-mask: url($url);
+  mask: url($url);
+  -webkit-mask-size: $x1 $y1;
+  mask-size: $x1 $y1;
+  border: $bor;
+  color: $col;
 }
 
-.LogosVideo{
-min-width: 3.5rem;
-max-width: 3.5rem;
-max-height: 3.5rem;
-min-width: 3.5rem;
+.LogosVideo {
+  min-width: 3.5rem;
+  max-width: 3.5rem;
+  max-height: 3.5rem;
+  min-width: 3.5rem;
 }
 
-.SortButtons{
-display: flex;
-flex-direction: row;
-padding-top: 3%;
-align-items: center;
-justify-content: center;
-text-align: center;
-width: 100%;
+.SortButtons {
+  display: flex;
+  flex-direction: row;
+  padding-top: 3%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 
-.anyButtons{
-display: flex;
-width: 25%;
-align-items: center;
-justify-content: center;
-text-align: center;
+.anyButtons {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .ButtonContainer {
-position: relative;
-width: 10rem;
-height: 5rem;
-overflow: hidden;
-border: .5rem solid $NEONBLUE;
-font-family: 'Oswald', sans-serif;
-font-weight: 300;
-transition: 0.5s;
-letter-spacing: 1px;
-border-radius: 15px 50px;
-margin: 2%;
+  position: relative;
+  width: 10rem;
+  height: 5rem;
+  overflow: hidden;
+  border: 0.5rem solid $NEONBLUE;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 15px 50px;
+  margin: 2%;
 
-button {
-width: 101%;
-height: 100%;
-font-family: 'Oswald', sans-serif;
-font-weight: 300;
-font-size: 3vh;
-letter-spacing: 1px;
-font-weight: bold;
+  button {
+    width: 101%;
+    height: 100%;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 3vh;
+    letter-spacing: 1px;
+    font-weight: bold;
 
-@include button($MBLUE, "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
-3000%,
-100%,
-none,
-$White);
-cursor: pointer;
--webkit-animation: ani2 0.7s steps(29) forwards;
-animation: ani2 0.7s steps(29) forwards;
+    @include button(
+      $MBLUE,
+      "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+      3000%,
+      100%,
+      none,
+      $White
+    );
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(29) forwards;
+    animation: ani2 0.7s steps(29) forwards;
 
-&:hover {
--webkit-animation: ani 0.7s steps(29) forwards;
-animation: ani 0.7s steps(29) forwards;
-cursor: url(../../Components//Images//Pointer1.png), pointer;
-}
-}
+    &:hover {
+      -webkit-animation: ani 0.7s steps(29) forwards;
+      animation: ani 0.7s steps(29) forwards;
+      cursor: url(../../Components//Images//Pointer1.png), pointer;
+    }
+  }
 }
 
 .Mas {
-position: absolute;
-color:$NEONBLUE;
-text-align: center;
-width: 101%;
-font-family: 'Oswald', sans-serif;
-font-weight: 300;
-position: absolute;
-font-size: 3vh;
-margin-top: .6rem;
-overflow: hidden;
-font-weight: bold;
+  position: absolute;
+  color: $NEONBLUE;
+  text-align: center;
+  width: 101%;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  font-size: 3vh;
+  margin-top: 0.6rem;
+  overflow: hidden;
+  font-weight: bold;
 }
 
 @-webkit-keyframes ani {
-from {
--webkit-mask-position: 0 0;
-mask-position: 0 0;
-}
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 
-to {
--webkit-mask-position: 100% 0;
-mask-position: 100% 0;
-}
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
 }
 
 @keyframes ani {
-from {
--webkit-mask-position: 0 0;
-mask-position: 0 0;
-}
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 
-to {
--webkit-mask-position: 100% 0;
-mask-position: 100% 0;
-}
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
 }
 
 @-webkit-keyframes ani2 {
-from {
--webkit-mask-position: 100% 0;
-mask-position: 100% 0;
-}
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
 
-to {
--webkit-mask-position: 0 0;
-mask-position: 0 0;
-}
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 }
 
 @keyframes ani2 {
-from {
--webkit-mask-position: 100% 0;
-mask-position: 100% 0;
-}
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
 
-to {
--webkit-mask-position: 0 0;
-mask-position: 0 0;
-}
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 }
 
 .ButtonContainerUp {
-position: relative;
-width: 6rem;
-height: 3rem;
-margin-left: auto;
-margin-right: auto;
-margin-top: 0vh;
-overflow: hidden;
-font-family: 'Oswald', sans-serif;
-font-weight: 300;
-font-size: 4vh;
-transition: 0.9s;
-letter-spacing: 1px;
-border-radius: 20%;
+  position: relative;
+  width: 6rem;
+  height: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0vh;
+  overflow: hidden;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 4vh;
+  transition: 0.9s;
+  letter-spacing: 1px;
+  border-radius: 20%;
 
-button {
-width: 101%;
-height: 100%;
-font-family: 'Josefin Sans', sans-serif;
-font-weight: 300;
-font-size:3vh;
-letter-spacing: 1px;
-font-weight: bold;
+  button {
+    width: 101%;
+    height: 100%;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 3vh;
+    letter-spacing: 1px;
+    font-weight: bold;
 
-@include button($Spring,
-"https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
-2300%,
-100%,
-none,
-$Black);
-cursor: pointer;
--webkit-animation: ani2 0.7s steps(22) forwards;
-animation: ani2 0.7s steps(22) forwards;
+    @include button(
+      $Spring,
+      "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
+      2300%,
+      100%,
+      none,
+      $Black
+    );
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
 
-&:hover {
--webkit-animation: ani 0.7s steps(22) forwards;
-animation: ani 0.7s steps(22) forwards;
-cursor: url(../../Components//Images//Pointer1.png), pointer;
-}
-}
-}
-
-.masUp{
-position: absolute;
-color:$Black;
-text-align: center;
-width: 101%;
-font-family: 'Josefin Sans', sans-serif;
-font-weight: 300;
-position: absolute;
-font-size: 3vh;
-margin-top: .6rem;
-overflow: hidden;
-font-weight: bold;
+    &:hover {
+      -webkit-animation: ani 0.7s steps(22) forwards;
+      animation: ani 0.7s steps(22) forwards;
+      cursor: url(../../Components//Images//Pointer1.png), pointer;
+    }
+  }
 }
 
-.SortArrowUp{
-position: fixed;
-display: flex;
-bottom: 5%;
-right: 5%;
-z-index: 4;
-}    
-
-.LogosHomeUp{
-max-width: 2rem;
-min-width: 2rem;
-max-height: 2rem;
-min-height: 2rem;
+.masUp {
+  position: absolute;
+  color: $Black;
+  text-align: center;
+  width: 101%;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  font-size: 3vh;
+  margin-top: 0.6rem;
+  overflow: hidden;
+  font-weight: bold;
 }
 
-.hrProject{
-width: 90%;
-position: relative;
-height: 1rem;
-border: solid .2rem $Fawn;
-background-color: $Papaya;
-border-radius: 15px 15px 15px 15px;
-margin-top: 2%;
+.SortArrowUp {
+  position: fixed;
+  display: flex;
+  bottom: 5%;
+  right: 5%;
+  z-index: 4;
+}
+
+.LogosHomeUp {
+  max-width: 2rem;
+  min-width: 2rem;
+  max-height: 2rem;
+  min-height: 2rem;
+}
+
+.hrProject {
+  width: 90%;
+  position: relative;
+  height: 1rem;
+  border: solid 0.2rem $Fawn;
+  background-color: $Papaya;
+  border-radius: 15px 15px 15px 15px;
+  margin-top: 2%;
 }
 
 @media (max-width: 1248px) {
+  .Back {
+    padding-top: 20%;
+  }
 
-.Back{
-padding-top: 20%;
-}
+  .SortTitle {
+    display: flex;
+    flex-direction: column;
+  }
 
-.SortTitle{
-display: flex;
-flex-direction: column;
-}
+  .SortLitleTitles {
+    display: flex;
+    flex-direction: column;
+  }
 
-.SortLitleTitles{
-display: flex;
-flex-direction: column;
-}
+  .SortLitleLinks {
+    display: flex;
+    flex-direction: column;
+  }
 
-.SortLitleLinks{
-display: flex;
-flex-direction: column;
-}
+  .SortButtons {
+    display: flex;
+    flex-direction: column;
+  }
 
-.SortButtons{
-display: flex;
-flex-direction: column;
-}
+  .anyButtons {
+    width: 50%;
+  }
 
-.anyButtons{
-width: 50%;
-}
+  .SortInfoPro {
+    margin-bottom: 5rem;
+  }
 
-.SortInfoPro{
-margin-bottom: 5rem;
-}
-
-.Folder{
-padding-top: 5rem;
-}
-
+  .Folder {
+    padding-top: 5rem;
+  }
 }

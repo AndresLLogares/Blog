@@ -1,193 +1,190 @@
-$Black:#0C1115;
-$White:#FFFFFF;
-$NEONBLUE:#9CF6FB;
-$SLBLE:#E1FCFD;
-$STRBLUE:#394F8A;
-$MBLUE:#7868E6;
-$STRPINK:#E5B9A8;
-$SLPINK:#EAD6CD;
-$GREEN:#05F4B7;
+$Black: #0c1115;
+$White: #ffffff;
+$NEONBLUE: #9cf6fb;
+$SLBLE: #e1fcfd;
+$STRBLUE: #394f8a;
+$MBLUE: #7868e6;
+$STRPINK: #e5b9a8;
+$SLPINK: #ead6cd;
+$GREEN: #05f4b7;
 $SPURPLE: #361999;
-$Pink:#FA255E;
+$Pink: #fa255e;
 
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arapey&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap");
 
-
-.BodyNotFound{
-width: 100%;
-margin-top: 0;
-min-height: 100vh;
-background-color:  $SPURPLE;
+.BodyNotFound {
+  width: 100%;
+  margin-top: 0;
+  min-height: 100vh;
+  background-color: $SPURPLE;
 }
 
-.ContainerNotFound{
-width: 100%;
-display: flex;
-padding-top: 10%;
-padding-bottom: 2%;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-align-items: center;
+.ContainerNotFound {
+  width: 100%;
+  display: flex;
+  padding-top: 10%;
+  padding-bottom: 2%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
-.ContainerNotFoundButton{
-width: 100%;
-display: flex;
-padding-bottom: 2%;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-align-items: center;
-padding-bottom: 5%;
+.ContainerNotFoundButton {
+  width: 100%;
+  display: flex;
+  padding-bottom: 2%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 5%;
 }
 
-.TitleNotFound{
-color: $White;
-font-size: 8vh;
-font-family: 'Oswald', sans-serif;
-text-shadow: -3px 3px 0 $Black;
-padding-bottom: 0%;
-margin-bottom: 0;
+.TitleNotFound {
+  color: $White;
+  font-size: 8vh;
+  font-family: "Oswald", sans-serif;
+  text-shadow: -3px 3px 0 $Black;
+  padding-bottom: 0%;
+  margin-bottom: 0;
 }
 
-.ImageNotFound{
-margin-top: 0;
-padding-top: 0;
-min-width: 25rem;
-min-height: 25rem;
-max-width: 25rem;
-max-height: 25rem;
+.ImageNotFound {
+  margin-top: 0;
+  padding-top: 0;
+  min-width: 25rem;
+  min-height: 25rem;
+  max-width: 25rem;
+  max-height: 25rem;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
-@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
 
-@mixin button($bcolor,
-$url,
-$x1,
-$y1,
-$bor,
-$col) {
-background: $bcolor;
--webkit-mask: url($url);
-mask: url($url);
--webkit-mask-size: $x1 $y1;
-mask-size: $x1 $y1;
-border: $bor;
-color: $col;
+@mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
+  background: $bcolor;
+  -webkit-mask: url($url);
+  mask: url($url);
+  -webkit-mask-size: $x1 $y1;
+  mask-size: $x1 $y1;
+  border: $bor;
+  color: $col;
 }
 
 .buttoncontainer {
-position: relative;
-width: 15rem;
-height: 5rem;
-overflow: hidden;
-border: .5rem solid $MBLUE;
-font-family: 'Merienda', cursive;
-font-weight: 300;
-transition: 0.5s;
-letter-spacing: 1px;
-border-radius: 8px;
+  position: relative;
+  width: 15rem;
+  height: 5rem;
+  overflow: hidden;
+  border: 0.5rem solid $MBLUE;
+  font-family: "Merienda", cursive;
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 8px;
 
-button {
-width: 101%;
-height: 100%;
-font-family: 'Merienda', cursive;
-font-weight: 300;
-font-size: 3vh;
-letter-spacing: 1px;
-font-weight: bold;
+  button {
+    width: 101%;
+    height: 100%;
+    font-family: "Merienda", cursive;
+    font-weight: 300;
+    font-size: 3vh;
+    letter-spacing: 1px;
+    font-weight: bold;
 
-@include button($NEONBLUE, "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
-3000%,
-100%,
-none,
-$MBLUE);
-cursor: pointer;
--webkit-animation: ani2 0.7s steps(29) forwards;
-animation: ani2 0.7s steps(29) forwards;
+    @include button(
+      $NEONBLUE,
+      "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+      3000%,
+      100%,
+      none,
+      $MBLUE
+    );
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(29) forwards;
+    animation: ani2 0.7s steps(29) forwards;
 
-&:hover {
--webkit-animation: ani 0.7s steps(29) forwards;
-animation: ani 0.7s steps(29) forwards;
-cursor: url(../../Components//Images//Pointer1.png), pointer;
-}
-}
+    &:hover {
+      -webkit-animation: ani 0.7s steps(29) forwards;
+      animation: ani 0.7s steps(29) forwards;
+      cursor: url(../../Components//Images//Pointer1.png), pointer;
+    }
+  }
 }
 
 .mas {
-position: absolute;
-color:$NEONBLUE;
-text-align: center;
-width: 101%;
-font-family: 'Merienda', cursive;
-font-weight: 300;
-position: absolute;
-font-size: 3vh;
-margin-top: 1.6rem;
-overflow: hidden;
-font-weight: bold;
+  position: absolute;
+  color: $NEONBLUE;
+  text-align: center;
+  width: 101%;
+  font-family: "Merienda", cursive;
+  font-weight: 300;
+  position: absolute;
+  font-size: 3vh;
+  margin-top: 1.6rem;
+  overflow: hidden;
+  font-weight: bold;
 }
 
 @-webkit-keyframes ani {
-from {
--webkit-mask-position: 0 0;
-mask-position: 0 0;
-}
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 
-to {
--webkit-mask-position: 100% 0;
-mask-position: 100% 0;
-}
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
 }
 
 @keyframes ani {
-from {
--webkit-mask-position: 0 0;
-mask-position: 0 0;
-}
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 
-to {
--webkit-mask-position: 100% 0;
-mask-position: 100% 0;
-}
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
 }
 
 @-webkit-keyframes ani2 {
-from {
--webkit-mask-position: 100% 0;
-mask-position: 100% 0;
-}
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
 
-to {
--webkit-mask-position: 0 0;
-mask-position: 0 0;
-}
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 }
 
 @keyframes ani2 {
-from {
--webkit-mask-position: 100% 0;
-mask-position: 100% 0;
-}
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
 
-to {
--webkit-mask-position: 0 0;
-mask-position: 0 0;
-}
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 }
 
 @media (max-width: 1248px) {
-    .ContainerNotFound {
+  .ContainerNotFound {
     padding-top: 30%;
-}
-.buttoncontainer{
+  }
+  .buttoncontainer {
     width: 10rem;
-}
+  }
 }
