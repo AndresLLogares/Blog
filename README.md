@@ -10,7 +10,7 @@ Blog personal desarrollado íntegramente con React con la finalidad de dar a con
 
 ## Las puedes visualizar aquí:
 
-🔗: https://andreslogares.netlify.app/Blog
+🔗: https://andreslogares.netlify.app/
 
 
 ## Portfolio
@@ -25,4 +25,4 @@ Personal blog developed entirely with React in order to publicize my work and I 
 ## You can see the website here:
 
 
-🔗: https://andreslogares.netlify.app/Blog
+🔗: https://andreslogares.netlify.app/
