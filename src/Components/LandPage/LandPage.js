@@ -54,7 +54,7 @@ const LandPage = () => {
                 <Link to="/Home">
                   <div className={styles.ButtonContainer}>
                     <img className={styles.Flag} src={Spain} alt="" />
-                    <button>Español</button>
+                    <button name="Español" >Español</button>
                   </div>
                 </Link>
               </div>
@@ -62,7 +62,7 @@ const LandPage = () => {
                 <Link to="/HomeE">
                   <div className={styles.ButtonContainer}>
                     <img className={styles.Flag} src={EEUU} alt="" />
-                    <button>English</button>
+                    <button name="English">English</button>
                   </div>
                 </Link>
               </div>

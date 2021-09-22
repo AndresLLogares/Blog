@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Route, BrowserRouter, Switch } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import NavigationBar from "./Components/Nav/Nav";
 import LandPage from "./Components/LandPage/LandPage";
@@ -12,7 +12,7 @@ import "./Scss/App/App.css";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Route path="/Home">
         <NavigationBar />
       </Route>
@@ -33,7 +33,7 @@ function App() {
         <Route exact path="/Projects" component={Projects} />
         <Route exact path="/ProjectsE" component={ProjectsE} />
       </Switch>
-    </Router>
+    </BrowserRouter>
   );
 }
 

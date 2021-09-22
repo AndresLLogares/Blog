@@ -29,7 +29,8 @@ import { Folder } from "react-kawaii";
 import Background from "../Water/Water.js";
 import gifBlog from "../Images/Blog.gif";
 import { ArrowRightSquareFill } from "@styled-icons/bootstrap/ArrowRightSquareFill";
-import PinkBio from "../Images/PinkBio.png";
+import NextLingo from "../Images/NextLingo.png";
+import { Nextdotjs } from "@styled-icons/simple-icons/Nextdotjs";
 
 const Home = () => {
   const TEXTS = ["Creatividad", "Compromiso", "Pasión"];
@@ -271,6 +272,14 @@ const Home = () => {
                   Scrum
                 </button>
               </div>
+              <div className={styles.buttoncontainer}>
+                <span className={styles.mas}>
+                  <Nextdotjs className={styles.LogosHome} />
+                </span>
+                <button type="button" name="Hover">
+                  Next.js
+                </button>
+              </div>
             </div>
           </div>
         </Zoom>
@@ -293,7 +302,7 @@ const Home = () => {
           <div className={styles.ContactMeTitleCont}>
             <h4 className={styles.TitleContact}>Proyectos</h4>
             <div className={styles.anyTitle}>
-              <p className={styles.TitleProjects}>Pink Bio</p>
+            <p className={styles.TitleProjects}>NextLingo</p>
             </div>
             <div className={styles.SortLitleLinks}>
               <a
@@ -301,11 +310,11 @@ const Home = () => {
                 target="_blank"
                 rel="noreferrer"
                 className={styles.HoverLink}
-                href="https://pinkbio.netlify.app/"
+                href="https://nextlingo.vercel.app/"
               >
                 <div className={styles.buttoncontainerLink}>
                   <span className={styles.masLink}>
-                    <img className={styles.imageButton} src={PinkBio} alt="" />
+                    <img className={styles.imageButton} src={NextLingo} alt="" />
                   </span>
                   <button type="button" name="Hover">
                     Link <ArrowRightSquareFill className={styles.arrow} />

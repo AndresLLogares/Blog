@@ -10,6 +10,7 @@ import Animu from "../Images/Animu.webp";
 import Clothbea from "../Images/Clothbea.webp";
 import Background from "../Water/Water.js";
 import PinkBio from "../Images/PinkBio.png";
+import NextLingo from "../Images/NextLingo.png";
 
 const ProjectsE = () => {
   return (
@@ -200,6 +201,43 @@ const ProjectsE = () => {
               <div className={styles.buttoncontainerLink}>
                 <span className={styles.masLink}>
                   <img className={styles.imageButton} src={PinkBio} alt="" />
+                </span>
+                <button type="button" name="Hover">
+                  Link <ArrowRightSquareFill className={styles.arrow} />
+                </button>
+              </div>
+            </a>
+          </div>
+        </Zoom>
+      </div>
+      <hr className={styles.hrProject} />
+      <div className={styles.SortAny}>
+        <Zoom className={styles.zoom}>
+          <div className={styles.SortLitleTitles}>
+            <div className={styles.anyTitle}>
+              <p className={styles.TitleProjects}>NextLingo</p>
+            </div>
+            <div className={styles.anyTitle}>
+              <p className={styles.TitleProjects}>21/09/2021</p>
+            </div>
+          </div>
+          <div className={styles.SortInfoPro}>
+            <p className={styles.Pinfo}>
+              This project is a small translation app using some basic exercises
+              from Duolingo to practice Next.js. I hope you enjoy it.
+            </p>
+          </div>
+          <div className={styles.SortLitleLinks}>
+            <a
+              style={{ textDecoration: "none" }}
+              target="_blank"
+              rel="noreferrer"
+              className={styles.HoverLink}
+              href="https://nextlingo.vercel.app/"
+            >
+              <div className={styles.buttoncontainerLink}>
+                <span className={styles.masLink}>
+                  <img className={styles.imageButton} src={NextLingo} alt="" />
                 </span>
                 <button type="button" name="Hover">
                   Link <ArrowRightSquareFill className={styles.arrow} />

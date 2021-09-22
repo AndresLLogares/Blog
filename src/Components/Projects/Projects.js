@@ -10,6 +10,7 @@ import Clothbea from "../Images/Clothbea.webp";
 import { Zoom } from "react-awesome-reveal";
 import Background from "../Water/Water.js";
 import PinkBio from "../Images/PinkBio.png";
+import NextLingo from "../Images/NextLingo.png";
 
 const Projects = () => {
   return (
@@ -204,6 +205,44 @@ const Projects = () => {
               <div className={styles.buttoncontainerLink}>
                 <span className={styles.masLink}>
                   <img className={styles.imageButton} src={PinkBio} alt="" />
+                </span>
+                <button type="button" name="Hover">
+                  Link <ArrowRightSquareFill className={styles.arrow} />
+                </button>
+              </div>
+            </a>
+          </div>
+        </Zoom>
+      </div>
+      <hr className={styles.hrProject} />
+      <div className={styles.SortAny}>
+        <Zoom className={styles.zoom}>
+          <div className={styles.SortLitleTitles}>
+            <div className={styles.anyTitle}>
+              <p className={styles.TitleProjects}>NextLingo</p>
+            </div>
+            <div className={styles.anyTitle}>
+              <p className={styles.TitleProjects}>21/09/2021</p>
+            </div>
+          </div>
+          <div className={styles.SortInfoPro}>
+            <p className={styles.Pinfo}>
+              Este proyecto es una pequeña app de traducción usando algunos
+              ejercicios básicos de Duolingo para practicar Next.js. Espero que
+              la disfruten.
+            </p>
+          </div>
+          <div className={styles.SortLitleLinks}>
+            <a
+              style={{ textDecoration: "none" }}
+              target="_blank"
+              className={styles.HoverLink}
+              rel="noreferrer"
+              href="https://nextlingo.vercel.app/"
+            >
+              <div className={styles.buttoncontainerLink}>
+                <span className={styles.masLink}>
+                  <img className={styles.imageButton} src={NextLingo} alt="" />
                 </span>
                 <button type="button" name="Hover">
                   Link <ArrowRightSquareFill className={styles.arrow} />

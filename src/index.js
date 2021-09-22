@@ -1,16 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import { BrowserRouter } from 'react-router-dom';
-import styles from './Scss/index/index.module.scss'
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
 
-ReactDOM.render(
-  <BrowserRouter >
-    <div className={styles.Back}>
-      <App />
-    </div>
+ReactDOM.render( 
+  <BrowserRouter>
+    <App />
   </BrowserRouter>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-
