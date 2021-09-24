@@ -1,14 +1,5 @@
 $Black: #0c1115;
 $White: #ffffff;
-$NEONBLUE: #9cf6fb;
-$SLBLE: #e1fcfd;
-$STRBLUE: #394f8a;
-$MBLUE: #7868e6;
-$STRPINK: #e5b9a8;
-$SLPINK: #ead6cd;
-$GREEN: #05f4b7;
-$SPURPLE: #361999;
-$Pink: #fa255e;
 
 $Spring: #ccd5ae;
 $Goldenrod: #e9edc9;
@@ -311,6 +302,10 @@ $Fawn: #d4a373;
     width: 100%;
   }
 
+  .Browser {
+    margin-bottom: 10%;
+  }
+
   .SortTitle {
     width: 100%;
     display: flex;
@@ -325,10 +320,12 @@ $Fawn: #d4a373;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 15%;
   }
   .SortTitleSecond {
     display: flex;
     width: 100%;
+    margin-bottom: 15%;
     flex-direction: column;
   }
   .LandBox {

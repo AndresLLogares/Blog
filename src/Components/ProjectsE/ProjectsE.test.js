@@ -2,6 +2,7 @@ import React from "react";
 import "@testing-library/jest-dom/extend-expect";
 import { render } from "@testing-library/react";
 import ProjectsE from "./ProjectsE";
+// eslint-disable-next-line jest/no-mocks-import
 import "../../__mocks__/ntersectionObserverMock";
 import { BrowserRouter } from "react-router-dom";
 
